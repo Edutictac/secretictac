@@ -1,0 +1,13 @@
+/* Page */
+ul,ol,li,dl,dt,dd{border:0;outline:none;margin:0;padding:0;}
+ul, ul li{list-style: none;}
+ul.text {margin-bottom: 1em; line-height: 1.5em;}
+.text-center {text-align: center;}
+
+.demo-container {padding: 0px 10px 20px 0px; float: left; width: 210px;    min-height: 550px;
+  height: auto !important;
+  height: 550px;}
+
+.clear {clear: both;}
+
+.dcjq-count {float: right;}

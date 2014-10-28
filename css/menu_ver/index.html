@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+<title>jQuery Vertical Accordion Menu Plugin v 2.6</title>
+<link href="css/dcaccordion.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+<script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='js/jquery.dcjqaccordion.2.7.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function($){
+					$('#accordion-1').dcAccordion({
+						eventType: 'click',
+						autoClose: true,
+						saveState: true,
+						disableLink: true,
+						speed: 'slow',
+						showCount: true,
+						autoExpand: true,
+						cookie	: 'dcjq-accordion-1',
+						classExpand	 : 'dcjq-current-parent'
+					});
+					$('#accordion-2').dcAccordion({
+						eventType: 'click',
+						autoClose: true,
+						saveState: true,
+						disableLink: true,
+						speed: 'fast',
+						autoExpand: false,
+						classActive: 'test',
+						showCount: false
+					});
+					$('#accordion-3').dcAccordion({
+						eventType: 'click',
+						autoClose: false,
+						saveState: false,
+						disableLink: false,
+						showCount: false,
+						speed: 'slow'
+					});
+					$('#accordion-4').dcAccordion({
+						eventType: 'hover',
+						autoClose: true,
+						saveState: true,
+						disableLink: true,
+						menuClose: false,
+						speed: 'slow',
+						showCount: true
+					});
+					$('#accordion-5').dcAccordion({
+						eventType: 'hover',
+						autoClose: false,
+						saveState: true,
+						disableLink: true,
+						menuClose: true,
+						speed: 'fast',
+						showCount: true
+					});
+					$('#accordion-6').dcAccordion({
+						eventType: 'hover',
+						autoClose: false,
+						saveState: false,
+						disableLink: false,
+						showCount: false,
+						menuClose: true,
+						speed: 'slow'
+					});
+});
+</script>
+<link href="css/skins/blue.css" rel="stylesheet" type="text/css" />
+<link href="css/skins/graphite.css" rel="stylesheet" type="text/css" />
+<link href="css/skins/grey.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="grey demo-container">
+
+
+<ul class="accordion"  id="accordion-2">
+ <li><a href="#">REGISTRO</a>
+ 			<ul>
+ 						<li><a href="#">Part B</a></li>
+						<li><a href="#">Part C</a></li>
+						<li><a href="#">Part D</a></li>
+ 				</ul>
+ </li>
+ 
+  <li><a href="#">COMPARTIR DOCUMENTOS</a>
+ 			<ul>
+ 						<li><a href="#">Part B</a></li>
+						<li><a href="#">Part C</a></li>
+						<li><a href="#">Part D</a></li>
+ 				</ul>
+ </li>
+ 
+   <li><a href="#">ADMINISTRADOR</a>
+ 			<ul>
+ 						<li><a href="#">Part B</a></li>
+						<li><a href="#">Part C</a></li>
+						<li><a href="#">Part D</a></li>
+ 				</ul>
+ </li>
+ 
+ 
+ 
+    
+</div>
+
+<div class="clear"></div>
+</div>
+<div style="height: 350px;"></div>
+</body>
+</html>
