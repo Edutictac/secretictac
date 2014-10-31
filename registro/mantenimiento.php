@@ -103,11 +103,11 @@ switch ($selecccion) {
 case 'origen_entradas':
 $tabla='origen';
 $tipo_e_s='e';
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 						$tipo_org =mysql_query("SELECT id_origen, nombre_cas,nombre_val FROM registro_origen where cod_centro='$upload_centro' and entrada_salida='e' order by nombre_cas");
 					}
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 					{
 						$tipo_org =mysql_query("SELECT id_origen, nombre_val,nombre_cas FROM registro_origen where cod_centro='$upload_centro' and entrada_salida='e' order by nombre_val");
 					}				
@@ -116,11 +116,11 @@ break;
 case 'organismo_entradas':
 $tabla='organismo';
 $tipo_e_s='e';
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 						$tipo_org =mysql_query("SELECT id_organismo, nombre_cas,nombre_val FROM registro_organismo where cod_centro='$upload_centro' and entrada_salida='e' order by nombre_cas");
 					}
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 					{
 						$tipo_org =mysql_query("SELECT id_organismo, nombre_val,nombre_cas FROM registro_organismo where cod_centro='$upload_centro' and entrada_salida='e' order by nombre_val");
 					}
@@ -129,11 +129,11 @@ break;
 case 'destino_entradas':
 $tabla='destino';
 $tipo_e_s='e';
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 						$tipo_org =mysql_query("SELECT id_destino, nombre_cas,nombre_val FROM  registro_destino where cod_centro='$upload_centro' and entrada_salida='e' order by nombre_cas");
 					}
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 					{
 						$tipo_org =mysql_query("SELECT id_destino, nombre_val,nombre_cas FROM registro_destino where cod_centro='$upload_centro' and entrada_salida='e' order by nombre_val");
 					}	
@@ -142,11 +142,11 @@ break;
 case 'origen_salidas':
 $tabla='destino';
 $tipo_e_s='s';
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 						$tipo_org =mysql_query("SELECT id_destino, nombre_cas,nombre_val FROM registro_destino where cod_centro='$upload_centro' and entrada_salida='s' order by nombre_cas");
 					}
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 					{
 						$tipo_org =mysql_query("SELECT id_destino, nombre_val,nombre_cas FROM registro_destino where cod_centro='$upload_centro' and entrada_salida='s' order by nombre_val");
 					}				
@@ -155,11 +155,11 @@ break;
 case 'organismo_salidas':
 $tabla='organismo';
 $tipo_e_s='s';
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 						$tipo_org =mysql_query("SELECT id_organismo, nombre_cas,nombre_val FROM registro_organismo where cod_centro='$upload_centro' and entrada_salida='s' order by nombre_cas");
 					}
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 					{
 						$tipo_org =mysql_query("SELECT id_organismo, nombre_val,nombre_cas FROM registro_organismo where cod_centro='$upload_centro' and entrada_salida='s' order by nombre_val");
 					}
@@ -168,11 +168,11 @@ break;
 case 'destino_salidas':
 $tabla='origen';
 $tipo_e_s='s';
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 						$tipo_org =mysql_query("SELECT id_origen, nombre_cas,nombre_val FROM  registro_origen where cod_centro='$upload_centro' and entrada_salida='s' order by nombre_cas");
 					}
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 					{
 						$tipo_org =mysql_query("SELECT id_origen, nombre_val,nombre_cas FROM registro_origen where cod_centro='$upload_centro' and entrada_salida='s' order by nombre_val");
 					}	
@@ -181,11 +181,11 @@ break;
 case 'documentos':
 $tipo_e_s='d';
 $tabla='tipo_documento';
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 						$tipo_org =mysql_query("SELECT id_tipo_documento, nombre_cas,nombre_val FROM  registro_tipo_documento where cod_centro='$upload_centro' order by nombre_cas");
 					}
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 					{
 						$tipo_org =mysql_query("SELECT id_tipo_documento, nombre_val,nombre_cas FROM registro_tipo_documento where cod_centro='$upload_centro' order by nombre_val");
 					}	

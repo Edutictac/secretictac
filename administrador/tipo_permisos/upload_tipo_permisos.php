@@ -1,6 +1,6 @@
 <?php
 session_start();
-$upload_centro=$_SESSION['cod_centro'];
+$upload_centro=$_SESSION['cod_centro_secretictac'];
 include ("../../ruta_absoluta.php");
 include ("../../conexion.php");
 include ("../../funciones.php");

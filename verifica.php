@@ -6,7 +6,7 @@ include ("funciones.php");
 
 
 
-$_SESSION["curso_academico_sesion"]= $_POST['curso_academico'];
+$_SESSION["curso_academico_sesion_secretictac"]= $_POST['curso_academico'];
 
 
 $usuario=$_POST['nick'];
@@ -38,13 +38,13 @@ $sql = mysql_fetch_array($resp);
                   echo '<script>location.href="login.php";</script>';
                   }
                   else {
-                  $_SESSION["autentificado"]= "secretictac_acceso";
-                  $_SESSION['usuario']=$usuario;
-                  $_SESSION['clave']=$contras;
-                  $_SESSION['acceso']=$sql['PERMISO'];
-                  $_SESSION['cod_centro']=$cod_centro;
-                   $_SESSION['anyo_academico']=$_REQUEST['curso_academico'];
-                  $_SESSION["nombre_usuario"]=$sql['nombre_usuario'];
+                  $_SESSION["autentificado_secretictac"]= "secretictac_acceso";
+                  $_SESSION['usuario_secretictac']=$usuario;
+                  $_SESSION['clave_secretictac']=$contras;
+                  $_SESSION['acceso_secretictac']=$sql['PERMISO'];
+                  $_SESSION['cod_centro_secretictac']=$cod_centro;
+                  $_SESSION['anyo_academico_secretictac']=$_REQUEST['curso_academico'];
+                  $_SESSION["nombre_usuario_secretictac"]=$sql['nombre_usuario'];
                   if ($sql['primera_vez']=='si')
                   echo "<script>location.href='$ruta_absoluta/cambiar_contrasenya';</script>";
                   else

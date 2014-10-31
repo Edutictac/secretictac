@@ -111,10 +111,6 @@ var a="CERRAR";
 document.Form1.nombre_boton.value=a;
 document.Form1.submit();}
 
-function alerta(mensaje)
-{
-alert(mensaje);	
-	}
 
 
 
@@ -842,7 +838,7 @@ if($dirigido==$nick_usuario)
 
 <div id="boton"  align="right" >
 <?php
-
+$avanzar1=$codigo_registro+1;
 $ult_registro =mysql_query("SELECT id_registro,codigo_registro FROM registro where cod_centro='$upload_centro' and entrada_salida='$entrada_salida' order by codigo_registro desc limit 1");
 $row3 = mysql_fetch_array($ult_registro);
 $ult_registro=$row3 ["codigo_registro"];
@@ -853,17 +849,14 @@ $row4= mysql_fetch_array($primer_registro);
 $primer_registro=$row4 ["codigo_registro"];
 $id_primer_registro=$row4 ["id_registro"];
 
-
-$id_registro_seleccionado=$_REQUEST['id_registro'];
-
-				$cual_retrocede=mysql_query("SELECT id_registro FROM registro where cod_centro='$upload_centro' and entrada_salida='$entrada_salida' and codigo_registro<'$codigo_registro' ORDER BY codigo_registro DESC LIMIT 1");
+$retroceder=$codigo_registro-1;
+				$cual_retrocede=mysql_query("SELECT id_registro FROM registro where cod_centro='$upload_centro' and entrada_salida='$entrada_salida' and codigo_registro='$retroceder' ");
 				$row = mysql_fetch_array($cual_retrocede);
 				$retroceder=$row ["id_registro"];
 				
-				$cual_avanza=mysql_query("SELECT id_registro FROM registro where cod_centro='$upload_centro' and entrada_salida='$entrada_salida' and codigo_registro>'$codigo_registro' ORDER BY codigo_registro ASC LIMIT 1 ");
+				$cual_avanza=mysql_query("SELECT id_registro FROM registro where cod_centro='$upload_centro' and entrada_salida='$entrada_salida' and codigo_registro='$avanzar1' ");
 				$row1 = mysql_fetch_array($cual_avanza);
 				$avanzar=$row1["id_registro"];
-				
 	
 ?>
 
@@ -876,7 +869,7 @@ $id_registro_seleccionado=$_REQUEST['id_registro'];
 </button>
 
 <?php
-if($codigo_registro>=$primer_registro+1) 
+if($retroceder>=$primer_registro+1) 
 {
 ?>
 <button  onclick="window.location.href='<?php echo "$ruta_absoluta/registro_entrada_guar/$retroceder/$entrada_salida";?>'" style='float:left;padding: 0px;margin-left:8px;margin-top:-2px;' name="boton" type="button"  title="<?php echo $registrotexto40;?>"/>
@@ -887,7 +880,7 @@ if($codigo_registro>=$primer_registro+1)
 else
 {
 ?>
-<button  onclick= "alerta('<?php echo $registrotexto76;?>');" style='float:left;padding: 0px;margin-left:8px;margin-top:-2px;' name="boton" type="button"  title="<?php echo $registrotexto40;?>"/>
+<button  onclick="window.location.href='#" style='float:left;padding: 0px;margin-left:8px;margin-top:-2px;' name="boton" type="button"  title="<?php echo $registrotexto40;?>"/>
 <img src="<?php echo "$ruta_absoluta/images/anterior.png";?>" style='width:25px'>
 </button>
 
@@ -896,9 +889,10 @@ else
 ?>
 
 <?php
-if($codigo_registro<=$ult_registro-1) 
+if($avanzar1<=$ult_registro) 
 {
 ?>
+
 <button  onclick="window.location.href='<?php echo "$ruta_absoluta/registro_entrada_guar/$avanzar/$entrada_salida";?>'" style='float:left;padding: 0px;margin-left:8px;margin-top:-2px;' name="boton" type="button"   title="<?php echo $registrotexto39;?>"/>
 <img src="<?php echo "$ruta_absoluta/images/siguiente.png";?>" style='width:25px'>
 </button>
@@ -906,7 +900,7 @@ if($codigo_registro<=$ult_registro-1)
 }
 else {
 	?>
-<button onclick= "alerta('<?php echo $registrotexto75;?>');" style='float:left;padding: 0px;margin-left:8px;margin-top:-2px;' name="boton" type="button" title="<?php echo $registrotexto39;?>"/>
+<button style='float:left;padding: 0px;margin-left:8px;margin-top:-2px;' name="boton" type="button" title="<?php echo $registrotexto39;?>"/>
 <img src="<?php echo "$ruta_absoluta/images/siguiente.png";?>" style='width:25px'>
 </button>
 <?php

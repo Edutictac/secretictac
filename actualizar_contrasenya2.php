@@ -2,7 +2,7 @@
 include("seguridad.php");
 include ("idioma.php");?>
 <?php
-$upload_centro=$_SESSION['cod_centro'];
+$upload_centro=$_SESSION['cod_centro_secretictac'];
 include ("conexion.php");
 conectar();
 include ("funciones.php");

@@ -1,8 +1,8 @@
 <?php
 session_start();
-$upload_centro=$_SESSION['cod_centro'];
-if(!isset ($_SESSION["idioma"]))
-$_SESSION["idioma"]="cas";
+$upload_centro=$_SESSION['cod_centro_secretictac'];
+if(!isset ($_SESSION["idioma_secretictac"]))
+$_SESSION["idioma_secretictac"]="cas";
 include("../idioma.php");
 include("../colores.php");
 $ejex_inicial='7';
@@ -148,7 +148,7 @@ conectar();
 $anyo=$_POST['anyo'];
 $tipo_registro=$_POST['tipo_registro'];
 
-$upload_centro=$_SESSION['cod_centro'];
+$upload_centro=$_SESSION['cod_centro_secretictac'];
 $result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
 $row = mysql_fetch_array($result);
 $nombre_centro1= ($row ["NOMBRE_CENTRO"]);
@@ -306,13 +306,13 @@ $destino=($row ["destino"]);
 
 if($tipo_documento!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_documento=mysql_query("SELECT nombre_cas FROM registro_tipo_documento where cod_centro='$upload_centro' and id_tipo_documento='$tipo_documento' ");
 				$row = mysql_fetch_array($nombre_documento);
 				  $nombre_docum=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_documento=mysql_query("SELECT nombre_val FROM registro_tipo_documento where cod_centro='$upload_centro' and id_tipo_documento='$tipo_documento' ");
 				$row = mysql_fetch_array($nombre_documento);
@@ -329,13 +329,13 @@ else
 
 if($origen!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_origen=mysql_query("SELECT nombre_cas FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
 				$row = mysql_fetch_array($nombre_origen);
 				  $nombre_origen=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_origen=mysql_query("SELECT nombre_val FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
 				$row = mysql_fetch_array($nombre_origen);
@@ -352,13 +352,13 @@ else
 
 if($organismo!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_organismo=mysql_query("SELECT nombre_cas FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
 				$row = mysql_fetch_array($nombre_organismo);
 				  $nombre_organismo=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_organismo=mysql_query("SELECT nombre_val FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
 				$row = mysql_fetch_array($nombre_organismo);
@@ -374,13 +374,13 @@ else
 		
 if($destino!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_destino=mysql_query("SELECT nombre_cas FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
 				$row = mysql_fetch_array($nombre_destino);
 				  $nombre_destino=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_destino=mysql_query("SELECT nombre_val FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
 				$row = mysql_fetch_array($nombre_destino);

@@ -262,13 +262,13 @@ $dirigido='';
 
 if($tipo_documento!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_documento=mysql_query("SELECT nombre_cas FROM registro_tipo_documento where cod_centro='$upload_centro' and id_tipo_documento='$tipo_documento' ");
 				$row = mysql_fetch_array($nombre_documento);
 				  $nombre_docum=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_documento==mysql_query("SELECT nombre_val FROM registro_tipo_documento where cod_centro='$upload_centro' and id_tipo_documento='$tipo_documento' ");
 				$row = mysql_fetch_array($nombre_documento);
@@ -285,13 +285,13 @@ else
 
 if($origen!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_origen=mysql_query("SELECT nombre_cas FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
 				$row = mysql_fetch_array($nombre_origen);
 				  $nombre_origen=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_origen==mysql_query("SELECT nombre_val FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
 				$row = mysql_fetch_array($nombre_origen);
@@ -308,13 +308,13 @@ else
 
 if($organismo!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_organismo=mysql_query("SELECT nombre_cas FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
 				$row = mysql_fetch_array($nombre_organismo);
 				  $nombre_organismo=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_organismo==mysql_query("SELECT nombre_val FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
 				$row = mysql_fetch_array($nombre_organismo);
@@ -330,13 +330,13 @@ else
 		
 if($destino!=0)
 {
-					if ($_SESSION["idioma"]=='cas')
+					if ($_SESSION["idioma_secretictac"]=='cas')
 					{
 				$nombre_destino=mysql_query("SELECT nombre_cas FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
 				$row = mysql_fetch_array($nombre_destino);
 				  $nombre_destino=$row ["nombre_cas"];
 				  }
-				if ($_SESSION["idioma"]=='val')
+				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_destino==mysql_query("SELECT nombre_val FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
 				$row = mysql_fetch_array($nombre_destino);
@@ -436,10 +436,10 @@ else{
 
 <div id="titulo_campo_texto2" style="float: left;"  align="justify">
 <?php
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 $consulta=mysql_query("SELECT id_tipo_documento,nombre_cas FROM registro_tipo_documento where cod_centro='$upload_centro' order by nombre_cas");
 
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 $consulta=mysql_query("SELECT id_tipo_documento,nombre_val FROM registro_tipo_documento where cod_centro='$upload_centro' order by nombre_val");
 
 
@@ -542,10 +542,10 @@ else
 </div>
 <div id="campo_input" style="float: left;"  align="justify">
 <?php
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 $consulta=mysql_query("SELECT id_origen,nombre_cas FROM registro_origen where cod_centro='$upload_centro' order by nombre_cas");
 
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 $consulta=mysql_query("SELECT id_origen,nombre_val FROM registro_origen where cod_centro='$upload_centro' order by nombre_val");
 
 
@@ -579,10 +579,10 @@ $consulta=mysql_query("SELECT id_origen,nombre_val FROM registro_origen where co
 </div>
 <div id="campo_input" style="float: left;"  align="justify">
 <?php
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 $consulta=mysql_query("SELECT id_organismo,nombre_cas FROM registro_organismo where cod_centro='$upload_centro' order by nombre_cas");
 
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 $consulta=mysql_query("SELECT id_organismo,nombre_val FROM registro_organismo where cod_centro='$upload_centro' order by nombre_val");
 
 
@@ -618,10 +618,10 @@ $consulta=mysql_query("SELECT id_organismo,nombre_val FROM registro_organismo wh
 </div>
 <div id="campo_input" style="float: left;"  align="justify">
 <?php
-if ($_SESSION["idioma"]=='cas')
+if ($_SESSION["idioma_secretictac"]=='cas')
 $consulta=mysql_query("SELECT id_destino,nombre_cas FROM registro_destino where cod_centro='$upload_centro' order by nombre_cas");
 
-if ($_SESSION["idioma"]=='val')
+if ($_SESSION["idioma_secretictac"]=='val')
 $consulta=mysql_query("SELECT id_destino,nombre_val FROM registro_destino where cod_centro='$upload_centro' order by nombre_val");
 
 

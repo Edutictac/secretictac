@@ -1,11 +1,11 @@
 <?php
 session_start();
-$upload_centro=$_SESSION['cod_centro'];
-$upload_anyo_academico=$_SESSION['anyo_academico'];
-$permiso=$_SESSION['acceso'];
-$nick_usuario=$_SESSION['usuario'];
-if(!isset ($_SESSION["idioma"]))
-$_SESSION["idioma"]="cas";
+$upload_centro=$_SESSION['cod_centro_secretictac'];
+$upload_anyo_academico=$_SESSION['anyo_academico_secretictac'];
+$permiso=$_SESSION['acceso_secretictac'];
+$nick_usuario=$_SESSION['usuario_secretictac'];
+if(!isset ($_SESSION["idioma_secretictac"]))
+$_SESSION["idioma_secretictac"]="cas";
 include("../idioma.php");
 include("../colores.php");
 include('../funciones.php');
@@ -32,7 +32,7 @@ conectar();
 $anyo=$_POST['anyo'];
 $tipo_registro=$_POST['tipo_registro'];
 
-$upload_centro=$_SESSION['cod_centro'];
+$upload_centro=$_SESSION['cod_centro_secretictac'];
 $result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
 $row = mysql_fetch_array($result);
 $nombre_centro1= ($row ["NOMBRE_CENTRO"]);
@@ -165,7 +165,7 @@ $replace=array("$enero","$febrero","$marzo","$abril","$mayo","$junio","$julio","
 $mes=str_replace($search,$replace,$month);
 
 
-if ($_SESSION["idioma"]=="val"){
+if ($_SESSION["idioma_secretictac"]=="val"){
 $mes_val =$mes;
 $comienza = $mes_val[0];
 

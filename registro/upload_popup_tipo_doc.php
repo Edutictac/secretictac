@@ -1,7 +1,7 @@
 <?php
 session_start();
-$upload_centro=$_SESSION['cod_centro'];
-$usuario=$_SESSION['usuario'];
+$upload_centro=$_SESSION['cod_centro_secretictac'];
+$usuario=$_SESSION['usuario_secretictac'];
 include ("../ruta_absoluta.php");
 include ("../conexion.php");
 include ("../funciones.php");

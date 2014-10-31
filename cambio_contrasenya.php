@@ -4,7 +4,7 @@ include ("base.php");
 include ("conexion.php");
 conectar();
 
-$id=$_SESSION['usuario'];
+$id=$_SESSION['usuario_secretictac'];
 
 $busqueda = mysql_query("SELECT * FROM usuarios WHERE usuario='$id' ");
 while ($row = mysql_fetch_array($busqueda))

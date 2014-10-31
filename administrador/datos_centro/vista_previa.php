@@ -1,6 +1,6 @@
 <?php
 session_start();
-$upload_centro=$_SESSION['cod_centro'];
+$upload_centro=$_SESSION['cod_centro_secretictac'];
 require('../../conexion.php');
 
 conectar();
@@ -20,7 +20,7 @@ class PDF extends FPDF
 function Header()
 {
 session_start();
-$upload_centro=$_SESSION['cod_centro'];
+$upload_centro=$_SESSION['cod_centro_secretictac'];
 $result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
 $row = mysql_fetch_array($result);
 $nombre_centro1= ($row ["NOMBRE_CENTRO"]);

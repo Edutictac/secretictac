@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['nombre_usuario']))
-unset($_SESSION['nombre_usuario']);
-session_destroy();
+if(isset($_SESSION['autentificado_secretictac']))
+unset($_SESSION['autentificado_secretictac']);
+//session_destroy();
 header("Location:index.php");
 ?>

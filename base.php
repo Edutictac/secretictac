@@ -1,6 +1,6 @@
 <?php
-if(!isset ($_SESSION["idioma"]))
-$_SESSION["idioma"]="cas";
+if(!isset ($_SESSION["idioma_secretictac"]))
+$_SESSION["idioma_secretictac"]="cas";
 include("ruta_absoluta.php");
 include("idioma.php");
 include("colores.php");
@@ -29,9 +29,6 @@ include("funciones.php");
 <div id="wb_Image1" >
 <img src="<?php echo "$ruta_absoluta/";?>images/baner.png" id="Image1" alt="" align="top" border="0" style="width:<?php echo "$tamanyo_pagina";?>px;">
 </div>
-
-
-
 
 </header>
 
