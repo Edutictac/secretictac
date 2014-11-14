@@ -12,6 +12,8 @@ $activado_inicio='activado';
 
 <div id="tabla_centrar2" align="left">
 
+
+
 <?php
 $activo_inicio="active";
 include ("menu.php");
@@ -113,12 +115,14 @@ $i=$i+1;
 }
 ?>
 
-<div id="campo_input" style="float:left;width:700px;padding-top:10px" align="justify">
+<div id="campo_input" style="float:left;width:430px;padding-top:10px" align="justify">
 <?php echo "$iniciotexto1";?>
 </div>
 
 
-
+<?php 
+include ('rss.php');
+?>
 
 
 <?php

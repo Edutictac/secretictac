@@ -29,6 +29,41 @@ function valida_codigo(){
 
        document.Form1.submit();
  }
+ 
+ 
+ 
+function submitenter(myfield,e)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+
+if (keycode == 13)
+   {
+   	   if (document.Form1.cod.value.length==0){
+       alert('<?php echo "$login_falta_codigo"; ?>')
+       document.Form1.cod.focus()
+       return false;
+       }
+  if (document.Form1.nick.value.length==0){
+       alert('<?php echo "$login_falta_usuario"; ?>')
+       document.Form1.nick.focus()
+       return false;
+       }
+      if (document.Form1.pass.value.length==0){
+       alert('<?php echo "$login_falta_contra"; ?>')
+       document.Form1.pass.focus()
+       return false;
+       }
+   myfield.form.submit();
+   return false;
+   }
+else{
+	   return true;
+     }
+}
+
  </script>
 
 
@@ -72,7 +107,7 @@ function valida_codigo(){
 			<div id='titulo_3' align='right'><b><?php echo "$idi_codigo";?></b></div>
 			</td>
 			<td align='left' valign='middle'>
-			<div id='titulo_3' align='left'><input type="text" autocomplete="off" maxlength="20" autofocus  style="width:200px;" name="cod" value='' /></div>
+			<div id='titulo_3' align='left'><input type="text" onKeyPress="return submitenter(this,event)" autocomplete="off" maxlength="20" autofocus  style="width:200px;" name="cod" value='' /></div>
 			</td>
 			</tr>
 			
@@ -83,7 +118,7 @@ function valida_codigo(){
 			<div id='titulo_3' align='right'><b><?php echo "$idi_usuario";?></b></div>
 			</td>
 			<td align='left' valign='middle'>
-			<div id='titulo_3' align='left'><input type="text" autocomplete="off" maxlength="20"  style="width:200px;" name="nick"  value="" /></div>
+			<div id='titulo_3' align='left'><input type="text" onKeyPress="return submitenter(this,event)" autocomplete="off" maxlength="20"  style="width:200px;" name="nick"  value="" /></div>
 			</td>
 			</tr>
 			
@@ -93,7 +128,7 @@ function valida_codigo(){
 			<div id='titulo_3' align='right'><b><?php echo "$idi_contrasenya";?></b></div>
 			</td>
 			<td align='left' valign='middle'>
-			<div id='titulo_3' align='left'><input type="password" maxlength="50" id="Editbox2"  style="width:200px;" name="pass" value=''/></div>
+			<div id='titulo_3' align='left'><input type="password" onKeyPress="return submitenter(this,event)"  maxlength="50" id="Editbox2"  style="width:200px;" name="pass" value=''/></div>
 			</td>
 			</tr>
 			
