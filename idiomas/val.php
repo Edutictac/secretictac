@@ -21,6 +21,7 @@ $menu_inicio='INICI';
 $pagina_inicio='Pàgina Inici';
 $inicio_titulo='Secretictac';
 $inicio_idioma='Seleccionar idioma';
+$inicio_instrucciones='Instruccions';
 
 //LOGIN
 $login_titulo='VALIDACIÓ D’USUARIS';
@@ -326,4 +327,10 @@ $noviembre='novembre';
 $diciembre='desembre';
 $de=' de ';
 $de_1=' d’';
+
+//RSS
+$rsstexto1='ACTUALITAT SECRETICTAC EN EDUTICTAC';
+$rsstexto2='Totes';
+$rsstexto3='NOTÍCIES SECRETICTAC';
+$rsstexto4='Llegir més';
 ?>

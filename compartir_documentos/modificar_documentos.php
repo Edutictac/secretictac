@@ -43,10 +43,10 @@ include ("../menu.php");
 <?php
 if($permiso=='1')
 {
-$_pagi_cuantos = 10;
+$_pagi_cuantos = 40;
 $_pagi_nav_num_enlaces = 10;
 $_pagi_nav_estilo = "borde";
-$_pagi_sql = "SELECT * FROM documentos_compartidos where COD_CENTRO='$upload_centro'  order by nombre";
+$_pagi_sql = "SELECT * FROM documentos_compartidos where COD_CENTRO='$upload_centro'  order by tipo desc,nombre asc";
 include("../paginator.inc.php");
 
 }

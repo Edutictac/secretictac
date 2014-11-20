@@ -501,7 +501,7 @@ echo "<b>$registrotexto46</b>";
 </div>
 </td>
 
-<td width='130px'>
+<td width='120px'>
 <div id="titulo_campo_texto2"   align="left">
 <?php 
 if($entrada_salida=='e')
@@ -556,7 +556,7 @@ if ($_SESSION["idioma_secretictac"]=='val')
 $consulta=mysql_query("SELECT id_tipo_documento,nombre_val FROM registro_tipo_documento where cod_centro='$upload_centro' order by nombre_val");
 
 
-	echo "<select style='width:250px;' name='tipo_documento'>";
+	echo "<select style='width:200px;' name='tipo_documento'>";
 	echo "<option value='$tipo_documento'>$nombre_docum</option>";
 	while($registro=mysql_fetch_row($consulta))
 	{
@@ -596,13 +596,13 @@ $consulta=mysql_query("SELECT id_tipo_documento,nombre_val FROM registro_tipo_do
 <tr>
 <td>
 <div id="titulo_campo_texto"  align="left">
-<textarea  name="asunto" id="TextArea1" style="width:350px;height:80px;" rows="5"  cols="39"><?php echo "$asunto";?></textarea>
+<textarea  name="asunto" id="TextArea1" style="width:330px;height:80px;" rows="5"  cols="39"><?php echo "$asunto";?></textarea>
 </div>
 </td>
 
 <td valign="top">
 <div id="titulo_campo_texto2"  align="left">
-<textarea  name="observaciones" id="TextArea1" style="width:350px;height:80px;" rows="5"  cols="39"><?php echo "$observaciones";?></textarea>
+<textarea  name="observaciones" id="TextArea1" style="width:330px;height:80px;" rows="5"  cols="39"><?php echo "$observaciones";?></textarea>
 </div>
 </td>
 </tr>
@@ -643,7 +643,7 @@ else
 
 <div id="campo_input"  align="left"></div>
 
-<div id="formulario_borde"  style="margin: 0px 0px 0px 0px;float: left;width:280px;" >
+<div id="formulario_borde"  style="margin: 0px 0px 0px 0px;float: left;width:250px;" >
 
 <div id="titulo_2" style="padding: 0px 5px 0px 5px; margin-top: -20px;background-color:ffffff;width:60px;">
 <?php 
@@ -739,7 +739,7 @@ $consulta=mysql_query("SELECT id_organismo,nombre_val FROM registro_organismo wh
 
 
 
-<div id="formulario_borde"  style="margin: 0px 0px 0px 20px;float: left; clear:right;width:290px;" >
+<div id="formulario_borde"  style="margin: 0px 0px 0px 20px;float: left; clear:right;width:280px;" >
 
 <div id="titulo_2" style="padding: 0px 5px 0px 5px; margin-top: -20px;background-color:ffffff;width:60px;">
 <?php 

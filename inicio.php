@@ -33,7 +33,7 @@ $numero = mysql_num_rows($result);
 if ($numero!=0)
 {
 ?>
-<table class="borde_tabla" width="700px" style='float: left;'>
+<table class="borde_tabla" width="730px" style='float: left;'>
 <tr>
 <th >
 <div id="cabecera_tabla" align='left'>
@@ -115,10 +115,6 @@ $i=$i+1;
 }
 ?>
 
-<div id="campo_input" style="float:left;width:430px;padding-top:10px" align="justify">
-<?php echo "$iniciotexto1";?>
-</div>
-
 
 <?php 
 include ('rss.php');
@@ -134,7 +130,7 @@ desconectar();
 
 
 
-
+<div id="separador" style="clear:both;margin-bottom:0px;"></div>
 
 
 

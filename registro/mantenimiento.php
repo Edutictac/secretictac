@@ -201,9 +201,9 @@ break;
 <div id="titulo_2"><?php echo $nombre_tabla;?></div>
 <table class="borde_tabla" style='float: left;'>
 <tr>
-<th width="250px" ><div id="cabecera_tabla" align='left'><?php echo "$mantenimientotexto11";?></div></th>
-<th width="80px" ><div id="cabecera_tabla" align='center'><?php echo "$tipo_texto7";?></div></th>
-<th width="80px" ><div id="cabecera_tabla" align='center'><?php echo "$boton_borrar";?></div></th>
+<th width="230px" ><div id="cabecera_tabla" align='left'><?php echo "$mantenimientotexto11";?></div></th>
+<th width="70px" ><div id="cabecera_tabla" align='center'><?php echo "$tipo_texto7";?></div></th>
+<th width="75px" ><div id="cabecera_tabla" align='center'><?php echo "$boton_borrar";?></div></th>
 </tr>
 
 <?php
@@ -289,7 +289,7 @@ else {
 }
 
 ?>
-<div  style='float: right;padding: 0px 0px 0px 0px;' >
+<div  style='float: left;padding: 0px 0px 0px 10px;' >
 
 <div id="cabecera_formulario">
 <?php echo "<b>$mantenimientotexto12</b>";?>

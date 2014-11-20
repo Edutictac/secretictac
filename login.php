@@ -10,11 +10,6 @@ unlink($archivo) ;
 
 <script>
 function valida_codigo(){
-       if (document.Form1.cod.value.length==0){
-       alert('<?php echo "$login_falta_codigo"; ?>')
-       document.Form1.cod.focus()
-       return 0;
-       }
   if (document.Form1.nick.value.length==0){
        alert('<?php echo "$login_falta_usuario"; ?>')
        document.Form1.nick.focus()
@@ -107,7 +102,7 @@ else{
 			<div id='titulo_3' align='right'><b><?php echo "$idi_codigo";?></b></div>
 			</td>
 			<td align='left' valign='middle'>
-			<div id='titulo_3' align='left'><input type="text" onKeyPress="return submitenter(this,event)" autocomplete="off" maxlength="20" autofocus  style="width:200px;" name="cod" value='' /></div>
+			<div id='titulo_3' align='left'><input type="text" readonly="readonly" maxlength="20"   style="background-color:<?php echo "$color_campo_no_editable";?>;width:200px;" name="cod" value='<?php echo "$codigo_centro_inicial";?>' /></div>
 			</td>
 			</tr>
 			
@@ -118,7 +113,7 @@ else{
 			<div id='titulo_3' align='right'><b><?php echo "$idi_usuario";?></b></div>
 			</td>
 			<td align='left' valign='middle'>
-			<div id='titulo_3' align='left'><input type="text" onKeyPress="return submitenter(this,event)" autocomplete="off" maxlength="20"  style="width:200px;" name="nick"  value="" /></div>
+			<div id='titulo_3' align='left'><input type="text" autofocus onKeyPress="return submitenter(this,event)" autocomplete="off" maxlength="20"  style="width:200px;" name="nick"  value="" /></div>
 			</td>
 			</tr>
 			

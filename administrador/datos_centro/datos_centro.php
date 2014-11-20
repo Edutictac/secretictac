@@ -110,7 +110,7 @@ $ruta_logo_conselleria="$ruta_absoluta/imagen_logo_conse/".$upload_centro."/".$N
 <?php echo "$definir_centro2";?>
 </div>
 
-<div id="campo_input" align='justify'>
+<div id="campo_input" style="float:left;padding-top:10px;width:700px;" align='justify'>
 <?php echo "$definir_centro3";?>
 </div>
 
@@ -121,7 +121,7 @@ $ruta_logo_conselleria="$ruta_absoluta/imagen_logo_conse/".$upload_centro."/".$N
 <!--mantenemos el formulario a la derecha-->
 <div  style='float:left;padding: 0px 0px 0px 10px;width:700px;' >
 
-<div id="cabecera_formulario">
+<div id="cabecera_formulario" style='float:left;padding: 10px 10px 10px 10px;margin-bottom:20px;width:640px;'>
 <?php echo "<b>$definir_centro4</b>";?>
 </div>
 
@@ -192,7 +192,7 @@ $display_mostrar='none';
 
 
 
-<div id="formulario_borde"  style="margin: 10px 0px 20px 0px;float: left;" >
+<div id="formulario_borde"  style="float:left;padding-top:10px; margin-bottom:20px;width:600px;" >
 
 <div id="campo_input"  style="padding: 0px 5px 0px 5px; margin-top: -20px;background-color:ffffff;width:260px;"align='center'>
 <!--titulo logo centro y datos-->
@@ -223,7 +223,7 @@ $display_mostrar='none';
 <div id="campo_input" align='left'>
 <!--DIRECCION-->
 <b><?php echo "$definir_centro6";?></b>  
-<input type="text" maxlength="100"  autocomplete="off" name="direccion" style='width:170px;' value="<?php echo  "$direccion_DATOS" ; ?>" />
+<input type="text" maxlength="100"  autocomplete="off" name="direccion" style='width:150px;' value="<?php echo  "$direccion_DATOS" ; ?>" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--poblacion-->
 <b><?php echo "$definir_centro7";?> </b>
@@ -234,7 +234,7 @@ $display_mostrar='none';
 <div id="campo_input" align='left'>
 <!--provincia-->
 <b><?php echo "$definir_centro8";?>  </b>
-<input type="text" maxlength="100"  autocomplete="off" name="provincia" style='width:200px;' value="<?php echo  "$provincia_DATOS" ; ?>" />
+<input type="text" maxlength="100"  autocomplete="off" name="provincia" style='width:170px;' value="<?php echo  "$provincia_DATOS" ; ?>" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--cp-->
 <b><?php echo "$definir_centro9";?> </b> 
@@ -255,11 +255,11 @@ $display_mostrar='none';
 <div id="campo_input" align='left'>
 <!--email-->
 <b><?php echo "$definir_centro12";?> </b>  
-<input type="text" maxlength="100" autocomplete="off" name="email" style='width:260px;' value="<?php echo  "$email_DATOS" ; ?>" />
+<input type="text" maxlength="100" autocomplete="off" name="email" style='width:230px;' value="<?php echo  "$email_DATOS" ; ?>" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--web-->
 <b><?php echo "$definir_centro13";?>  </b>
-<input type="text" maxlength="100"  autocomplete="off" name="web" style='width:260px;'  tabindex=8 value="<?php echo  "$web_DATOS" ; ?>" />
+<input type="text" maxlength="100"  autocomplete="off" name="web" style='width:230px;'  tabindex=8 value="<?php echo  "$web_DATOS" ; ?>" />
 </div>
 
 
@@ -283,7 +283,7 @@ $display_mostrar='none';
 
 
 
-<div id="formulario_borde"  style="margin: 10px 0px 10px 0px;float: left;" >
+<div id="formulario_borde"  style="float:left;padding-top:10px;width:600px;" >
 
 
 
@@ -335,7 +335,7 @@ $display_mostrar='none';
 
 </div>
 
-<div id="campo_input" align='right' style="margin: 10px 0px 10px 0px;float: right;" >
+<div id="campo_input" align='right' style="float:left;padding-top:10px;width:650px;" >
 <!--variable para seleccionar el tipo de boton apretado-->
 <input type="hidden" maxlength="20" id="Editbox2" name="nombre_boton" tabindex=2 value="">
 

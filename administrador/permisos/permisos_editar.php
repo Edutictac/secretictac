@@ -92,7 +92,7 @@ include ("../../menu.php");
 <b><?php echo "$editar_permisos1";?></b>
 </div>
 
-<div id="campo_input" align="justify">
+<div id="campo_input" style="float:left;padding-top:10px;width:700px;" align="justify">
 <?php echo "$editar_permisos5";?>
 </div>
 

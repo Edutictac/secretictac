@@ -85,7 +85,7 @@ $row = mysql_fetch_array($permiso_seleccionado);
 $id_tipo_seleccion=($row ["id_tipo"]);
 $tipo_seleccion= ($row ["tipo"]);
 ?>
-<div id="campo_input" align='justify'>
+<div id="campo_input" style="float:left;padding-top:10px;width:690px;" align='justify'>
 <?php echo "$tipo_texto9";?>
 </div>
 <?php
@@ -95,7 +95,7 @@ else
 $id_tipo_seleccion=$codigo_tipo;
 $tipo_seleccion='';
 ?>
-<div id="campo_input" align='justify'>
+<div id="campo_input" style="float:left;padding-top:10px;width:690px;" align='justify'>
 <?php echo "$tipo_texto5";?>
 </div>
 <?php
@@ -109,9 +109,9 @@ $tipo_seleccion='';
 
 <table class="borde_tabla" style='float: left;'>
 <tr>
-<th width="280px" ><div id="cabecera_tabla" align='left'><?php echo "$tipo_texto6";?></div></th>
-<th width="90px" ><div id="cabecera_tabla" align='center'><?php echo "$tipo_texto7";?></div></th>
-<th width="90px" ><div id="cabecera_tabla" align='center'><?php echo "$boton_borrar";?></div></th>
+<th width="250px" ><div id="cabecera_tabla" align='left'><?php echo "$tipo_texto6";?></div></th>
+<th width="80px" ><div id="cabecera_tabla" align='center'><?php echo "$tipo_texto7";?></div></th>
+<th width="80px" ><div id="cabecera_tabla" align='center'><?php echo "$boton_borrar";?></div></th>
 </tr>
 
 <?php
@@ -168,7 +168,7 @@ $i=$i+1;
 </table>
 
 
-<div  style='float: right;padding: 0px 0px 0px 0px;' >
+<div  style='float: left;padding: 0px 10px 0px 10px;' >
 <?php
 if (!isset($_REQUEST['id_tipo']))
 $texto_cabecera_formulario=$tipo_texto11;

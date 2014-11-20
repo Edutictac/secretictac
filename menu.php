@@ -14,6 +14,8 @@
  
  			<ul class="item_secundario">
  						<li class='<?php echo $activado_inicio ;?>' ><a href="<?php echo "$ruta_absoluta";?>/inicio.php"><?php echo $pagina_inicio;?></a></li>
+
+ 						<li class='<?php echo $activado_instrucciones ;?>' ><a href="<?php echo "$ruta_absoluta";?>/instrucciones.php"><?php echo $inicio_instrucciones;?></a></li>
 						
  				</ul>
  </li>
