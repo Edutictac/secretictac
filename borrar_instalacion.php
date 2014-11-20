@@ -1,7 +1,7 @@
 <?php
-echo "<script>alert('Se va a proceder al borrado del directorio de instalación. Una vez borrado el archivo de instalación, no volver a ejecutarlo, puesto que se duplicaría la base de datos.');</script>";
+echo "<script>alert('Se va a proceder al borrado del directorio de instalaciÃ³n. Una vez borrado el archivo de instalaciÃ³n, no volver a ejecutarlo, puesto que se duplicarÃ­a la base de datos.');</script>";
 
-$carpeta_eliminar='../instalacion_secretictac';
+$carpeta_eliminar='../instalacion_secretictac_master';
 function eliminarDir($carpeta){
 foreach(glob($carpeta."/*") as $archivos_carpeta)
 { echo $archivos_carpeta;
