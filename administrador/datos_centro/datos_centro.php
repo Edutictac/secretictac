@@ -61,6 +61,7 @@ function ocultar()
 <div id="tabla_centrar2" align="left">
 
 <?php
+$activo='configuracion';
 $activado_datos_centro="activado";
 include ("../../menu.php");
 conectar();

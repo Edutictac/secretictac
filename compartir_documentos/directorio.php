@@ -187,6 +187,7 @@ $padre_recogido=$_REQUEST['nodo_padre'];
 
 <div id="tabla_centrar2" align="left">
 <?php
+$activo='documentos';
 $activado_subir_documentos="activado";
 include ("../menu.php");
 ?>

@@ -58,6 +58,7 @@ return confirm( mensaje );
 <div id="tabla_centrar2" align="left">
 
 <?php
+$activo='configuracion';
 $activado_crear_usuarios="activado";
 include ("../../menu.php");
 conectar();
@@ -158,8 +159,8 @@ if($i%2==0)
 
 
 
-<tr>
-<td id='background<?php echo $color_backgrund;?>' >
+<tr class='background<?php echo $color_backgrund;?>' > 
+<td>
 <div id="titulo_5" align="left"><?php echo "$nombre_usuario";?>
 </div>
 
@@ -167,14 +168,14 @@ if($i%2==0)
 </div>
 </td>
 
-<td id='background<?php echo $color_backgrund;?>' >
+<td>
 <div id="enlaces"  class="transparente edit" align="center">
 <a href='<?php echo "$link_editar";?>' target="_self">
 <?php echo "$tipo_texto7";?>
 </a>
 </td>
 
-<td id='background<?php echo $color_backgrund;?>' >
+<td>
 <div id="enlaces"  class="transparente delete" align="center">
 <a href='<?php echo "$link_borrar";?>' onclick="return confirmar('<?php echo "$crear_usuarios6 $nombre_usuario ?";?>')" target="_self">
 <?php echo "$boton_borrar";?>

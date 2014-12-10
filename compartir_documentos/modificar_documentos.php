@@ -30,6 +30,7 @@ echo "<script>location.href='$ruta_absoluta/cerrar_sesion.php';</script>";
 <div id="container">
 <div id="tabla_centrar2" align="left">
 <?php
+$activo='documentos';
 $activado_modificar_documentos="activado";
 include ("../menu.php");
 ?>

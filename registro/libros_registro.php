@@ -16,6 +16,7 @@ conectar();
 <div id="tabla_centrar2" align='left'>
 
 <?php
+$activo='registro';
 $activado_imprimir_libros="activado";
 include ("../menu.php");
 conectar();

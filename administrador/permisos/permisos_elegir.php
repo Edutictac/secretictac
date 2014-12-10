@@ -21,6 +21,7 @@ conectar();
 <div id="tabla_centrar2" align='left'>
 
 <?php
+$activo='configuracion';
 $activado_permisos="activado";
 include ("../../menu.php");
 conectar();

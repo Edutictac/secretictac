@@ -1,0 +1,79 @@
+@media print {
+
+#titulo_2{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+font-weight: bold;
+font-size: 14px;
+line-height: 150%;
+}
+
+#margenes_impresion{
+margin-left: 30px;	
+}
+
+#cabecera_impresion{
+  border-bottom: 1px solid #000000;
+}
+
+#texto_logo_izq{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+font-weight: normal;
+font-size: 10px;
+line-height: 200%;
+
+}
+
+#texto_logo_der{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+font-weight: normal;
+font-size: 10px;
+
+}
+#titulo_1{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+font-weight: bold;
+font-size: 16px;
+line-height: 150%;
+
+}
+
+ #asistentes_acta{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+margin-right: 10px;
+margin-bottom: 0px;
+font-weight: normal;
+font-size: 8px;
+}
+
+#asistentes{
+ border-right: 1px solid #000000;
+ margin-right: 10px;
+ margin-left: 10px;
+
+}
+
+#texto_acta{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+font-weight: normal;
+font-size: 12px;
+line-height: 150%;
+
+}
+
+.subrayado
+{
+	margin-top: 15px;
+	text-decoration: underline;
+}
+}

@@ -445,6 +445,7 @@ else{
 	}
 ?>
 <?php
+$activo='registro';
 if($entrada_salida=='e')
 {
 $activado_entradas="activado";

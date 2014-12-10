@@ -84,6 +84,7 @@ echo "<script>location.href='$ruta_absoluta/cerrar_sesion.php';</script>";
 <div id="container">
 <div id="tabla_centrar2" align='left'>
 <?php
+$activo='configuracion';
 $activado_permisos="activado";
 include ("../../menu.php");
 ?>
@@ -122,6 +123,12 @@ $ver_listados=($row ["listados"]);
 $ver_configuracion=($row ["configuracion"]);
 $ver_registro=($row ["registro"]);
 $ver_imprimir_libros=($row ["imprimir_libros"]);
+$ver_actas=($row ["actas"]);
+$ver_crear_actas=($row ["crear_actas"]);
+$ver_listado_actas=($row ["listado_actas"]);
+$ver_redactar_actas=($row ["redactar_actas"]);
+$ver_busqueda_actas=($row ["busqueda_actas"]);
+$ver_convocatorias_actas=($row ["convocatorias_actas"]);
 }
 ?>
 
@@ -172,6 +179,52 @@ $ver_imprimir_libros=($row ["imprimir_libros"]);
 <input id="ver_menu_secundario" type="checkbox" name="modif_docum"   <?php if ($ver_modificar_documentos=='1') echo "checked"; ?>>
 <?php echo "$compartirtexto32";?>
 </div>
+
+
+
+
+
+
+<div id="ver_menu_principal">
+<input id="ver_menu_principal" type="checkbox" name="actas"   <?php if ($ver_actas=='1') echo "checked"; ?>>
+<?php echo "$actatexto1";?>
+</div>
+
+
+<div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="ver_menu_secundario" type="checkbox" name="tipos_actas"   <?php if ($ver_crear_actas=='1') echo "checked"; ?>>
+<?php echo "$actatexto2";?>
+</div>
+
+
+<div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="ver_menu_secundario" type="checkbox" name="convocatorias_actas"   <?php if ($ver_convocatorias_actas=='1') echo "checked"; ?>>
+<?php echo "$actatexto75";?>
+</div>
+
+
+<div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="ver_menu_secundario" type="checkbox" name="redactar_actas"   <?php if ($ver_redactar_actas=='1') echo "checked"; ?>>
+<?php echo "$actatexto4";?>
+</div>
+
+<div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="ver_menu_secundario" type="checkbox" name="listar_actas"   <?php if ($ver_listado_actas=='1') echo "checked"; ?>>
+<?php echo "$actatexto3";?>
+</div>
+
+
+<div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="ver_menu_secundario" type="checkbox" name="busqueda_actas"   <?php if ($ver_busqueda_actas=='1') echo "checked"; ?>>
+<?php echo "$actatexto74";?>
+</div>
+
+
+
+
+
+
+
 
 
 

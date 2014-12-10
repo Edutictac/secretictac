@@ -166,6 +166,7 @@ $row4 = mysql_fetch_array($busqueda3);
 <div id="container">
 <div id="tabla_centrar2" align='left'>
 <?php
+$activo='documentos';
 $activado_modificar_documentos="activado";
 include ("../menu.php");
 ?>

@@ -68,6 +68,7 @@ $carpeta_Seleccionada=mysql_query("SELECT * FROM documentos_compartidos where CO
 <div id="tabla_centrar_2" align='left'>
 
 <?php
+$activo='documentos';
 $activado_modificar_documentos="activado";
 include ("../menu.php");
 ?>

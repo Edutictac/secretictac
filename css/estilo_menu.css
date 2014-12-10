@@ -1,0 +1,35 @@
+.menu_secretictac {font: 12px Arial, sans-serif;padding: 0px 10px 0px 0px; float: left; width: 210px;   
+
+  height: 700px;}
+  
+  
+
+ul, ul li{list-style: none;border:0;outline:none;margin:0;padding: 4px 5px 4px 2px;}
+.item_principal_original {	
+#color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+padding: 8px 5px 8px 5px;
+margin-bottom: 0px;
+margin-top: 0px;
+font-size: 12px;
+background: #2e3191;
+display: block;
+ width: 190px;
+ font-weight: bold;
+}
+.item_principal {	
+color: #2e3191;
+font-family: Arial, Helvetica, sans-serif;
+padding: 8px 5px 0px 5px;
+margin-bottom: 0px;
+margin-top: 0px;
+font-size: 14px;
+
+display: block;
+ width: 190px;
+ font-weight: bold;
+ text-decoration:underline;
+}
+.item_secundario a{color:#2e3191;}
+.item_secundario a:hover {color:#ff0000;}
+.activado a{color:#ff0000;}

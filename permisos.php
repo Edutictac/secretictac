@@ -6,10 +6,7 @@ $nick_usuario=$_SESSION['usuario_secretictac'];
 $permiso=$_SESSION['acceso_secretictac'];
 $upload_centro=$_SESSION['cod_centro_secretictac'];
 $upload_anyo_academico=$_SESSION['anyo_academico_secretictac'];
-if ($permiso=='ADMINISTRADOR')
-$tamanyo_letra_menu='12px';
-else
-$tamanyo_letra_menu='12px';
+
 ?>
 
 
@@ -42,6 +39,12 @@ $permitir_listados=($row ["listados"]);
 $permitir_configuracion=($row ["configuracion"]);
 $permitir_registro=($row ["registro"]);
 $permitir_imprimir_libros=($row ["imprimir_libros"]);
+$permitir_actas=($row ["actas"]);
+$permitir_crear_actas=($row ["crear_actas"]);
+$permitir_listado_actas=($row ["listado_actas"]);
+$permitir_redactar_actas=($row ["redactar_actas"]);
+$permitir_busqueda_actas=($row ["busqueda_actas"]);
+$permitir_convocatorias_actas=($row ["convocatorias_actas"]);
 }
 
 ?>

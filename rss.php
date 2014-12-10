@@ -1,6 +1,6 @@
 <!--FORO DE SECRETICTAC-->
 
-<div   style="margin:0px 10px 0px 0px;float:left; width:470px;border: 0px solid #9395af;"  >
+<div   style="margin:0px 5px 0px 0px;float:left; width:470px;border: 0px solid #9395af;"  >
 <div id='cabecera_formulario' class='crsl-item' ">
 <?php echo "<b>$rsstexto1</b>";?>
 <div id="enlaces_rss_todas" align="right">
@@ -58,7 +58,7 @@ $descripcion=substr($descripcion,0,200)." (...)";
 
 
 
-<div   style="margin:0px 10px 0px 10px;float:right; width:230px;border: 0px solid #9395af;"  >
+<div   style="margin:0px 0px 0px 5px;float:left; width:230px;border: 0px solid #9395af;"  >
 <div id='cabecera_formulario' class='crsl-item' style="width:235px; ">
 <b><?php echo $rsstexto3;?></b>
 <div id="enlaces_rss_todas" align="right">
@@ -73,7 +73,7 @@ $i = 1;
 foreach ($rss->channel->item as $item) {
 	$k=1;
 
-	$titulo=utf8_decode(htmlentities($item->title));
+	$titulo=utf8_decode (htmlentities($item->title));
 	
 	$link=$item->link;
 	$fecha=date('M d, Y ',strtotime($item->pubDate));

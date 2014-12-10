@@ -13,6 +13,7 @@ unlink($archivo) ;
 <div id="tabla_centrar2" align="left">
 
 <?php
+$activo='inicio';
 $activado_instrucciones='activado';
 include ("menu.php");
 conectar();

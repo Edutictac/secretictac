@@ -46,6 +46,7 @@ $codigo_tipo=$upload_centro.md5($usuario).$codigo_fecha;
 <div id="tabla_centrar2" align="left">
 
 <?php
+$activo='configuracion';
 $activado_tivo_permisos="activado";
 include ("../../menu.php");
 conectar();
@@ -133,20 +134,20 @@ if($i%2==0)
 
 
 
-<tr>
-<td id='background<?php echo $color_backgrund;?>' >
+<tr class='background<?php echo $color_backgrund;?>' > 
+<td>
 <div id="titulo_5" align="left"><?php echo "$tipo";?>
 </div>
 </td>
 
-<td id='background<?php echo $color_backgrund;?>' >
+<td>
 <div id="enlaces"  class="transparente edit" align="center">
 <a href='<?php echo "$link_editar";?>' target="_self">
 <?php echo "$tipo_texto7";?>
 </a>
 </td>
 
-<td id='background<?php echo $color_backgrund;?>' >
+<td>
 <?php if ($id_tipo!=1)
 {
 ?>

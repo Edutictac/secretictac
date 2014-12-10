@@ -19,7 +19,7 @@ include("funciones.php");
 <link rel="stylesheet" href="<?php echo "$ruta_absoluta";?>/css/estilo_botones.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo "$ruta_absoluta";?>/css/div.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo "$ruta_absoluta";?>/sombra.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo "$ruta_absoluta";?>/css/styles.css">
+<link rel="stylesheet" href="<?php echo "$ruta_absoluta";?>/css/estilo_menu.css" type="text/css" media="screen">
 
 </HEAD>
 

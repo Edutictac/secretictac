@@ -5,6 +5,7 @@ if (file_exists($archivo))
 {
 unlink($archivo) ;
 }
+$activo='inicio';
 $activado_inicio='activado';
 ?>
 
@@ -23,6 +24,9 @@ conectar();
 
 <div id="titulo_1" align="justify">
 <?php echo "$inicio_titulo";?>
+</div>
+<div id="titulo_2" align="justify">
+<i><?php echo "$aviso_ventanas_emergente";?></i>
 </div>
 
 <?php

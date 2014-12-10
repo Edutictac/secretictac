@@ -9,6 +9,7 @@ div#container
    background-color:ffffff;
    z-index:0;
 
+
 }
 
 
@@ -17,9 +18,7 @@ body
    text-align: center;
    margin: 0;
    background:#000000;
-   min-height: 550px;
-  height: auto !important;
-  height: 550px;
+
 }
 
 html {
@@ -107,7 +106,7 @@ line-height: 150%;
    font-size:12px;
    color:#00000;
    font-weight: normal;
-padding: 8px 5px 8px 5px;
+   padding: 8px 5px 8px 5px;
 }
 
 
@@ -119,6 +118,29 @@ padding: 8px 5px 8px 5px;
    padding: 0px 5px 0px 5px;
 }
 
+#titulo_7{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:12px;
+   color:#00000;
+   font-weight: normal;
+padding: 3px 5px 3px 5px;
+}
+
+#titulo_8{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:9px;
+   color:#2e3191;
+   font-weight: normal;
+   padding: 0px 0px 0px 0px;
+}
+
+#titulo_9{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:12px;
+   color:#00000;
+   font-weight: bold;
+   padding: 2px 5px 0px 5px;
+}
 
 #enlaces{
 text-decoration: none;
@@ -131,12 +153,12 @@ font-size: 12px;
 #enlaces a{
 text-decoration: none;
 color: #3B5998;
-
 }
 
-
-
-
+#enlaces .activo{
+text-decoration: none;
+color: #ff0000;
+}
 
 #enlaces a:hover{
 text-decoration: none;
@@ -164,8 +186,14 @@ text-decoration: underline;
 color: #c0c0c0;
 }
 
+.background1 {
+background-color:#d6d9ff;
 
+}
 
+.background2 {
+background-color:#ebecff;
+}
 
 #cabecera_tabla{
 color: #ffffff;
@@ -177,8 +205,6 @@ font-size: 12px;
 .borde_tabla {
   border: 1px solid #9395af;
   border-collapse: collapse;
-  
-  
 }
 
 .borde_tabla th, .borde_tabla td {
@@ -189,13 +215,12 @@ border-collapse: collapse;
 .borde_tabla th {
 background:#2e3191;
 }
-#background1 {
-background:#d6d9ff;
+
+.borde_tabla tr:hover {
+background-color:#fdffc0;
 }
 
-#background2 {
-background:#eee;
-}
+
 
 
 /*FORMULARIOS*/
@@ -379,13 +404,7 @@ font-size: 12px;
 background:#2e3191;
 }
 
-#background1 {
-background:#d6d9ff;
-}
 
-#background2 {
-background:#eee;
-}
 
 #listado_titulo {
 	color: #2e3191;
@@ -591,3 +610,54 @@ font-family: Arial, Helvetica, sans-serif;
   text-decoration: underline;
 }
 
+#asistentes_acta{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+margin-right: 20px;
+margin-bottom: 0px;
+font-weight: normal;
+font-size: 8px;
+
+}
+
+#asistentes{
+ border-right: 1px solid #000000;
+ margin-right: 10px;
+ margin-left: 10px;
+
+}
+
+#texto_logo_izq{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+font-weight: normal;
+font-size: 10px;
+line-height: 200%;
+
+}
+
+#texto_logo_der{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+font-weight: normal;
+font-size: 10px;
+
+}
+
+#texto_acta{
+color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+font-weight: normal;
+font-size: 12px;
+line-height: 150%;
+
+}
+
+.subrayado
+{
+	margin-top: 15px;
+	text-decoration: underline;
+}

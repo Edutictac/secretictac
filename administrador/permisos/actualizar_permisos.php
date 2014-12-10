@@ -99,19 +99,54 @@ $imprimir_libros="1";
 else
 $imprimir_libros="0";
 
+if (isset($_POST['actas']))
+$actas="1";
+else
+$actas="0";
+
+if (isset($_POST['tipos_actas']))
+$tipos_actas="1";
+else
+$tipos_actas="0";
+
+if (isset($_POST['listar_actas']))
+$listar_actas="1";
+else
+$listar_actas="0";
+
+if (isset($_POST['redactar_actas']))
+$redactar_actas="1";
+else
+$redactar_actas="0";
+
+if (isset($_POST['convocatorias_actas']))
+$convocatorias_actas="1";
+else
+$convocatorias_actas="0";
+
+
+if (isset($_POST['busqueda_actas']))
+$busqueda_actas="1";
+else
+$busqueda_actas="0";
+
+
+
+
+
 $sql = "SELECT id_tipo FROM  1_permisos where id_tipo='$tipo_usuario' and cod_centro='$upload_centro'";
 $result = mysql_query($sql);
 $numero = mysql_num_rows($result);
 
 If ($numero==0)
-{$qry="insert into 1_permisos(id_tipo,cod_centro,administrador,tipo_permisos,permisos,crear_usuarios,definir_centro,compartir_documentos,subir_documentos,modificar_documentos,registro,entradas,salidas,listados,configuracion,imprimir_libros)
-values ('$tipo_usuario','$upload_centro','$administrador','$tipo_permisos','$permisos','$crear_usuarios','$definir_centro','$compartir_documentos','$subir_documentos','$modificar_documentos','$registro','$entradas','$salidas','$listados','$configuracion','$imprimir_libros')";
+{$qry="insert into 1_permisos(id_tipo,cod_centro,administrador,tipo_permisos,permisos,crear_usuarios,definir_centro,compartir_documentos,subir_documentos,modificar_documentos,registro,entradas,salidas,listados,configuracion,imprimir_libros,actas,crear_actas,listado_actas,redactar_actas,busqueda_actas,convocatorias_actas)
+values ('$tipo_usuario','$upload_centro','$administrador','$tipo_permisos','$permisos','$crear_usuarios','$definir_centro','$compartir_documentos','$subir_documentos','$modificar_documentos','$registro','$entradas','$salidas','$listados','$configuracion','$imprimir_libros','$actas','$tipos_actas','$listar_actas','$redactar_actas','$busqueda_actas','$convocatorias_actas')";
 mysql_query($qry) or die("Query: $qry <br />Error: ".mysql_error());
 }
 else
 {
 mysql_query("update 1_permisos SET administrador='$administrador', tipo_permisos='$tipo_permisos',permisos='$permisos',crear_usuarios='$crear_usuarios',definir_centro='$definir_centro',compartir_documentos='$compartir_documentos',subir_documentos='$subir_documentos',
-modificar_documentos='$modificar_documentos',registro='$registro',entradas='$entradas',salidas='$salidas',listados='$listados',configuracion='$configuracion',imprimir_libros='$imprimir_libros' where id_tipo='$tipo_usuario' and cod_centro='$upload_centro' ");
+modificar_documentos='$modificar_documentos',registro='$registro',entradas='$entradas',salidas='$salidas',listados='$listados',configuracion='$configuracion',imprimir_libros='$imprimir_libros',actas='$actas',crear_actas='$tipos_actas',listado_actas='$listar_actas',redactar_actas='$redactar_actas',busqueda_actas='$busqueda_actas',convocatorias_actas='$convocatorias_actas' where id_tipo='$tipo_usuario' and cod_centro='$upload_centro' ");
 }
 
 mysql_close();

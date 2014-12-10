@@ -37,6 +37,7 @@ $codigo_tipo=$upload_centro.md5($usuario).$codigo_fecha;
 <div id="tabla_centrar2" align="left">
 
 <?php
+$activo='registro';
 $activado_configuracion="activado";
 include ("../menu.php");
 conectar();
@@ -237,8 +238,8 @@ $frase_borrado=$mantenimientotexto24;
 
 
 
-<tr>
-<td id='background<?php echo $color_backgrund;?>' >
+<tr class='background<?php echo $color_backgrund;?>' > 
+<td >
 <div id="titulo_campo_texto3" align="left"><?php echo "$nombre";?>
 </div>
 <div id="titulo_campo_texto4" align="left"><?php echo "$nombre_2";?>
@@ -247,14 +248,14 @@ $frase_borrado=$mantenimientotexto24;
 </div>
 </td>
 
-<td id='background<?php echo $color_backgrund;?>' >
+<td >
 <div id="enlaces"  class="transparente edit" align="center">
 <a href='<?php echo "$link_editar";?>' target="_self">
 <?php echo "$tipo_texto7";?>
 </a>
 </td>
 
-<td id='background<?php echo $color_backgrund;?>' >
+<td>
 <div id="enlaces"  class="transparente delete" align="center">
 <a href='<?php echo "$link_borrar";?>' onclick="return confirmar('<?php echo "$frase_borrado";?>')" target="_self">
 <?php echo "$boton_borrar";?>

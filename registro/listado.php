@@ -440,7 +440,7 @@ else
 	$nombre_destino_remitente=$registrotexto59;
 		}
 
-		
+$activo='registro';
 $activado_listados="activado";
 
 include ("../menu.php");
@@ -966,8 +966,8 @@ if($i%2==0)
 	$color_backgrund="2";
 	
 ?>
-<tr>
-<td id='background<?php echo $color_backgrund;?>'>
+<tr class='background<?php echo $color_backgrund;?>' >
+<td>
 <div id="listado_titulo" align="left"><?php echo $registrotexto7.': '?>
 <span class="registro_listado_titulo"><?php echo $codigo_registro;?></span>
 

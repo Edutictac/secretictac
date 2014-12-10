@@ -93,6 +93,45 @@ Rewriterule ^mantenimiento_1/(.*)/(.*)/(.*)$ secretictac/registro/mantenimiento.
 Rewriterule ^upload_mantenimiento$ secretictac/registro/upload_mantenimiento.php
 Rewriterule ^borrar_mantenimiento/(.*)/(.*)/(.*)$ secretictac/registro/borrar_mantenimiento.php?id_nombre=$1&seleccion=$2&tabla=$3
 
+#ACTAS
+Rewriterule ^tipo_asistentes$ secretictac/actas/tipo_asistentes.php
+Rewriterule ^tipo_asistentes/(.*)$ secretictac/actas/tipo_asistentes.php?id_tipo=$1
+Rewriterule ^borrar_tipo_asistentes/(.*)$ secretictac/actas/borrar_tipo_asistentes.php?id_tipo=$1
+Rewriterule ^upload_tipo_asistente$ secretictac/actas/upload_tipo_asistente.php
+Rewriterule ^tipo_actas$ secretictac/actas/tipo_acta.php
+Rewriterule ^tipo_acta/(.*)$ secretictac/actas/tipo_acta.php?id_tipo=$1
+Rewriterule ^borrar_tipo_acta/(.*)$ secretictac/actas/borrar_tipo_acta.php?id_tipo=$1
+Rewriterule ^upload_tipo_acta$ secretictac/actas/upload_tipo_acta.php
+Rewriterule ^importar_asistentes$ secretictac/actas/importar_usuarios.php
+Rewriterule ^importar_asistentes/(.*)/(.*)$ secretictac/actas/importar_usuarios.php?id_asistentes=$1&tipo_acta=$2
+Rewriterule ^importar_asistentes/(.*)$ secretictac/actas/importar_usuarios.php?tipo_acta=$1
+Rewriterule ^borrar_asistentes/(.*)/(.*)$ secretictac/actas/borrar_asistente.php?id_asistentes=$1&tipo_acta=$2
+Rewriterule ^upload_importar_asistentes$ secretictac/actas/upload_importar_asistentes.php
+Rewriterule ^upload_asistente_ne$ secretictac/actas/upload_edi_crear_asistentes.php
+Rewriterule ^actas_firmas$ secretictac/actas/firmas.php
+Rewriterule ^upload_tipo_firma$ secretictac/actas/upload_tipo_firma.php
+Rewriterule ^borrar_firmantes/(.*)$ secretictac/actas/borrar_firmas.php?id_firma=$1
+Rewriterule ^redactar_actas$ secretictac/actas/nueva_acta.php
+Rewriterule ^upload_acta$ secretictac/actas/upload_acta.php
+Rewriterule ^redactar_actas/(.*)/(.*)/(.*)$ secretictac/actas/nueva_acta.php?tipo_acta=$1&id_acta=$2&div_seleccionado=$3
+Rewriterule ^vista_previa/(.*)/(.*)/(.*)$ secretictac/actas/vista_previa.php?tipo_acta=$1&id_acta=$2&div_seleccionado=$3
+Rewriterule ^borrar_antiguo_miembro/(.*)/(.*)/(.*)$ secretictac/actas/borrar_antiguo_miembro.php?tipo_acta=$1&id_acta=$2&id_asistente=$3
+Rewriterule ^permisos_ver_acta$ secretictac/actas/permisos.php
+Rewriterule ^upload_permisos_actas$ secretictac/actas/upload_permisos_actas.php
+Rewriterule ^borrar_permiso_actas/(.*)$ secretictac/actas/borrar_permiso.php?id_permiso=$1
+Rewriterule ^editar_actas$ secretictac/actas/editar_actes.php
+Rewriterule ^editar_actas/(.*)/(.*)$ secretictac/actas/editar_actes.php?anyo=$1&tipo_acta=$2
+Rewriterule ^vista_previa_editar/(.*)/(.*)/(.*)/(.*)$ secretictac/actas/vista_previa.php?tipo_acta=$1&id_acta=$2&anyo=$3&div_seleccionado=$4
+Rewriterule ^busqueda_actas$ secretictac/actas/busqueda_actas.php
+Rewriterule ^vista_previa_busqueda/(.*)/(.*)/(.*)/(.*)$ secretictac/actas/vista_previa_busqueda.php?tipo_acta=$1&id_acta=$2&anyo=$3&busqueda=$4
+Rewriterule ^redactar_actas_busqueda/(.*)/(.*)/(.*)/(.*)$ secretictac/actas/nueva_acta.php?tipo_acta=$1&id_acta=$2&div_seleccionado=$3&busqueda=$4
+Rewriterule ^convocatorias_actas$ secretictac/actas/convocatoria.php
+Rewriterule ^upload_convocatoria$ secretictac/actas/upload_convocatoria.php
+Rewriterule ^convocatorias_actas/(.*)/(.*)$ secretictac/actas/convocatoria.php?tipo_acta=$1&id_convocatoria=$2
+Rewriterule ^listado_convocatorias$ secretictac/actas/listado_convocatorias.php
+Rewriterule ^listado_convocatorias/(.*)$ secretictac/actas/listado_convocatorias.php?anyo=$1
+Rewriterule ^vista_previa_convocatoria/(.*)/(.*)$ secretictac/actas/vista_previa_convocatorias.php?tipo_acta=$1&id_convocatoria=$2
+
 
 
 # Evitar escaneos y cualquier intento de manipulación malintencionada

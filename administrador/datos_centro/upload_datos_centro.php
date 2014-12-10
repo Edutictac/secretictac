@@ -7,8 +7,10 @@ include ("../../funciones.php");
 conectar();
 
 
+
 $secretari=str_replace($search,$replace,$_REQUEST['secretari']);
 $secretari=limpiar_tags($secretari);
+
 
 $contar=str_replace($search,$replace,$_REQUEST['contar']);
 $contar=limpiar_tags($contar);
@@ -27,14 +29,18 @@ $cmlogo=limpiar_tags($cmlogo);
 $n_centro=str_replace($search,$replace,$_REQUEST['n_centro']);
 $n_centro=limpiar_tags($n_centro);
 
+
 $direccion=str_replace($search,$replace,$_REQUEST['direccion']);
 $direccion=limpiar_tags($direccion);
+
 
 $poblacion=str_replace($search,$replace,$_REQUEST['poblacion']);
 $poblacion=limpiar_tags($poblacion);
 
+
 $provincia=str_replace($search,$replace,$_REQUEST['provincia']);
 $provincia=limpiar_tags($provincia);
+
 
 $cp=str_replace($search,$replace,$_REQUEST['cp']);
 $cp=limpiar_tags($cp);
@@ -60,11 +66,14 @@ $cmlogo_conse=limpiar_tags($cmlogo_conse);
 $frase1=str_replace($search,$replace,$_REQUEST['frase1']);
 $frase1=limpiar_tags($frase1);
 
+
 $frase2=str_replace($search,$replace,$_REQUEST['frase2']);
 $frase2=limpiar_tags($frase2);
 
+
 $frase3=str_replace($search,$replace,$_REQUEST['frase3']);
 $frase3=limpiar_tags($frase3);
+
 
 
 //GUARDAMOS PRIMERO LOS DATOS DE TEXTO
