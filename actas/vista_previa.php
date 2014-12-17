@@ -79,6 +79,7 @@ if ($_SESSION["idioma_secretictac"]=='cas')
 $nombre_acta= ($row ["nombre_cas"]);
 if ($_SESSION["idioma_secretictac"]=='val')
 $nombre_acta= ($row ["nombre_val"]);
+$encabezado_acta=($row ["encabezado_acta"]);
 
 
 
@@ -97,7 +98,9 @@ $anyo= ($row ["anyo"]);
 <?php 
 				$nombre_ciutat=mysql_query("SELECT POBLACION,NOMBRE_CENTRO FROM 1_centro where cod_centro='$upload_centro'");
 				$row5 = mysql_fetch_array($nombre_ciutat);
-				$nombre_poblacio=ucwords(strtolower($row5["POBLACION"]));
+				
+				$nombre_poblacio=$row5["POBLACION"];
+	     $nombre_poblacio=mb_convert_case($nombre_poblacio, MB_CASE_TITLE, "ISO-8859-1");
 				$nombre_centro=$row5["NOMBRE_CENTRO"];
 				
 ?>
@@ -146,6 +149,93 @@ else {
 <div style="float:left;">
 
 <div id="acta" align="left">
+
+
+<?php
+$result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
+$row = mysql_fetch_array($result);
+$nombre_centro1= ($row ["NOMBRE_CENTRO"]);
+$direccion1= ($row ["DIRECCION"]);
+$poblacion1= ($row ["POBLACION"]);
+$provincia1= ($row ["PROVINCIA"]);
+$cp1= ($row ["cp"]);
+$web1= ($row ["WEB"]);
+$email1= ($row ["EMAIL"]);
+$telefono1= ($row ["TELEFONO"]);
+$fax1= ($row ["FAX"]);
+$frase1_1= ($row ["FRASE1"]);
+$frase2_1= ($row ["FRASE2"]);
+$frase3_1= ($row ["FRASE3"]);
+
+$distancia_logo=($row ["CMLOGO"]);
+$distancia_logo_conse=($row ["CMLOGO_CONSE"]);
+
+$nombre_logo_centro=($row ["NOMBRE_LOGO"]);
+$nombre_logo_conselleria=($row ["NOMBRE_LOGO_CONSELLERIA"]);
+//Logo
+
+$nombre_logo_centro="$ruta_absoluta/archivos/datos_centro/".$upload_centro."/".$nombre_logo_centro;
+$nombre_logo_conselleria="$ruta_absoluta/archivos/datos_centro/".$upload_centro."/".$nombre_logo_conselleria;
+?>
+
+
+<table>
+<?php 
+if ($encabezado_acta=='1')
+{
+	?>
+<thead><tr>
+<td>
+<div id="cabecera_logo" style="margin-bottom:100px;">
+		   <div id="logo_dcho">
+				<img src="<?php echo $nombre_logo_conselleria;?>" height="60px" style="float:left;margin-right:5px" >
+				</div>
+   <div id="datos_centro" style="float:left;margin-top:5px;">
+					<div id="texto_logo_izq">
+				<?php echo "$frase1_1";?>
+				</div>
+					<div id="texto_logo_izq">
+				<?php echo "$frase2_1" ;?>
+				</div>
+					<div id="texto_logo_izq">
+				<?php echo "$frase3_1" ;?>
+				</div>
+				
+</div>
+		
+
+
+
+<div id="datos_centro" style="float:right">
+				<div id="texto_logo_der">
+				<?php echo $nombre_centro1;?>
+				</div>
+				<div id="texto_logo_der">
+				<?php echo "$direccion1 $cp1 $poblacion1 ( $provincia1 )";?>
+				</div>
+						<div id="texto_logo_der">
+				<?php echo "Email: $email1" ;?>
+				</div>
+						<div id="texto_logo_der">
+				<?php echo "Web: $web1" ;?>
+				</div>
+						<div id="texto_logo_der">
+				<?php echo "Tlfn: $telefono1  FAX: $fax1" ;?>
+				</div>				
+</div>
+				<div id="logo_izdo_der">
+				<img src="<?php echo $nombre_logo_centro;?>" height="60px" style="float:right;margin-right:5px" >
+				</div>
+
+</div>
+</td>
+</tr>
+</thead>
+<?php
+}
+?>
+<tr><td>
+<div style="clear:both;"></div>
 
 <div id="titulo_2" style="float:left; padding-top:10px;" align='left'>
 <?php echo "$nombre_centro - $nombre_poblacio";?>
@@ -200,7 +290,9 @@ $asistentes_cargo =mysql_query( "SELECT distinct id_tipo_asistente FROM acta_asi
  $asistentes_reunion =mysql_query( "SELECT nombre FROM acta_asistentes_reunion where id_actas='$id_acta' and id_tipo_asistente='$id_tipo_asistente' and cod_centro='$upload_centro' order by nombre") ;
 	while($row2=mysql_fetch_array($asistentes_reunion))
 	{	
-	 $nombre_asistente=ucwords(strtolower($row2["nombre"]));
+	 //$nombre_asistente=ucwords(strtolower($row2["nombre"]));
+	  $nombre_asistente=($row2["nombre"]);
+	  $nombre_asistente=mb_convert_case($nombre_asistente, MB_CASE_TITLE, "ISO-8859-1");
 	 ?>
 	<div id="asistentes_acta" align="left">
 <?php echo 	$nombre_asistente;?>
@@ -267,7 +359,8 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
 				$nombre_firma_cargo =mysql_query( "SELECT nombre FROM acta_asistentes_reunion where id_tipo_asistente='$id_tipo_asistente' and id_actas='$id_acta'  and cod_centro='$upload_centro'") ;
     	  while($row3=mysql_fetch_array($nombre_firma_cargo))
     	  {
-     	 $nombre_firma=ucwords(strtolower($row3["nombre"]));
+     	 $nombre_firma=$row3["nombre"];
+	      $nombre_firma=mb_convert_case($nombre_firma, MB_CASE_TITLE, "ISO-8859-1");
 ?>	
 
 
@@ -291,6 +384,7 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
 }
 ?>
 </div>
+</td></tr></table>
 </div>
 
 <?php
@@ -298,6 +392,62 @@ if($acuerdos!='')
 {
 	?>
 <div id="acuerdos" style="clear:both">
+<table>
+<?php 
+if ($encabezado_acta=='1')
+{
+	?>
+<thead><tr>
+<td>
+<div id="cabecera_logo" style="margin-bottom:100px;">
+		   <div id="logo_dcho">
+				<img src="<?php echo $nombre_logo_conselleria;?>" height="70px" style="float:left;margin-right:5px" >
+				</div>
+   <div id="datos_centro" style="float:left;margin-top:5px;">
+					<div id="texto_logo_izq">
+				<?php echo "$frase1_1";?>
+				</div>
+					<div id="texto_logo_izq">
+				<?php echo "$frase2_1" ;?>
+				</div>
+					<div id="texto_logo_izq">
+				<?php echo "$frase3_1" ;?>
+				</div>
+				
+</div>
+		
+
+
+
+<div id="datos_centro" style="float:right">
+				<div id="texto_logo_der">
+				<?php echo $nombre_centro1;?>
+				</div>
+				<div id="texto_logo_der">
+				<?php echo "$direccion1 $cp1 $poblacion1 ( $provincia1 )";?>
+				</div>
+						<div id="texto_logo_der">
+				<?php echo "Email: $email1" ;?>
+				</div>
+						<div id="texto_logo_der">
+				<?php echo "Web: $web1" ;?>
+				</div>
+						<div id="texto_logo_der">
+				<?php echo "Tlfn: $telefono1  FAX: $fax1" ;?>
+				</div>				
+</div>
+				<div id="logo_izdo_der">
+				<img src="<?php echo $nombre_logo_centro;?>" height="70px" style="float:right;margin-right:5px" >
+				</div>
+
+</div>
+</td>
+</tr>
+</thead>
+<?php
+}
+?>
+<tr><td>
 <div id="titulo_2" style="float:left; padding-top:10px;" align='left'>
 <?php echo "$nombre_centro - $nombre_poblacio";?>
 </div>
@@ -338,7 +488,8 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
 				$nombre_firma_cargo =mysql_query( "SELECT nombre FROM acta_asistentes_reunion where id_tipo_asistente='$id_tipo_asistente' and id_actas='$id_acta'  and cod_centro='$upload_centro'") ;
     	  while($row3=mysql_fetch_array($nombre_firma_cargo))
     	  {
-     	 $nombre_firma=ucwords(strtolower($row3["nombre"]));
+     	 $nombre_firma=$row3["nombre"];
+	      $nombre_firma=mb_convert_case($nombre_firma, MB_CASE_TITLE, "ISO-8859-1");
 ?>	
 
 
@@ -362,7 +513,9 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
 }
 ?>
 </div>
+</td></tr></table>
 </div>
+
 <?php
 }
 ?>

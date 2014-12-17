@@ -610,6 +610,10 @@ font-family: Arial, Helvetica, sans-serif;
   text-decoration: underline;
 }
 
+
+#cabecera_logo{display:none;}
+
+
 #asistentes_acta{
 color:#000000;
 font-family: Arial, Helvetica, sans-serif;

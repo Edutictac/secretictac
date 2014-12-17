@@ -130,7 +130,10 @@ $busqueda_actas="1";
 else
 $busqueda_actas="0";
 
-
+if (isset($_POST['copies_seguretat']))
+$copies_seguretat="1";
+else
+$copies_seguretat="0";
 
 
 
@@ -138,15 +141,15 @@ $sql = "SELECT id_tipo FROM  1_permisos where id_tipo='$tipo_usuario' and cod_ce
 $result = mysql_query($sql);
 $numero = mysql_num_rows($result);
 
-If ($numero==0)
-{$qry="insert into 1_permisos(id_tipo,cod_centro,administrador,tipo_permisos,permisos,crear_usuarios,definir_centro,compartir_documentos,subir_documentos,modificar_documentos,registro,entradas,salidas,listados,configuracion,imprimir_libros,actas,crear_actas,listado_actas,redactar_actas,busqueda_actas,convocatorias_actas)
-values ('$tipo_usuario','$upload_centro','$administrador','$tipo_permisos','$permisos','$crear_usuarios','$definir_centro','$compartir_documentos','$subir_documentos','$modificar_documentos','$registro','$entradas','$salidas','$listados','$configuracion','$imprimir_libros','$actas','$tipos_actas','$listar_actas','$redactar_actas','$busqueda_actas','$convocatorias_actas')";
+if ($numero==0)
+{$qry="insert into 1_permisos(id_tipo,cod_centro,administrador,tipo_permisos,permisos,crear_usuarios,definir_centro,compartir_documentos,subir_documentos,modificar_documentos,registro,entradas,salidas,listados,configuracion,imprimir_libros,actas,crear_actas,listado_actas,redactar_actas,busqueda_actas,convocatorias_actas,copies_seguretat)
+values ('$tipo_usuario','$upload_centro','$administrador','$tipo_permisos','$permisos','$crear_usuarios','$definir_centro','$compartir_documentos','$subir_documentos','$modificar_documentos','$registro','$entradas','$salidas','$listados','$configuracion','$imprimir_libros','$actas','$tipos_actas','$listar_actas','$redactar_actas','$busqueda_actas','$convocatorias_actas','$copies_seguretat')";
 mysql_query($qry) or die("Query: $qry <br />Error: ".mysql_error());
 }
 else
 {
 mysql_query("update 1_permisos SET administrador='$administrador', tipo_permisos='$tipo_permisos',permisos='$permisos',crear_usuarios='$crear_usuarios',definir_centro='$definir_centro',compartir_documentos='$compartir_documentos',subir_documentos='$subir_documentos',
-modificar_documentos='$modificar_documentos',registro='$registro',entradas='$entradas',salidas='$salidas',listados='$listados',configuracion='$configuracion',imprimir_libros='$imprimir_libros',actas='$actas',crear_actas='$tipos_actas',listado_actas='$listar_actas',redactar_actas='$redactar_actas',busqueda_actas='$busqueda_actas',convocatorias_actas='$convocatorias_actas' where id_tipo='$tipo_usuario' and cod_centro='$upload_centro' ");
+modificar_documentos='$modificar_documentos',registro='$registro',entradas='$entradas',salidas='$salidas',listados='$listados',configuracion='$configuracion',imprimir_libros='$imprimir_libros',actas='$actas',crear_actas='$tipos_actas',listado_actas='$listar_actas',redactar_actas='$redactar_actas',busqueda_actas='$busqueda_actas',convocatorias_actas='$convocatorias_actas',copies_seguretat='$copies_seguretat' where id_tipo='$tipo_usuario' and cod_centro='$upload_centro' ");
 }
 
 mysql_close();

@@ -24,7 +24,8 @@ break;
 
 case 'GUARDAR':
 $id_tipo= $_REQUEST["id_tipo"];
-
+$cabecera_acta= $_REQUEST["cabecera_actas"];
+$cabecera_convocatoria= $_REQUEST["cabecera_convocatorias"];
 $nombre_cas=$_POST['nombre_cas'];
 $nombre_cas=str_replace($search,$replace,$nombre_cas);
 $nombre_cas=limpiar_tags($nombre_cas);
@@ -40,12 +41,13 @@ $result = mysql_query($sql);
 $numero = mysql_num_rows($result);
 
 if ($numero==0)
-{$qry="insert into actas_tipo_acta(id_tipo,cod_centro,nombre_cas,nombre_val) values ('$id_tipo','$upload_centro','$nombre_cas','$nombre_val')";
+{$qry="insert into actas_tipo_acta(id_tipo,cod_centro,nombre_cas,nombre_val,encabezado_acta,encabezado_convocatoria) 
+values ('$id_tipo','$upload_centro','$nombre_cas','$nombre_val','$cabecera_acta','$cabecera_convocatoria')";
 mysql_query($qry) or die("Query: $qry <br />Error: ".mysql_error());
 }
 else
 {
-mysql_query("update actas_tipo_acta SET nombre_cas='$nombre_cas',nombre_val='$nombre_val' where id_tipo='$id_tipo' and cod_centro='$upload_centro' ");
+mysql_query("update actas_tipo_acta SET nombre_cas='$nombre_cas',nombre_val='$nombre_val',encabezado_acta='$cabecera_acta',encabezado_convocatoria='$cabecera_convocatoria' where id_tipo='$id_tipo' and cod_centro='$upload_centro' ");
 }
 
 mysql_close();

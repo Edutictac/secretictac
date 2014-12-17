@@ -129,6 +129,7 @@ $ver_listado_actas=($row ["listado_actas"]);
 $ver_redactar_actas=($row ["redactar_actas"]);
 $ver_busqueda_actas=($row ["busqueda_actas"]);
 $ver_convocatorias_actas=($row ["convocatorias_actas"]);
+$ver_copies_seguretat=($row ["copies_seguretat"]);
 }
 ?>
 
@@ -229,28 +230,33 @@ $ver_convocatorias_actas=($row ["convocatorias_actas"]);
 
 
 <div id="ver_menu_principal">
-<input id="ver_menu_principal" type="checkbox" <?php if ($eleccion_tipo==1) ;?> name="administrador"   <?php if ($ver_administrador=='1') echo "checked"; ?>>
+<input id="ver_menu_principal" type="checkbox" name="administrador"   <?php if ($ver_administrador=='1') echo "checked"; ?>>
 <?php echo "$tipo_texto3";?>
 </div>
 
 <div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="ver_menu_secundario" type="checkbox" <?php if ($eleccion_tipo==1) ;?> name="tipo_permisos"   <?php if ($ver_tipos_permisos=='1') echo "checked"; ?>>
+<input id="ver_menu_secundario" type="checkbox" name="tipo_permisos"   <?php if ($ver_tipos_permisos=='1') echo "checked"; ?>>
 <?php echo "$tipo_texto1";?>
 </div>
 
 <div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="ver_menu_secundario" type="checkbox" <?php if ($eleccion_tipo==1) ;?> name="permisos"   <?php if ($ver_permisos=='1') echo "checked"; ?>>
+<input id="ver_menu_secundario" type="checkbox"  name="permisos"   <?php if ($ver_permisos=='1') echo "checked"; ?>>
 <?php echo "$tipo_texto2";?>
 </div>
 
 <div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="ver_menu_secundario"type="checkbox" <?php if ($eleccion_tipo==1) ;?> name="crear_usuarios"   <?php if ($ver_crear_usuarios=='1') echo "checked"; ?>>
+<input id="ver_menu_secundario"type="checkbox" name="crear_usuarios"   <?php if ($ver_crear_usuarios=='1') echo "checked"; ?>>
 <?php echo "$crear_usuarios1";?>
 </div>
 
 <div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="ver_menu_secundario" type="checkbox" <?php if ($eleccion_tipo==1) ;?> name="definir_centro"   <?php if ($ver_definir_centro=='1') echo "checked"; ?>>
+<input id="ver_menu_secundario" type="checkbox"  name="definir_centro"   <?php if ($ver_definir_centro=='1') echo "checked"; ?>>
 <?php echo "$definir_centro1";?>
+</div>
+
+<div id="ver_menu_secundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="ver_menu_secundario" type="checkbox" name="copies_seguretat"   <?php if ($ver_copies_seguretat=='1') echo "checked"; ?>>
+<?php echo "$copiestexte1";?>
 </div>
 
 <input type="hidden" id="Editbox2" name="tipo_usuario"  value='<?php echo "$eleccion_tipo"; ?>'>

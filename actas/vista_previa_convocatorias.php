@@ -41,6 +41,7 @@ if ($_SESSION["idioma_secretictac"]=='cas')
 $nombre_acta= ($row ["nombre_cas"]);
 if ($_SESSION["idioma_secretictac"]=='val')
 $nombre_acta= ($row ["nombre_val"]);
+$encabezado_convocatoria=($row ["encabezado_convocatoria"]);
 
 
 
@@ -57,7 +58,8 @@ $texto_val=str_replace($replace,$search,$texto_val);
 <?php 
 				$nombre_ciutat=mysql_query("SELECT POBLACION,NOMBRE_CENTRO FROM 1_centro where cod_centro='$upload_centro'");
 				$row5 = mysql_fetch_array($nombre_ciutat);
-				$nombre_poblacio=ucwords(strtolower($row5["POBLACION"]));
+				$nombre_poblacio=$row5["POBLACION"];
+	     $nombre_poblacio=mb_convert_case($nombre_poblacio, MB_CASE_TITLE, "ISO-8859-1");
 				$nombre_centro=$row5["NOMBRE_CENTRO"];
 				
 ?>
@@ -115,10 +117,17 @@ $nombre_logo_conselleria="$ruta_absoluta/archivos/datos_centro/".$upload_centro.
 <div id="convocatoria" align="left">
 <div id="margenes_impresion">
 
-<!--
+<table>
+<?php 
+if ($encabezado_convocatoria=='1')
+{
+	?>
+<thead>
+<tr>
+<td>
 <div id="cabecera_logo">
-		<div id="logo_dcho">
-				<img src="<?php echo $nombre_logo_conselleria;?>" height="70px" style="float:left;margin-right:5px" >
+		   <div id="logo_dcho">
+				<img src="<?php echo $nombre_logo_conselleria;?>" height="60px" style="float:left;margin-right:5px" >
 				</div>
    <div id="datos_centro" style="float:left;margin-top:5px;">
 					<div id="texto_logo_izq">
@@ -134,7 +143,6 @@ $nombre_logo_conselleria="$ruta_absoluta/archivos/datos_centro/".$upload_centro.
 </div>
 		
 
-</div>
 
 
 <div id="datos_centro" style="float:right">
@@ -155,11 +163,17 @@ $nombre_logo_conselleria="$ruta_absoluta/archivos/datos_centro/".$upload_centro.
 				</div>				
 </div>
 				<div id="logo_izdo_der">
-				<img src="<?php echo $nombre_logo_centro;?>" height="70px" style="float:right;margin-right:5px" >
+				<img src="<?php echo $nombre_logo_centro;?>" height="60px" style="float:right;margin-right:5px" >
 				</div>
 
 </div>
--->
+</td>
+</tr>
+</thead>
+<?php
+}
+?>
+<tr><td>
 <div style="clear:both;"></div>
 <div id="titulo_1" style="float:left; padding-top:10px;" align='left'>
 <?php echo "$nombre_centro - $nombre_poblacio";?>
@@ -191,58 +205,7 @@ echo "<script>location.href='$ruta_absoluta/cerrar_sesion.php';</script>";
 <div id="texto_acta" align="justify">
 <?php echo 	$texto_cas;?>
 </div>
-<?php
-$year=substr($fecha_convocatoria,0,4);
-$month=substr($fecha_convocatoria,5,2);
-$day=substr($fecha_convocatoria,8,2);
 
-$search=array("01","02","03","04","05","06","07","08","09","10","11","12");
-$replace=array("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre");
-$mes=str_replace($search,$replace,$month);
-
-
-$fecha_acta=$day.$de.$mes.$de.$year;
-?>
-<div id="texto_acta" align="center">
-<?php echo 	"$nombre_poblacio, $fecha_acta" ;?>
-</div>
-
-<div align="center">
-<?php
-
-$firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_acta' and cod_centro='$upload_centro' order by orden") ;
-	while($row2=mysql_fetch_array($firma_acta))
-	{ 
-	$id_tipo_asistente=$row2["id_tipo_asistente"];
-	
-				$nombre_tipo1=mysql_query("SELECT nombre_cas FROM actas_tipo_asistentes where cod_centro='$upload_centro' and id_tipo='$id_tipo_asistente' ");
-				$row12 = mysql_fetch_array($nombre_tipo1);
-			 $nombre_tipo_asis=$row12["nombre_cas"];
-			
-				
-				$nombre_firma_cargo =mysql_query( "SELECT nombre_asistente FROM actas_asistentes where tipo_asistente='$id_tipo_asistente' and id_tipo_acta='$tipo_acta' and cod_centro='$upload_centro'") ;
-    	  while($row3=mysql_fetch_array($nombre_firma_cargo))
-    	  {
-     	 $nombre_firma=ucwords(strtolower($row3["nombre_asistente"]));
-?>	
-
-<div id="firmas"  style="display:inline-block; margin-left:10px;margin-right:10px;" align="center">
-<div id="texto_acta" style="margin-bottom:50px;" align="center">
-<?php echo 	"$nombre_tipo_asis" ;?>
-</div>
-<div id="texto_acta" align="center">
-<?php echo 	"$actatexto91 $nombre_firma" ;?>
-</div>
-</div>
-
-<?php
-}
-?>
-
-<?php
-}
-?>
-</div>
 </div> <!--termina div castellano-->
 
 
@@ -250,10 +213,20 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
 <div id="texto_acta" align="justify">
 <?php echo 	$texto_val;?>
 </div>
-<?php
+
+
+</div> <!--termina div valencia-->
+</td></tr></table>
+<?php		
+$year=substr($fecha_convocatoria,0,4);
+$month=substr($fecha_convocatoria,5,2);
+$day=substr($fecha_convocatoria,8,2);
+
 $search=array("01","02","03","04","05","06","07","08","09","10","11","12");
-$replace=array("gener","febrer","març","abril","maig","juny","juliol","agost","setembre","octubre","novembre","desembre");
+$replace=array("$enero","$febrero","$marzo","$abril","$mayo","$junio","$julio","$agosto","$septiembre","$octubre","$noviembre","$diciembre");
 $mes=str_replace($search,$replace,$month);
+
+if ($_SESSION["idioma_secretictac"]=='val'){
 $mes_val =$mes;
 $comienza = $mes_val[0];
 
@@ -261,6 +234,11 @@ if ($comienza=='a' or $comienza=='e' or $comienza=='i'  or $comienza=='o' or $co
 $fecha_acta=$day.$de_1.$mes.$de.$year;
 else
 $fecha_acta=$day.$de.$mes.$de.$year;
+}
+else
+{
+$fecha_acta=$day.$de.$mes.$de.$year;
+}
 ?>
 
 <div id="texto_acta" align="center">
@@ -269,7 +247,7 @@ $fecha_acta=$day.$de.$mes.$de.$year;
 <div align="center">
 <?php
 
-$firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_acta' and cod_centro='$upload_centro' order by orden") ;
+$firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_acta' and cod_centro='$upload_centro' and firma_convocatoria='1' order by orden") ;
 	while($row2=mysql_fetch_array($firma_acta))
 	{ 
 	$id_tipo_asistente=$row2["id_tipo_asistente"];
@@ -282,7 +260,8 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
 				$nombre_firma_cargo =mysql_query( "SELECT nombre_asistente FROM actas_asistentes where tipo_asistente='$id_tipo_asistente' and id_tipo_acta='$tipo_acta' and cod_centro='$upload_centro'") ;
     	  while($row3=mysql_fetch_array($nombre_firma_cargo))
     	  {
-     	 $nombre_firma=ucwords(strtolower($row3["nombre_asistente"]));
+     	 $nombre_firma=$row3["nombre_asistente"];
+	      $nombre_firma=mb_convert_case($nombre_firma, MB_CASE_TITLE, "ISO-8859-1");
 ?>	
 
 <div id="firmas"  style="display:inline-block; margin-left:10px;margin-right:10px;" align="center">
@@ -302,8 +281,6 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
 }
 ?>
 </div>
-
-</div> <!--termina div valencia-->
 </div>
 </div>
 <?php

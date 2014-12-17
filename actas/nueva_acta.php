@@ -342,10 +342,26 @@ $display1='none';
 <?php echo "<b>$compartirtexto28</b>";?> &nbsp;
 <input type="text"  autocomplete="off" style="width:90px;text-align: right;'"  maxlength='10' onclick='scwShow(this,event);' onBlur='esFechaValida(this);' tabindex='false' name='fecha_acta' value='<?php echo "$fecha";?>'  >
  &nbsp; &nbsp; &nbsp;
+ 
+<?php
+if($anyo==$upload_anyo_academico)
+{
+	?>
 <?php echo "<b>$actatexto54</b>";?> &nbsp;
 <input type="text"  autocomplete="off" style="width:50px;text-align: right;'"  maxlength='4'  name='anyo' value='<?php echo "$anyo";?>'  >
 </div>
-
+<?php
+}
+else 
+{
+?>
+<?php echo "<b>$actatexto54</b>";?> &nbsp;
+<input type="text"  autocomplete="off" readonly="readonly" style="background-color:<?php echo "$color_campo_no_editable";?>;width:50px;text-align: right;" maxlength='4'  name='anyo' value='<?php echo "$anyo";?>'  >
+</div>
+<?php
+}
+?>
+	
 
 <div id="titulo_campo_texto" align="left">
 <?php echo "<b>$actatexto51</b>";?> &nbsp;
@@ -485,19 +501,17 @@ else
 <?php
 $num_col=3;
 $filas=0;
-$bus_prof=mysql_query("SELECT id_asistente,nombre_asistente FROM actas_asistentes where cod_centro='$upload_centro' and id_tipo_acta='$id_tipo_seleccion' order by nombre_asistente");
+$bus_prof=mysql_query("SELECT id_asistente,nombre FROM acta_asistentes_reunion where cod_centro='$upload_centro' and id_actas='$id_acta' order by nombre");
 	while($row=mysql_fetch_array($bus_prof))
 	{
 	$id_asistente=($row["id_asistente"]);
-	$nombre_asistente=($row["nombre_asistente"]);
+	$nombre_asistente=($row["nombre"]);
   $link_borrar="$ruta_absoluta/borrar_antiguo_miembro/$id_tipo_seleccion/$id_acta/$id_asistente";
 				   
-				$sql = "SELECT id_asistente FROM acta_asistentes_reunion where id_actas='$id_acta' and id_Asistente='$id_asistente' and cod_centro='$upload_centro'";
+				$sql = "SELECT id_asistente FROM acta_asistentes_reunion where id_actas='$id_acta' and id_asistente='$id_asistente' and cod_centro='$upload_centro'";
 				$result = mysql_query($sql);
 				$numero = mysql_num_rows($result);
 					
-
-  
   $ancho_columnas=700/$num_col;
 
     if ($numero!=0)

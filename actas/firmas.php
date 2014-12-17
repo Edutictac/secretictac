@@ -183,6 +183,29 @@ $i=$i+1;
 <div id="campo_input"  align="left"></div>
 <input type="hidden" name='id_firma' value='<?php echo "$codigo_tipo";?>'  >
 
+
+<div id="titulo_campo_texto">
+<b><?php echo "$actatexto44";?></b>
+</div>
+<div id="campo_input">
+<?php
+if ($_SESSION["idioma_secretictac"]=='cas')
+$consulta=mysql_query("SELECT id_tipo,nombre_cas FROM actas_tipo_asistentes where cod_centro='$upload_centro' order by nombre_cas");
+if ($_SESSION["idioma_secretictac"]=='val')
+$consulta=mysql_query("SELECT id_tipo,nombre_val FROM actas_tipo_asistentes where cod_centro='$upload_centro' order by nombre_val");
+
+	echo "<select name='tipo_asistente' style='width:200px'>";
+	echo "<option value='0'>$actatexto31</option>";
+	
+	while($registro=mysql_fetch_row($consulta))
+	{
+		echo "<option value='".$registro[0]."'>".$registro[1]."</option>";
+	}
+	echo "</select>";
+
+?>
+</div>
+
 <div id="titulo_campo_texto" align='justify'>
 <b><?php echo "$actatexto30";?></b>
 </div>
@@ -205,27 +228,9 @@ $consulta=mysql_query("SELECT id_tipo,nombre_val FROM actas_tipo_acta where cod_
 ?>
 </div>
 
-
-<div id="titulo_campo_texto">
-<b><?php echo "$actatexto44";?></b>
-</div>
 <div id="campo_input">
-<?php
-if ($_SESSION["idioma_secretictac"]=='cas')
-$consulta=mysql_query("SELECT id_tipo,nombre_cas FROM actas_tipo_asistentes where cod_centro='$upload_centro' order by nombre_cas");
-if ($_SESSION["idioma_secretictac"]=='val')
-$consulta=mysql_query("SELECT id_tipo,nombre_val FROM actas_tipo_asistentes where cod_centro='$upload_centro' order by nombre_val");
-
-	echo "<select name='tipo_asistente' style='width:200px'>";
-	echo "<option value='0'>$actatexto31</option>";
-	
-	while($registro=mysql_fetch_row($consulta))
-	{
-		echo "<option value='".$registro[0]."'>".$registro[1]."</option>";
-	}
-	echo "</select>";
-
-?>
+<input  type="checkbox" name="firma_convocatoria"  checked value="1">
+<b><?php echo "$actatexto94";?></b>
 </div>
 
 <div id="campo_input"  align="left">

@@ -1,5 +1,5 @@
 <?php
-//clse para extraer zip
+//clase para extraer zip
 class Zip_manager{
 
 function listar($var){
@@ -46,7 +46,7 @@ echo "<br>";
 
 include ("conexion.php");
 conectar();
-//	CREAMOS TABLAS NUEVAS
+//	CREAMOS TABLAS NUEVAS version 1.1
 
 mysql_query ("CREATE TABLE IF NOT EXISTS actas (
   id_acta varchar(200) NOT NULL,
@@ -129,6 +129,23 @@ mysql_query ("CREATE TABLE IF NOT EXISTS acta_asistentes_reunion (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8");
 
 
+//tablas de la version 1.2
+mysql_query ("CREATE TABLE IF NOT EXISTS copies_arxius (
+  id_arxiu varchar(500) NOT NULL,
+  nom varchar(255) NOT NULL,
+  data datetime NOT NULL,
+  cod_centro varchar(20) NOT NULL,
+  nom_arxius varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8");
+
+
+mysql_query ("CREATE TABLE IF NOT EXISTS copies_carpeta (
+  id_carpeta varchar(500) NOT NULL,
+  ruta varchar(500) NOT NULL,
+  cod_centro varchar(20) NOT NULL,
+  numero_copies varchar(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8");
+
 //actualizamos las tablas antiguas
 
 function add_column_if_not_exist($db, $column, $column_attr = "VARCHAR( 255 ) NULL" ){
@@ -147,6 +164,7 @@ function add_column_if_not_exist($db, $column, $column_attr = "VARCHAR( 255 ) NU
   }
 }
 
+//actualizacion tablas version 1.1
 add_column_if_not_exist('1_permisos', 'actas', $column_attr = "VARCHAR(1) NULL" );
 add_column_if_not_exist('1_permisos', 'crear_actas', $column_attr = "VARCHAR(1) NULL" );
 add_column_if_not_exist('1_permisos', 'listado_actas', $column_attr = "VARCHAR(1) NULL" );
@@ -154,6 +172,11 @@ add_column_if_not_exist('1_permisos', 'redactar_actas', $column_attr = "VARCHAR(
 add_column_if_not_exist('1_permisos', 'busqueda_actas', $column_attr = "VARCHAR(1) NULL" );
 add_column_if_not_exist('1_permisos', 'convocatorias_actas', $column_attr = "VARCHAR(1) NULL" );
 
+//actualizacion tablas version 1.2
+add_column_if_not_exist('1_permisos', 'copies_seguretat', $column_attr = "VARCHAR(1) NULL" );
+add_column_if_not_exist('actas_firmas', 'firma_convocatoria', $column_attr = "VARCHAR(1) NOT NULL DEFAULT '1'" );
+add_column_if_not_exist('actas_tipo_acta', 'encabezado_acta', $column_attr = "VARCHAR(1) NULL" );
+add_column_if_not_exist('actas_tipo_acta', 'encabezado_convocatoria', $column_attr = "VARCHAR(1) NULL" );
 
 
 desconectar();

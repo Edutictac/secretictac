@@ -97,6 +97,8 @@ $row = mysql_fetch_array($tipo_sel);
 $id_tipo_seleccion=($row ["id_tipo"]);
 $nombre_cas= ($row ["nombre_cas"]);
 $nombre_val= ($row ["nombre_val"]);
+$cabecera_actas= ($row ["encabezado_acta"]);
+$cabecera_convocatorias= ($row ["encabezado_convocatoria"]);
 }
 else 
 {
@@ -207,6 +209,16 @@ $texto_cabecera_formulario=$actatexto14;
 <div id="campo_input"  align="left">
 <input type='text' maxlength='100' autocomplete="off" style='width:240px;' name='nombre_val'  value='<?php echo "$nombre_val";?>'/>
 </div>
+
+    <div id="campo_input"  align="left">
+    <input type="checkbox"  name="cabecera_actas" <?php if ($cabecera_actas=='1') echo checked;?> value="1" >
+   <b> <?php echo "$actatexto92";?></b>
+    </div>
+    
+        <div id="campo_input"  align="left">
+    <input type="checkbox"  name="cabecera_convocatorias" <?php if ($cabecera_convocatorias=='1') echo checked;?> value="1" >
+   <b> <?php echo "$actatexto93";?></b>
+    </div>
 
 
 <div id="campo_input"  align="right">

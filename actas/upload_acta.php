@@ -22,9 +22,7 @@ $fecha_acta=f_datefI($fecha_acta);
 
 $texto=$_POST['texto'];
 $texto=str_replace($search,$replace,$texto);
-$texto = html_entity_decode($texto);
-$texto = utf8_decode($texto);
-
+$texto = utf8_decode(html_entity_decode($texto));
 
 
 $acuerdos=$_POST['acuerdos'];

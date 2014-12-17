@@ -45,6 +45,7 @@ $permitir_listado_actas=($row ["listado_actas"]);
 $permitir_redactar_actas=($row ["redactar_actas"]);
 $permitir_busqueda_actas=($row ["busqueda_actas"]);
 $permitir_convocatorias_actas=($row ["convocatorias_actas"]);
+$permitir_copies_seguretat=($row ["copies_seguretat"]);
 }
 
 ?>

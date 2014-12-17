@@ -123,6 +123,7 @@
 						<?php if ($permitir_permisos==1){?><li class='<?php echo $activado_permisos ;?>'><a href="<?php echo $ruta_absoluta;?>/elegir_permiso"><?php echo $tipo_texto2;?></a></li><?php }?>
 						<?php if ($permitir_crear_usuarios==1){?><li class='<?php echo $activado_crear_usuarios ;?>'><a href="<?php echo $ruta_absoluta;?>/crear_usuario"><?php echo $crear_usuarios1;?></a></li><?php }?>
 						<?php if ($permitir_definir_centro==1){?><li class='<?php echo $activado_datos_centro ;?>'><a href="<?php echo $ruta_absoluta;?>/definir_centro"><?php echo $definir_centro1;?></a></li><?php }?>
+ 				 		<?php if ($permitir_copies_seguretat==1){?><li class='<?php echo $activado_copies_seguretat ;?>'><a href="<?php echo $ruta_absoluta;?>/copies_seguretat"><?php echo $copiestexte1;?></a></li><?php }?>
  				 			
 					</ul>
 			

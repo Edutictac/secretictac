@@ -132,6 +132,12 @@ Rewriterule ^listado_convocatorias$ secretictac/actas/listado_convocatorias.php
 Rewriterule ^listado_convocatorias/(.*)$ secretictac/actas/listado_convocatorias.php?anyo=$1
 Rewriterule ^vista_previa_convocatoria/(.*)/(.*)$ secretictac/actas/vista_previa_convocatorias.php?tipo_acta=$1&id_convocatoria=$2
 
+#COPIES SEGURETAT
+Rewriterule ^copies_seguretat$ secretictac/administrador/copies_seguretat/copies_seguretat.php
+Rewriterule ^guardar_ruta$ secretictac/administrador/copies_seguretat/guardar_ruta.php
+Rewriterule ^upload_copia$ secretictac/administrador/copies_seguretat/upload_copia.php
+Rewriterule ^restaurar_datos$ secretictac/administrador/copies_seguretat/restaurar_datos.php
+Rewriterule ^restaurar_documents$ secretictac/administrador/copies_seguretat/restaurar_documents.php
 
 
 # Evitar escaneos y cualquier intento de manipulación malintencionada
