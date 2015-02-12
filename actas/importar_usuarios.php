@@ -139,10 +139,13 @@ $nombre_acta= $actatexto31;
 <b><?php echo "$actatexto30";?></b>
 <?php
 if ($_SESSION["idioma_secretictac"]=='cas')
+{
 $consulta=mysql_query("SELECT id_tipo,nombre_cas FROM actas_tipo_acta where cod_centro='$upload_centro' order by nombre_cas");
+}
 if ($_SESSION["idioma_secretictac"]=='val')
+{
 $consulta=mysql_query("SELECT id_tipo,nombre_val FROM actas_tipo_acta where cod_centro='$upload_centro' order by nombre_val");
-
+}
 	echo "<select name='tipo_acta' onchange='envia()'>";
 	echo "<option value=$id_tipo_seleccion>$nombre_acta</option>";
 	
@@ -153,6 +156,7 @@ $consulta=mysql_query("SELECT id_tipo,nombre_val FROM actas_tipo_acta where cod_
 	echo "</select>";
 
 ?>
+
 </div>
 </form>
 

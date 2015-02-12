@@ -6,7 +6,6 @@ $nick_usuario=$_SESSION['usuario_secretictac'];
 $permiso=$_SESSION['acceso_secretictac'];
 $upload_centro=$_SESSION['cod_centro_secretictac'];
 $upload_anyo_academico=$_SESSION['anyo_academico_secretictac'];
-
 ?>
 
 

@@ -141,7 +141,7 @@ function NbLines($w,$txt)
 class PDF extends PDF_MC_Table
 {
 
-//Cabecera de página
+//Cabecera de pÃ¡gina
 function Header()
 {
 conectar();
@@ -151,18 +151,18 @@ $tipo_registro=$_POST['tipo_registro'];
 $upload_centro=$_SESSION['cod_centro_secretictac'];
 $result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
 $row = mysql_fetch_array($result);
-$nombre_centro1= ($row ["NOMBRE_CENTRO"]);
-$direccion1= ($row ["DIRECCION"]);
-$poblacion1= ($row ["POBLACION"]);
-$provincia1= ($row ["PROVINCIA"]);
+$nombre_centro1= codificar_utf($row ["NOMBRE_CENTRO"]);
+$direccion1= codificar_utf($row ["DIRECCION"]);
+$poblacion1= codificar_utf($row ["POBLACION"]);
+$provincia1= codificar_utf($row ["PROVINCIA"]);
 $cp1= ($row ["cp"]);
 $web1= ($row ["WEB"]);
 $email1= ($row ["EMAIL"]);
 $telefono1= ($row ["TELEFONO"]);
 $fax1= ($row ["FAX"]);
-$frase1_1= ($row ["FRASE1"]);
-$frase2_1= ($row ["FRASE2"]);
-$frase3_1= ($row ["FRASE3"]);
+$frase1_1= codificar_utf($row ["FRASE1"]);
+$frase2_1= codificar_utf($row ["FRASE2"]);
+$frase3_1= codificar_utf($row ["FRASE3"]);
 
 $distancia_logo=($row ["CMLOGO"]);
 $distancia_logo_conse=($row ["CMLOGO_CONSE"]);
@@ -228,9 +228,9 @@ $this->Ln(10);
 $this->SetX(7);
 $this->SetFont('Arial','B',10);
 if($tipo_registro=='e')
-$this->MultiCell(170,5,$imprimirtexto4.'. '.$imprimirtexto5.' '.$anyo,0,'L',0);
+$this->MultiCell(170,5,codificar_utf($imprimirtexto4).'. '.codificar_utf($imprimirtexto5).' '.$anyo,0,'L',0);
  else 
-$this->MultiCell(170,5,$imprimirtexto6.'. '.$imprimirtexto5.' '.$anyo,0,'L',0);
+$this->MultiCell(170,5,codificar_utf($imprimirtexto6).'. '.codificar_utf($imprimirtexto5).' '.$anyo,0,'L',0);
 //print column titles
 $this->SetFillColor($rojo,$verde,$azul);
 $this->SetFont('Arial','B',8);
@@ -238,28 +238,28 @@ $this->Ln(5);
 $this->SetX(7);
 
 if($tipo_registro=='e')
-$this->Cell(15,$row_height,$registrotexto63,0,0,'L',0);
+$this->Cell(15,$row_height,codificar_utf($registrotexto63),0,0,'L',0);
 else 
-$this->Cell(15,$row_height,$registrotexto66,0,0,'L',0);
+$this->Cell(15,$row_height,codificar_utf($registrotexto66),0,0,'L',0);
 
-$this->Cell(17,$row_height,$registrotexto64,0,0,'L',0);
+$this->Cell(17,$row_height,codificar_utf($registrotexto64),0,0,'L',0);
 
 if($tipo_registro=='e')
-$this->Cell(17,$row_height,$registrotexto65,0,0,'L',0);
+$this->Cell(17,$row_height,codificar_utf($registrotexto65),0,0,'L',0);
 else 
-$this->Cell(17,$row_height,$registrotexto67,0,0,'L',0);
+$this->Cell(17,$row_height,codificar_utf($registrotexto67),0,0,'L',0);
 
-$this->Cell(25,$row_height,$registrotexto57,0,0,'L',0);
-$this->Cell(38,$row_height,$registrotexto51,0,0,'L',0);
-$this->Cell(38,$row_height,$registrotexto52,0,0,'L',0);
+$this->Cell(25,$row_height,codificar_utf($registrotexto57),0,0,'L',0);
+$this->Cell(38,$row_height,codificar_utf($registrotexto51),0,0,'L',0);
+$this->Cell(38,$row_height,codificar_utf($registrotexto52),0,0,'L',0);
 
 if($tipo_registro=='e')
-$this->Cell(28,$row_height,$registrotexto53,0,0,'L',0);
+$this->Cell(28,$row_height,codificar_utf($registrotexto53),0,0,'L',0);
 else 
-$this->Cell(28,$row_height,$registrotexto58,0,0,'L',0);
+$this->Cell(28,$row_height,codificar_utf($registrotexto58),0,0,'L',0);
 
-$this->Cell(38,$row_height,$registrotexto54,0,0,'L',0);
-$this->Cell(65,$row_height,$registrotexto17,0,0,'L',0);
+$this->Cell(38,$row_height,codificar_utf($registrotexto54),0,0,'L',0);
+$this->Cell(65,$row_height,codificar_utf($registrotexto17),0,0,'L',0);
 $this->Line(7, 44, 285, 44);
 $this->Ln(4);
 }
@@ -267,7 +267,7 @@ $this->Ln(4);
 }
 
 
-//Creación del objeto de la clase heredada
+//CreaciÃ³n del objeto de la clase heredada
 $pdf=new PDF('L','mm');
 $pdf->AliasNbPages();
 $pdf->AddPage();
@@ -296,13 +296,13 @@ $fecha_entrada_salida=f_datef($row ["fecha_entrada_salida"]);
 $fecha_registro=f_datef($row ["fecha_registro"]);
 $entrada_salida=($row ["entrada_salida"]);
 $tipo_documento=($row ["tipo_documento"]);
-$asunto=($row ["asunto"]);
+$asunto=codificar_utf($row ["asunto"]);
 
 
-$origen=($row ["origen"]);
-$procedencia=($row ["procedencia"]);
-$organismo=($row ["organismo"]);
-$destino=($row ["destino"]);
+$origen=codificar_utf($row ["origen"]);
+$procedencia=codificar_utf($row ["procedencia"]);
+$organismo=codificar_utf($row ["organismo"]);
+$destino=codificar_utf($row ["destino"]);
 
 if($tipo_documento!=0)
 {
@@ -310,13 +310,13 @@ if($tipo_documento!=0)
 					{
 				$nombre_documento=mysql_query("SELECT nombre_cas FROM registro_tipo_documento where cod_centro='$upload_centro' and id_tipo_documento='$tipo_documento' ");
 				$row = mysql_fetch_array($nombre_documento);
-				  $nombre_docum=$row ["nombre_cas"];
+				  $nombre_docum=codificar_utf($row ["nombre_cas"]);
 				  }
 				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_documento=mysql_query("SELECT nombre_val FROM registro_tipo_documento where cod_centro='$upload_centro' and id_tipo_documento='$tipo_documento' ");
 				$row = mysql_fetch_array($nombre_documento);
-				  $nombre_docum=$row ["nombre_val"];
+				  $nombre_docum=codificar_utf($row ["nombre_val"]);
 				}
 
 }
@@ -333,13 +333,13 @@ if($origen!=0)
 					{
 				$nombre_origen=mysql_query("SELECT nombre_cas FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
 				$row = mysql_fetch_array($nombre_origen);
-				  $nombre_origen=$row ["nombre_cas"];
+				  $nombre_origen=codificar_utf($row ["nombre_cas"]);
 				  }
 				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_origen=mysql_query("SELECT nombre_val FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
 				$row = mysql_fetch_array($nombre_origen);
-				  $nombre_origen=$row ["nombre_val"];
+				  $nombre_origen=codificar_utf($row ["nombre_val"]);
 				}
 
 }
@@ -356,13 +356,13 @@ if($organismo!=0)
 					{
 				$nombre_organismo=mysql_query("SELECT nombre_cas FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
 				$row = mysql_fetch_array($nombre_organismo);
-				  $nombre_organismo=$row ["nombre_cas"];
+				  $nombre_organismo=codificar_utf($row ["nombre_cas"]);
 				  }
 				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_organismo=mysql_query("SELECT nombre_val FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
 				$row = mysql_fetch_array($nombre_organismo);
-				  $nombre_organismo=$row ["nombre_val"];
+				  $nombre_organismo=codificar_utf($row ["nombre_val"]);
 				}
 
 }
@@ -378,13 +378,13 @@ if($destino!=0)
 					{
 				$nombre_destino=mysql_query("SELECT nombre_cas FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
 				$row = mysql_fetch_array($nombre_destino);
-				  $nombre_destino=$row ["nombre_cas"];
+				  $nombre_destino=codificar_utf($row ["nombre_cas"]);
 				  }
 				if ($_SESSION["idioma_secretictac"]=='val')
 				{
 				$nombre_destino=mysql_query("SELECT nombre_val FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
 				$row = mysql_fetch_array($nombre_destino);
-				  $nombre_destino=$row ["nombre_val"];
+				  $nombre_destino=codificar_utf($row ["nombre_val"]);
 				}
 
 }
@@ -398,7 +398,7 @@ else
 
 //un arreglo con alineacion de cada celda
 
-//$pdf->SetAligns(array(‘C’,’L’,’R’));
+//$pdf->SetAligns(array(âCâ,âLâ,âRâ));
 
 
 $pdf->SetX(7);

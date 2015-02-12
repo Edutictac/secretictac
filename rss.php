@@ -14,12 +14,13 @@ $rss = simplexml_load_file('http://edutictac.es/moodle/rss/file.php/1724/cc2dfaa
 $i = 1;
 foreach ($rss->channel->item as $item) {
 	$k=1;
-
-	$titulo=utf8_decode(htmlentities($item->title));
+$titulo=($item->title);
+	//$titulo=utf8_decode(htmlentities($item->title));
 	
 	$link=$item->link;
 	$fecha=date('M d, Y ',strtotime($item->pubDate));
-	$descripcion=(utf8_decode($item->description));
+		$descripcion=strip_tags($item->description);
+	//$descripcion=(utf8_decode($item->description));
 	$descripcion=str_replace("&quot;",'"',$descripcion);
 $descripcion=str_replace($replace,$search,$descripcion);
 $descripcion= str_replace("<p>","",$descripcion);
@@ -73,11 +74,13 @@ $i = 1;
 foreach ($rss->channel->item as $item) {
 	$k=1;
 
-	$titulo=utf8_decode (htmlentities($item->title));
+	$titulo=($item->title);
+	//$titulo=utf8_decode (htmlentities($item->title));
 	
 	$link=$item->link;
 	$fecha=date('M d, Y ',strtotime($item->pubDate));
-	$descripcion=utf8_decode(($item->description));
+		$descripcion=strip_tags($item->description);
+	//$descripcion=utf8_decode(($item->description));
 	$descripcion=str_replace("&quot;",'"',$descripcion);
 $descripcion=str_replace($replace,$search,$descripcion);
 $descripcion= str_replace("<p>","",$descripcion);

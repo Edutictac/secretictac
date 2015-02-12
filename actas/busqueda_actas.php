@@ -58,7 +58,7 @@ if(isset($_REQUEST['anyo']) )
 $anyo_elegido=$_REQUEST['anyo'];
 else 
 $anyo_elegido=$registrotexto59;
-//consulta para el año
+//consulta para el aÃ±o
 if($anyo_elegido!=$registrotexto59)
 $consulta_anyo="and anyo='$anyo_elegido'";
 else 

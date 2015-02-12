@@ -282,7 +282,7 @@ function drawRows($w_1, $h_1, $txt, $border=0, $align='J', $fill=false, $maxline
 
 
 
-//funcion añadidad para imagenes
+//funcion aÃ±adidad para imagenes
 function MemImage($data, $x=null, $y=null, $w=0, $h=0, $link='')
     {
         //Display the image contained in $data
@@ -328,7 +328,7 @@ function MemImage($data, $x=null, $y=null, $w=0, $h=0, $link='')
 
 
 
-//funcion añadidad para imagenes del pie
+//funcion aÃ±adidad para imagenes del pie
 function MemImage_pie($data, $x=null, $y=null, $w=0, $h=0, $link='')
     {
         //Display the image contained in $data
@@ -2152,7 +2152,7 @@ function _putcatalog1()
 function CreateIndex(){
     //Index title
     $this->SetFontSize(20);
-    //$this->Cell(0,5,'ÍNDICE',0,1,'C');
+    //$this->Cell(0,5,'ÃNDICE',0,1,'C');
     $this->SetFontSize(8);
     $this->Ln(5);
 

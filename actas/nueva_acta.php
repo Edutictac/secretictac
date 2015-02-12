@@ -492,7 +492,7 @@ $bus_prof=mysql_query("SELECT id_asistente,nombre_asistente FROM actas_asistente
 
 </table>
 <?php
-}//termina en el caso de que el acta sea del mismo años academico
+}//termina en el caso de que el acta sea del mismo aÃ±os academico
 else 
 {
 ?>
@@ -552,7 +552,7 @@ $bus_prof=mysql_query("SELECT id_asistente,nombre FROM acta_asistentes_reunion w
 
 </table>
 <?php
-}//termina distinto año academico
+}//termina distinto aÃ±o academico
 ?>
 </div>
 </form>

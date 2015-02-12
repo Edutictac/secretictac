@@ -21,15 +21,17 @@ $fecha_acta=limpiar_tags($fecha_acta);
 $fecha_acta=f_datefI($fecha_acta);
 
 $texto=$_POST['texto'];
+$texto = (html_entity_decode($texto,ENT_COMPAT,'UTF-8'));
+//$texto = utf8_decode(($texto));
 $texto=str_replace($search,$replace,$texto);
-$texto = html_entity_decode($texto);
+
 
 
 $acuerdos=$_POST['acuerdos'];
 $acuerdos=str_replace($search,$replace,$acuerdos);
 
 
-//insertamos si el acta es del año academico
+//insertamos si el acta es del aÃ±o academico
 if($anyo==$upload_anyo_academico)
 {
 //borro todos los asistentes iniciales y despues se graban de nuevo

@@ -8,7 +8,6 @@ include("funciones.php");
 ?>
 <html lang="es">
 <head>
-    <meta charset="ISO-8859-1"/>
         <meta name="description" content="Registro de entrada-salida" />
 
 <meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />

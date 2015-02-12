@@ -6,7 +6,7 @@
 <td valign="middle" >
 <div id="pie_pagina_div" align='center'>
 <?php
-echo "© Secretictac 2014";
+echo "Â© Secretictac 2014";
 ?>
 </div>
 </td>

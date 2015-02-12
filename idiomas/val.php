@@ -14,18 +14,18 @@ $boton_borrar='BORRAR';
 $boton_nuevo='NOU';
 $advertencia_rellenar='Falten camps per omplir';
 $menu_boton_desconectar='DESCONECTAR';
-$boton_vista_previa='VISTA PR»VIA';
-$extension_no_valida='no Ès un arxiu v‡lid. ⁄nicament arxius díextensiÛ jpg';
-$fecha_erronea='Format de data no v‡lid';
+$boton_vista_previa='VISTA PR√àVIA';
+$extension_no_valida='no √©s un arxiu v√†lid. √önicament arxius d‚Äôextensi√≥ jpg';
+$fecha_erronea='Format de data no v√†lid';
 
 $menu_inicio='INICI';
-$pagina_inicio='P‡gina Inici';
+$pagina_inicio='P√†gina Inici';
 $inicio_titulo='Secretictac';
 $inicio_idioma='Seleccionar idioma';
 $inicio_instrucciones='Instruccions';
 
 //LOGIN
-$login_titulo='VALIDACI” DíUSUARIS';
+$login_titulo='VALIDACI√ì D‚ÄôUSUARIS';
 $login_falta_codigo='Falta Codi de Centre';
 $login_falta_usuario='Falta Camp USUARI';
 $login_falta_contra='Falta Camp CONTRASENYA';
@@ -34,124 +34,124 @@ $idi_codigo='CODI';
 $idi_usuario='USUARI';
 $idi_contrasenya='CONTRASENYA';
 $login_boton_entrar='ENTRAR';
-$idi_resolucion='ResoluciÛ mÌnima 1024 x 768';
+$idi_resolucion='Resoluci√≥ m√≠nima 1024 x 768';
 $version_docges='Secretictac v1.2';
-$idi_licencia='© Tots els drets de Antonio AntÛn Ruso<br>e-mail: antonioanton37@hotmail.com&nbsp; VERSI” 1.0';
+$idi_licencia='¬© Tots els drets de Antonio Ant√≥n Ruso<br>e-mail: antonioanton37@hotmail.com&nbsp; VERSI√ì 1.0';
 $cambio_contratexto1='CAMBIAR CONTRASENYA';
 //VERIFICA
-$no_contrasenya='Nom díusuari o contrasenya incorrecte';
+$no_contrasenya='Nom d‚Äôusuari o contrasenya incorrecte';
 
-//cambio contraseÒa
+//cambio contrase√±a
 $idi_titulo_cambio='CANVI CONTRASENYA';
 $idi_usuario_cambio='USUARI';
 $idi_antigua_cambio='CONTRASENYA ANTIGA';
 $idi_nueva_cambio='CONTRASENYA NOVA';
 $idi_confirmar_cambio='CONFIRMAR CONTRASENYA';
-$idi_contrasenya_cambio_erronea='Dades incorrectes o incomplets. La causa pot ser:\n -algun camp est‡ buid. \n-La contrasenya nova no coincideix amb la confirmaciÛ.\n -La contrasenya nova coincideix amb la contrasenya antiga.\n Tornar a intentar.';
+$idi_contrasenya_cambio_erronea='Dades incorrectes o incomplets. La causa pot ser:\n -algun camp est√† buid. \n-La contrasenya nova no coincideix amb la confirmaci√≥.\n -La contrasenya nova coincideix amb la contrasenya antiga.\n Tornar a intentar.';
 $contrasenya_actualizada='CONTRASENYA ACTUALITZADA';
-$mensaje_bienvenida='Benvingud/a a líaplicaciÛ SECRETICTAC. La primera vegada que síentra a líaplicaciÛ, has de canviar la contrasenya';
-$eleccion_idioma='SELECCI”N IDIOMA';
+$mensaje_bienvenida='Benvingud/a a l‚Äôaplicaci√≥ SECRETICTAC. La primera vegada que s‚Äôentra a l‚Äôaplicaci√≥, has de canviar la contrasenya';
+$eleccion_idioma='SELECCI√ìN IDIOMA';
 
 
 $cambio_contratexto1='CANVIAR CONTRASENYA';
 $cambio_contratexto2='HAS OBLIDAT LA TEUA CONTRASENYA?';
-$cambio_contratexto3='Per a canviar la contrasenya, ompli el seg¸ent formulari';
+$cambio_contratexto3='Per a canviar la contrasenya, ompli el seg√ºent formulari';
 $cambio_contratexto4='Dades incorrectes o incomplets';
-$cambio_contratexto5='Si has oblidat la teua contrasenya, ompli amb les dades correctes el seg¸ent formulari i se tíenviar‡ una contrasenya nova al correu electrÚnic que has facilitat en SECRETICTAC. En cas de no haver facilitat el correu electrÚnic, posaít en contacte amb líADMINISTRADOR. Una vegada generada la contrasenya, entra novament a líaplicaciÛ i seguix els passos que síindiquen.';
+$cambio_contratexto5='Si has oblidat la teua contrasenya, ompli amb les dades correctes el seg√ºent formulari i se t‚Äôenviar√† una contrasenya nova al correu electr√≤nic que has facilitat en SECRETICTAC. En cas de no haver facilitat el correu electr√≤nic, posa‚Äôt en contacte amb l‚ÄôADMINISTRADOR. Una vegada generada la contrasenya, entra novament a l‚Äôaplicaci√≥ i seguix els passos que s‚Äôindiquen.';
 
 //TIPOS PERMISOS
 $tipo_texto1='Tipus permisos';
 $tipo_texto2='Editar permisos';
 $tipo_texto3='ADMINISTRADOR';
 $tipo_texto4='CREAR / EDITAR TIPUS DE PERMISOS';
-$tipo_texto5='Per a editar un TIPUS DE PERMÕS, polsar sobre líopciÛ EDITAR. Si es desitja crear un nou, introduir el nom del nou tipus de permÌs en el formulari i polsar el botÛ GUARDAR. Una vegada creat un nou tipus, assignar-li els permisos adequats en líapartat EDITAR PERMISOS del men˙.';
+$tipo_texto5='Per a editar un TIPUS DE PERM√çS, polsar sobre l‚Äôopci√≥ EDITAR. Si es desitja crear un nou, introduir el nom del nou tipus de perm√≠s en el formulari i polsar el bot√≥ GUARDAR. Una vegada creat un nou tipus, assignar-li els permisos adequats en l‚Äôapartat EDITAR PERMISOS del men√∫.';
 $tipo_texto6='TIPUS DE PERMISOS';
 $tipo_texto7='EDITAR';
-$tipo_texto8='NOM PERMÕS';
-$tipo_texto9='Per a editar el nom del permÌs seleccionat, escriure el nou nom i polsar GUARDAR. ⁄nicament es modificar‡ el nom, no els permisos assignats.';
-$tipo_texto10='Abans díesborrar el permÌs seleccionat, assegurar-se que no hi ha cap usuari amb aquest permÌs. Esborrar permÌs ';
-$tipo_texto11='NOU PERMÕS';
-$tipo_texto12='EDITAR PERMÕS';
+$tipo_texto8='NOM PERM√çS';
+$tipo_texto9='Per a editar el nom del perm√≠s seleccionat, escriure el nou nom i polsar GUARDAR. √önicament es modificar√† el nom, no els permisos assignats.';
+$tipo_texto10='Abans d‚Äôesborrar el perm√≠s seleccionat, assegurar-se que no hi ha cap usuari amb aquest perm√≠s. Esborrar perm√≠s ';
+$tipo_texto11='NOU PERM√çS';
+$tipo_texto12='EDITAR PERM√çS';
 
 
 //EDITAR PERMISOS
-$editar_permisos1='EDITAR PERMISOS DíUSUARIS';
-$editar_permisos2='Seleccionar el tipus de permÌs que es desitja modificar';
+$editar_permisos1='EDITAR PERMISOS D‚ÄôUSUARIS';
+$editar_permisos2='Seleccionar el tipus de perm√≠s que es desitja modificar';
 $editar_permisos3='Seleccionar tipus usuari';
-$editar_permisos4='Modificar permisos díaccÈs del tipus díusuario';
-$editar_permisos5='Seleccionar les caselles per a assignar els permisos corresponents als usuaris amb el permÌs seleccionat. Si es desitja seleccionar un casella de nivell inferior, síha díactivar les corresponents de nivell superior fins a arribar a ella. Si es desactiva una opciÛ, totes les que depenguen díella quedaran desactivades autom‡ticament, incl˙s estant marcades com a actives.';
+$editar_permisos4='Modificar permisos d‚Äôacc√©s del tipus d‚Äôusuario';
+$editar_permisos5='Seleccionar les caselles per a assignar els permisos corresponents als usuaris amb el perm√≠s seleccionat. Si es desitja seleccionar un casella de nivell inferior, s‚Äôha d‚Äôactivar les corresponents de nivell superior fins a arribar a ella. Si es desactiva una opci√≥, totes les que depenguen d‚Äôella quedaran desactivades autom√†ticament, incl√∫s estant marcades com a actives.';
 
 //CREAR USUARIOS
 $crear_usuarios1='Crear / Editar usuaris';
 $crear_usuarios2='CREAR / EDITAR USUARIS';
-$crear_usuarios3='⁄nicament es pot modificar el nom de líusuari i el tipus de permÌs assignat. Una vegada fet, polsar GUARDAR.';
-$crear_usuarios4='Per a crear un nou usuari, introduir les dades en el formulari. Com a codi díusuari síha díintroduir un que no estiga en el sistema. Seria convenient usar identificadors ˙nics, com per exemple el DNI. En nom díusuari, escriure el nom de líusuari que ser‡ donat díalta en la plataforma. Com a contrasenya, síassignar‡ qualsevol, ja que quan el nou usuari entre en el sistema, li obligar‡ a canviar-la.';
+$crear_usuarios3='√önicament es pot modificar el nom de l‚Äôusuari i el tipus de perm√≠s assignat. Una vegada fet, polsar GUARDAR.';
+$crear_usuarios4='Per a crear un nou usuari, introduir les dades en el formulari. Com a codi d‚Äôusuari s‚Äôha d‚Äôintroduir un que no estiga en el sistema. Seria convenient usar identificadors √∫nics, com per exemple el DNI. En nom d‚Äôusuari, escriure el nom de l‚Äôusuari que ser√† donat d‚Äôalta en la plataforma. Com a contrasenya, s‚Äôassignar√† qualsevol, ja que quan el nou usuari entre en el sistema, li obligar√† a canviar-la.';
 $crear_usuarios5='USUARIS';
 $crear_usuarios6='Borrar usuari ';
 $crear_usuarios7='USUARI';
-$crear_usuarios8='NOM DíUSUARI';
+$crear_usuarios8='NOM D‚ÄôUSUARI';
 $crear_usuarios9='CONTRASENYA INICIAL';
-$crear_usuarios10='ASIGNAR PERMÕS';
-$crear_usuarios11='PERMÕS';
+$crear_usuarios10='ASIGNAR PERM√çS';
+$crear_usuarios11='PERM√çS';
 $crear_usuarios12='NOU USUARI';
 $crear_usuarios13='EDITAR USUARI';
 
 //DEFINIR CENTRO
 $definir_centro0='Secretari/a';
-$definir_centro1='ConfiguraciÛ inicial';
-$definir_centro2='CONFIGURACI” INICIAL';
-$definir_centro3='Personalitzar les dades del Centre. La imatge dels logos Ès obligatÚria introduir-la, en cas de no voler cap logotip en els documents, introduir una imagen en blanc perquË no aparega error en els documents. Es disposen de dos logos per a la capÁalera, un el del centre i un altre per a lí“rgan Oficial a quË pertany el Centre.';
+$definir_centro1='Configuraci√≥ inicial';
+$definir_centro2='CONFIGURACI√ì INICIAL';
+$definir_centro3='Personalitzar les dades del Centre. La imatge dels logos √©s obligat√≤ria introduir-la, en cas de no voler cap logotip en els documents, introduir una imagen en blanc perqu√® no aparega error en els documents. Es disposen de dos logos per a la cap√ßalera, un el del centre i un altre per a l‚Äô√írgan Oficial a qu√® pertany el Centre.';
 $definir_centro4='PERSONALITZAR LES DADES DEL CENTRE';
 $definir_centro5='NOM DEL CENTRE';
-$definir_centro6='DIRECCI”';
-$definir_centro7='POBLACI”';
-$definir_centro8='PROVÕNCIA';
+$definir_centro6='DIRECCI√ì';
+$definir_centro7='POBLACI√ì';
+$definir_centro8='PROV√çNCIA';
 $definir_centro9='CODI POSTAL';
-$definir_centro10='TEL»FON';
+$definir_centro10='TEL√àFON';
 $definir_centro11='FAX';
 $definir_centro12='EMAIL';
 $definir_centro13='WEB';
-$definir_centro14='Imagen LOGO del Centre <br>(˙nicament arxius en format jpg. Reduir la grand‡ria de líarxiu per a no ralentitzar líaplicaciÛ.)';
-$definir_centro15='Dist‡ncia del logo al marge esquerre del full (en mil∑lÌmetres)';
+$definir_centro14='Imagen LOGO del Centre <br>(√∫nicament arxius en format jpg. Reduir la grand√†ria de l‚Äôarxiu per a no ralentitzar l‚Äôaplicaci√≥.)';
+$definir_centro15='Dist√†ncia del logo al marge esquerre del full (en mil¬∑l√≠metres)';
 $definir_centro16='FRASE 1';
 $definir_centro17='FRASE 2';
 $definir_centro18='FRASE 3';
-$definir_centro19='LOGO CONSELLERIA <br>(˙nicament arxius en format jpg.  Reduir la grand‡ria de líarxiu per a no ralentitzar líaplicaciÛ.))';
+$definir_centro19='LOGO CONSELLERIA <br>(√∫nicament arxius en format jpg.  Reduir la grand√†ria de l‚Äôarxiu per a no ralentitzar l‚Äôaplicaci√≥.))';
 $definir_centro20='DEFINIR LOGO I DADES DEL CENTRE';
 $definir_centro21='DEFINIR LOGO CONSELLERIA I TEXTE DEL LOGO';
 $definir_centro22='PERSONALITZAR REGISTRE';
-$definir_centro23='ANUAL (Cada any comenÁar· amb el registre n˙mero 1)';
-$definir_centro24='CONTINUO (ComenÁar· a contar a partir del n˙mero que indiquem)';
+$definir_centro23='ANUAL (Cada any comen√ßar√° amb el registre n√∫mero 1)';
+$definir_centro24='CONTINUO (Comen√ßar√° a contar a partir del n√∫mero que indiquem)';
 
-$definir_centro25='⁄ltim n˙mero registre díENTRADES';
-$definir_centro26='⁄ltim n˙mero registre díEIXIDES';
-$definir_centro27='Podem enllaÁar el nou llibre de registres amb líantic, per fer-ho hi ha que indicar lí˙ltimo registro anotado en cada cas.';
+$definir_centro25='√öltim n√∫mero registre d‚ÄôENTRADES';
+$definir_centro26='√öltim n√∫mero registre d‚ÄôEIXIDES';
+$definir_centro27='Podem enlla√ßar el nou llibre de registres amb l‚Äôantic, per fer-ho hi ha que indicar l‚Äô√∫ltimo registro anotado en cada cas.';
 
 //COMPARTIR ARCHIVOS
 $compartirtexto1='Documents Compartits';
 $compartirtexto2='Expandir';
 $compartirtexto3='Contraure';
 $compartirtexto4='DOCUMENTS COMPARTITS';
-$compartirtexto5='Per a expandir un directori, polsar sobre el sÌmbol <b>+</b>. Per a contraure-ho, polsar sobre el signe <b>-</b>. Per a obrir un arxiu, polsar sobre ell. Per a crear una carpeta nova o un arxiu nou, polsar sobre el nom de la carpeta corresponent on es vol inserir la nova carpeta o el nou arxiu i a continuaciÛ omplir els elements del formulari. Si no se selecciona cap carpeta, es crear‡ en el directori arrel';
+$compartirtexto5='Per a expandir un directori, polsar sobre el s√≠mbol <b>+</b>. Per a contraure-ho, polsar sobre el signe <b>-</b>. Per a obrir un arxiu, polsar sobre ell. Per a crear una carpeta nova o un arxiu nou, polsar sobre el nom de la carpeta corresponent on es vol inserir la nova carpeta o el nou arxiu i a continuaci√≥ omplir els elements del formulari. Si no se selecciona cap carpeta, es crear√† en el directori arrel';
 $compartirtexto6='SERVIDOR';
-$compartirtexto7='Arxiu no permÈs';
-$compartirtexto8='ARXIU (si no se selecciona arxiu es crear‡ el node com a carpeta)';
-$compartirtexto9='⁄nicament arxius díextensiÛ ';
+$compartirtexto7='Arxiu no perm√©s';
+$compartirtexto8='ARXIU (si no se selecciona arxiu es crear√† el node com a carpeta)';
+$compartirtexto9='√önicament arxius d‚Äôextensi√≥ ';
 $compartirtexto10='Creat per: ';
-$compartirtexto11='P⁄BLIC';
+$compartirtexto11='P√öBLIC';
 $compartirtexto12='PRIVAT';
-$compartirtexto13='Si es crea una carpeta, aquesta es crear‡ sempre com a <b>P⁄BLICA</b> independentment de la casella seleccionada. Els documents que porten associats un arxiu sÛn els ˙nics que es poden declarar com a <b>PRIVATS</b>. Una vegada creat el document es pot modificar el seu car‡cter en la secciÛ <b>MODIFICAR ELS MEUS DOCUMENTS</b>. <b>Encara que els documents es declaren com a privats, líadministrador de líaplicaciÛ pot tindre accÈs a modificar-los i al seu contingut</b>';
+$compartirtexto13='Si es crea una carpeta, aquesta es crear√† sempre com a <b>P√öBLICA</b> independentment de la casella seleccionada. Els documents que porten associats un arxiu s√≥n els √∫nics que es poden declarar com a <b>PRIVATS</b>. Una vegada creat el document es pot modificar el seu car√†cter en la secci√≥ <b>MODIFICAR ELS MEUS DOCUMENTS</b>. <b>Encara que els documents es declaren com a privats, l‚Äôadministrador de l‚Äôaplicaci√≥ pot tindre acc√©s a modificar-los i al seu contingut</b>';
 $compartirtexto14='MODIFICAR ELS MEUS DOCUMENTS';
-$compartirtexto15='Per a modificar els par·metres inicials díun document, polsar sobre el nombre del document.';
+$compartirtexto15='Per a modificar els par√°metres inicials d‚Äôun document, polsar sobre el nombre del document.';
 $compartirtexto16='Confirmar borrar document';
 $compartirtexto17='MODIFICAR DOCUMENT SELECCIONAT';
 
 $compartirtexto19='MOURE ARXIU';
-$compartirtexto20='Seleccionar la nova ubicaciÛ i polsar el botÛ GUARDAR. Si no es desitja guardar, polsar el botÛ TORNAR';
-$compartirtexto21='CANVIAR UBICACI” ELEMENT SELECCIONAT';
-$compartirtexto22='Per a esborrar una CARPETA, ha díestar buida. Si no Ès aixÌ, no apareixer‡ líopciÛ díESBORRAR';
+$compartirtexto20='Seleccionar la nova ubicaci√≥ i polsar el bot√≥ GUARDAR. Si no es desitja guardar, polsar el bot√≥ TORNAR';
+$compartirtexto21='CANVIAR UBICACI√ì ELEMENT SELECCIONAT';
+$compartirtexto22='Per a esborrar una CARPETA, ha d‚Äôestar buida. Si no √©s aix√≠, no apareixer√† l‚Äôopci√≥ d‚ÄôESBORRAR';
 $compartirtexto23='MOURE ARXIU A';
-$compartirtexto24='Si es desitja compartir un arxiu de DROPBOX, seleccionar-ho amb el botÛ seg¸ent';
+$compartirtexto24='Si es desitja compartir un arxiu de DROPBOX, seleccionar-ho amb el bot√≥ seg√ºent';
 $compartirtexto25='Nom de la carpeta o arxiu que es vol crear';
 $compartirtexto26='COMPARTIR DOCUMENTS';
 $compartirtexto27='Pujar / Compartir documents';
@@ -179,9 +179,9 @@ $registrotexto10='TIPUS DE DOCUMENT';
 $registrotexto11='Seleccionar tipus document';
 $registrotexto12='NOU';
 $registrotexto13='CREAR NOU TIPUS DE DOCUMENT';
-$registrotexto14='Introduir el nom en els dos idiomes. A continuaciÛ, polsar GUARDAR';
-$registrotexto15='Nom en CASTELL¿';
-$registrotexto16='Nom en VALENCI¿';
+$registrotexto14='Introduir el nom en els dos idiomes. A continuaci√≥, polsar GUARDAR';
+$registrotexto15='Nom en CASTELL√Ä';
+$registrotexto16='Nom en VALENCI√Ä';
 $registrotexto17='ASSUMPTE';
 $registrotexto18='OBSERVACIONS';
 $registrotexto19='ORIGEN';
@@ -189,134 +189,134 @@ $registrotexto20='Crear nou tipus de document';
 $registrotexto21='NOM ORIGEN';
 $registrotexto22='Seleccionar origen';
 $registrotexto23='CREAR NOU ORIGEN';
-$registrotexto24='PROCED»NCIA';
+$registrotexto24='PROCED√àNCIA';
 $registrotexto25='ORGANISME';
 $registrotexto26='Crear nou origen';
 $registrotexto27='Seleccionar organisme';
 $registrotexto28='Crear nou organisme';
 $registrotexto29='CREAR NOU ORGANISME';
-$registrotexto30='DESTÕ';
-$registrotexto31='NOM DESTÕ';
-$registrotexto32='Seleccionar destÌ';
-$registrotexto33='Crear nou destÌ';
-$registrotexto34='CREAR NOU DESTÕ';
+$registrotexto30='DEST√ç';
+$registrotexto31='NOM DEST√ç';
+$registrotexto32='Seleccionar dest√≠';
+$registrotexto33='Crear nou dest√≠';
+$registrotexto34='CREAR NOU DEST√ç';
 $registrotexto35='Adjuntar document en format PDF.';
 $registrotexto36='Arxiu adjunt';
 $registrotexto37='Per a cambiar-lo, seleccionar un altre';
 $registrotexto38='Nou registre';
-$registrotexto39='Seg¸ent registre';
+$registrotexto39='Seg√ºent registre';
 $registrotexto40='Anterior registre';
-$registrotexto41='⁄ltim registre';
+$registrotexto41='√öltim registre';
 $registrotexto42='Primer registre';
 $registrotexto43='GUARDAR';
 $registrotexto44='DIRIGIT A:';
-$registrotexto45='Seleccionar, si Ès necessari';
+$registrotexto45='Seleccionar, si √©s necessari';
 $registrotexto46='REGISTRE EIXIDES';
-$registrotexto47='NOM DESTÕ';
+$registrotexto47='NOM DEST√ç';
 $registrotexto48='LLISTAT REGISTRE ENTRADES / EIXIDES';
-$registrotexto49='Seleccionar els filtres desitjats. Es pot usar mÈs de u. Una vegada fet, polsar el botÛ <b>FILTRAR</b>.<p> Per a modificar un registre, polsar sobre el botÛ <b>EDITAR</b></p>';
+$registrotexto49='Seleccionar els filtres desitjats. Es pot usar m√©s de u. Una vegada fet, polsar el bot√≥ <b>FILTRAR</b>.<p> Per a modificar un registre, polsar sobre el bot√≥ <b>EDITAR</b></p>';
 $registrotexto50='Seleccionar any';
 $registrotexto51='Remitent';
 $registrotexto52='Organisme';
-$registrotexto53='ProcedËncia';
+$registrotexto53='Proced√®ncia';
 $registrotexto54='Destinatari';
 $registrotexto55='Document Adjunt';
 $registrotexto56='EDITAR';
 $registrotexto57='Tipus Document';
-$registrotexto58='DestÌ';
+$registrotexto58='Dest√≠';
 $registrotexto59='Tots';
-$registrotexto60='Si es desitgen mÈs opcions de cerca, omplir els seg¸ents camps amb les dades adequats';
-$registrotexto61='Cercar en ASUMPTE o en el document adjunt la paraula o paraules indicades (mÌnim 4 lletres).';
+$registrotexto60='Si es desitgen m√©s opcions de cerca, omplir els seg√ºents camps amb les dades adequats';
+$registrotexto61='Cercar en ASUMPTE o en el document adjunt la paraula o paraules indicades (m√≠nim 4 lletres).';
 $registrotexto62='DATA EIXIDA';
-$registrotexto63='N∫ ENTRA';
+$registrotexto63='N¬∫ ENTRA';
 $registrotexto64='D. REGIS';
 $registrotexto65='D. ENTRA';
-$registrotexto66='N∫ EIXI';
+$registrotexto66='N¬∫ EIXI';
 $registrotexto67='D. EIXI';
 $registrotexto68='FILTRAR';
-$registrotexto69='N⁄MERO DE REGISTRES PER P¿GINA';
-$registrotexto70='AT…S';
-$registrotexto71='Els seg¸ents registres estar sense atendre. Polsar el botÛ EDITAR per a veure els detalls del registre.';
+$registrotexto69='N√öMERO DE REGISTRES PER P√ÄGINA';
+$registrotexto70='AT√âS';
+$registrotexto71='Els seg√ºents registres estar sense atendre. Polsar el bot√≥ EDITAR per a veure els detalls del registre.';
 $registrotexto72='ADJUNT ENVIE';
-$registrotexto73='N∫ EIXIDA';
-$registrotexto74='REGISTRE DíEIXIDA';
-$registrotexto75='⁄ltim registre';
+$registrotexto73='N¬∫ EIXIDA';
+$registrotexto74='REGISTRE D‚ÄôEIXIDA';
+$registrotexto75='√öltim registre';
 $registrotexto76='Primer registre';
 
 
 //IMPRIMIR LIBROS REGISTRO
 $imprimirtexto1='Imprimir Llibres Registre';
 $imprimirtexto2='IMPRIMIR REGISTRE ENTRADES / EIXIDES';
-$imprimirtexto3='Seleccionar el tipus de llibre que es desitja imprimir i líany. A continuaciÛ polsar el botÛ IMPRIMIR.';
-$imprimirtexto4='LLIBRE REGISTRE DíENTRADES';
+$imprimirtexto3='Seleccionar el tipus de llibre que es desitja imprimir i l‚Äôany. A continuaci√≥ polsar el bot√≥ IMPRIMIR.';
+$imprimirtexto4='LLIBRE REGISTRE D‚ÄôENTRADES';
 $imprimirtexto5='ANY';
-$imprimirtexto6='LIBRE REGISTRE DíEIXIDES';
+$imprimirtexto6='LIBRE REGISTRE D‚ÄôEIXIDES';
 
 //MANTENIMITNO ORGANOS DESTINOS
 $mantenimientotexto1='MANTENIMENT ORGANISMES / TIPUS DOCUMENTS';
-$mantenimientotexto2='Seleccionar líOrganismo / Tipus de Document que es desitja crear o modificar.';
+$mantenimientotexto2='Seleccionar l‚ÄôOrganismo / Tipus de Document que es desitja crear o modificar.';
 $mantenimientotexto3='ENTRADES';
 $mantenimientotexto4='EIXIDES';
 $mantenimientotexto5='ENTRADES';
 $mantenimientotexto6='Origen';
 $mantenimientotexto7='Organisme';
-$mantenimientotexto8='DestÌ';
+$mantenimientotexto8='Dest√≠';
 $mantenimientotexto9='Tipus de Documents';
 $mantenimientotexto10='DOCUMENTS';
 $mantenimientotexto11='NOM';
 $mantenimientotexto12='CREAR / EDITAR SELECCIONAT';
-$mantenimientotexto13='LLISTAT NOMS DíORIGEN DíENTRADES';
-$mantenimientotexto14='LLISTAT NOMS DíORGANISMES DíENTRADES';
-$mantenimientotexto15='LLISTAT NOMS DE DESTÕ DíENTRADES';
-$mantenimientotexto16='LLISTAT NOMS DíORIGEN DíEIXIDES';
-$mantenimientotexto17='LLISTAT NOMS DíORGANISMOS DíEIXIDES';
-$mantenimientotexto18='LLISTAT NOMS DE DESTINOS DíEIXIDES';
+$mantenimientotexto13='LLISTAT NOMS D‚ÄôORIGEN D‚ÄôENTRADES';
+$mantenimientotexto14='LLISTAT NOMS D‚ÄôORGANISMES D‚ÄôENTRADES';
+$mantenimientotexto15='LLISTAT NOMS DE DEST√ç D‚ÄôENTRADES';
+$mantenimientotexto16='LLISTAT NOMS D‚ÄôORIGEN D‚ÄôEIXIDES';
+$mantenimientotexto17='LLISTAT NOMS D‚ÄôORGANISMOS D‚ÄôEIXIDES';
+$mantenimientotexto18='LLISTAT NOMS DE DESTINOS D‚ÄôEIXIDES';
 $mantenimientotexto19='LLISTAT TIPUS DE DOCUMENTS';
-$mantenimientotexto20='Si síesborra líelement seleccionat, els registres ENTRADES / EIXIDES quedaran sense aquest element. Desitja contÌnuar?';
-$mantenimientotexto21='N∫ de registres associats';
+$mantenimientotexto20='Si s‚Äôesborra l‚Äôelement seleccionat, els registres ENTRADES / EIXIDES quedaran sense aquest element. Desitja cont√≠nuar?';
+$mantenimientotexto21='N¬∫ de registres associats';
 $mantenimientotexto22='Hi ha';
-$mantenimientotexto23='Registres associats a líelement seleccionat. Si contÌnua, aquestos registres es veuran afectats. Confirmar esborrament.';
-$mantenimientotexto24='No hi ha registres associats a líelement seleccionat. Es pot esborrar sense que afecte cap registre. Confirmar esborrament.';
+$mantenimientotexto23='Registres associats a l‚Äôelement seleccionat. Si cont√≠nua, aquestos registres es veuran afectats. Confirmar esborrament.';
+$mantenimientotexto24='No hi ha registres associats a l‚Äôelement seleccionat. Es pot esborrar sense que afecte cap registre. Confirmar esborrament.';
 $mantenimientotexto22='Hi ha';
 
 //INICIO
-$iniciotexto1='LíaplicaciÛ Secretictac consta, en principi, de tres mÚduls, que seran o no visibles en funciÛ dels permisos assignats a cada usuari. Aquestos mÚduls sÛn:
-<ul><li><b>MÚdul de Registre díentrades / eixides al Centre</b>: Este Ès el mÚdul principal de líaplicaciÛ i síusa per a gestionar els documents díENTRADA / EIXIDA en líorganitzaciÛ. Consta de diversos men˙s:
-<ul><li><u>Entrades</u>: GestiÛ dels documents díEntrada. Possibilitat de seleccionar líusuari al qual va dirigit el document, si Ès necessari. Quan un usuari entre en líaplicaciÛ, se li avisar‡ si tÈ algun document pendent de revisiÛ. </li>
-<li><u>Eixides</u>: GestiÛ dels documents díeixida.</li>
-<li><u>Llistats / Cerca</u>: Permet obtindre llistats dels registres per pantalla usant diferents filtre per a aixÚ, incloent busca en líassumpte del registre. Aquestos filtres es poden encadenar per a una busca mÈs precisa.</li>
-<li ><u>Imprimir Llibres Registre</u>: ImpressiÛ dels llibres díEntrades i Eixides per anys.</li>
-<li><u>Organismes /Tipus de Documents</u>: Permet crear i modificar el nom del Organisme, Tipus de documentos,... que usarem en aquest mÚdul.</li>
+$iniciotexto1='L‚Äôaplicaci√≥ Secretictac consta, en principi, de tres m√≤duls, que seran o no visibles en funci√≥ dels permisos assignats a cada usuari. Aquestos m√≤duls s√≥n:
+<ul><li><b>M√≤dul de Registre d‚Äôentrades / eixides al Centre</b>: Este √©s el m√≤dul principal de l‚Äôaplicaci√≥ i s‚Äôusa per a gestionar els documents d‚ÄôENTRADA / EIXIDA en l‚Äôorganitzaci√≥. Consta de diversos men√∫s:
+<ul><li><u>Entrades</u>: Gesti√≥ dels documents d‚ÄôEntrada. Possibilitat de seleccionar l‚Äôusuari al qual va dirigit el document, si √©s necessari. Quan un usuari entre en l‚Äôaplicaci√≥, se li avisar√† si t√© algun document pendent de revisi√≥. </li>
+<li><u>Eixides</u>: Gesti√≥ dels documents d‚Äôeixida.</li>
+<li><u>Llistats / Cerca</u>: Permet obtindre llistats dels registres per pantalla usant diferents filtre per a aix√≤, incloent busca en l‚Äôassumpte del registre. Aquestos filtres es poden encadenar per a una busca m√©s precisa.</li>
+<li ><u>Imprimir Llibres Registre</u>: Impressi√≥ dels llibres d‚ÄôEntrades i Eixides per anys.</li>
+<li><u>Organismes /Tipus de Documents</u>: Permet crear i modificar el nom del Organisme, Tipus de documentos,... que usarem en aquest m√≤dul.</li>
 </ul>
 </li>
-<li><b>MÚdul Compartir Documents</b>: MÚdul per a compartir documents entre els usuaris de líaplicaciÛ.
+<li><b>M√≤dul Compartir Documents</b>: M√≤dul per a compartir documents entre els usuaris de l‚Äôaplicaci√≥.
 <ul>
 <li>
-<u>Pujar /compartir documents</u>: Apartat on es gestionen els documents i carpetes que síhan de compartir. Als documents seíls pot donar el car‡cter de p˙blic (els veuran tots els usuaris) o privats (˙nicament els veur‡ líusuari que els ha pujat) . Les carpetes que es creuen sempre seran de car‡cter p˙blic, no aixÌ els documents.</li>
-<li><u>Modificar els meus documents</u>:Apartat per a gestionar els documents pujats, canviar-los, moureíls de carpeta,.... Les carpetes que es creuen, ˙nicament podran ser esborrades per líadministrador de líaplicaciÛ.
+<u>Pujar /compartir documents</u>: Apartat on es gestionen els documents i carpetes que s‚Äôhan de compartir. Als documents se‚Äôls pot donar el car√†cter de p√∫blic (els veuran tots els usuaris) o privats (√∫nicament els veur√† l‚Äôusuari que els ha pujat) . Les carpetes que es creuen sempre seran de car√†cter p√∫blic, no aix√≠ els documents.</li>
+<li><u>Modificar els meus documents</u>:Apartat per a gestionar els documents pujats, canviar-los, moure‚Äôls de carpeta,.... Les carpetes que es creuen, √∫nicament podran ser esborrades per l‚Äôadministrador de l‚Äôaplicaci√≥.
 </li>
 </ul>
 </li>
 
-<li><b>MÚdul Administrador de líaplicaciÛn</b>
+<li><b>M√≤dul Administrador de l‚Äôaplicaci√≥n</b>
 <ul>
 <li><u>Tipus permisos</u>: Permet crear distints tipus de permisos per a ajustar-se a les necessitats dels usuaris. Hi ha tres permisos creats per defecte, ADMIN, ADMINISTRATIU i SECRETARI.
 </li>
-<li><u>Editar permisos</u>: Permet seleccionar els mÚduls que poden usar cada un dels usuaris, en funciÛ del tipus de permÌs assignat. EL permÌs ADMIN ha de tindre activats tots els mÚduls.
+<li><u>Editar permisos</u>: Permet seleccionar els m√≤duls que poden usar cada un dels usuaris, en funci√≥ del tipus de perm√≠s assignat. EL perm√≠s ADMIN ha de tindre activats tots els m√≤duls.
 </li>
-<li><u>Crear / Editar usuaris</u>: Apartat per a donar díalta o editar els usuaris de líaplicaciÛ, assignant-li el permÌs adequat. 
+<li><u>Crear / Editar usuaris</u>: Apartat per a donar d‚Äôalta o editar els usuaris de l‚Äôaplicaci√≥, assignant-li el perm√≠s adequat. 
 </li>
-<li><u>ConfiguraciÛ Inicial</u>: PersonalitzaciÛ de les dades del centre com ara logotip, direcciÛ, nom,.... Seran les dades que apareixeran en la capÁalera dels documents impresos.
-</li>
-</ul>
+<li><u>Configuraci√≥ Inicial</u>: Personalitzaci√≥ de les dades del centre com ara logotip, direcci√≥, nom,.... Seran les dades que apareixeran en la cap√ßalera dels documents impresos.
 </li>
 </ul>
-Aquesta Ès la <b>FASE BETA DE SECRETICTAC</b>. Per a comentaris, suggeriments, correcciÛ díerrades,.... podeu posar-vos en contacte amb mi a travÈs del fÚrum díEDUCATICTAC o al correu antonioanton37@hotmail.com. Espere que trobeu díutilitat aquesta aplicaciÛ.
+</li>
+</ul>
+Aquesta √©s la <b>FASE BETA DE SECRETICTAC</b>. Per a comentaris, suggeriments, correcci√≥ d‚Äôerrades,.... podeu posar-vos en contacte amb mi a trav√©s del f√≤rum d‚ÄôEDUCATICTAC o al correu antonioanton37@hotmail.com. Espere que trobeu d‚Äôutilitat aquesta aplicaci√≥.
 ';
 
 $enero='gener';
 $febrero='febrer';
-$marzo='marÁ';
+$marzo='mar√ß';
 $abril='abril';
 $mayo='maig';
 $junio='juny';
@@ -327,35 +327,35 @@ $octubre='octubre';
 $noviembre='novembre';
 $diciembre='desembre';
 $de=' de ';
-$de_1=' dí';
+$de_1=' d‚Äô';
 
 //RSS
 $rsstexto1='ACTUALITAT SECRETICTAC EN EDUTICTAC';
 $rsstexto2='Totes';
-$rsstexto3='NOTÕCIES SECRETICTAC';
-$rsstexto4='Llegir mÈs';
+$rsstexto3='NOT√çCIES SECRETICTAC';
+$rsstexto4='Llegir m√©s';
 
 //ACTAS
 $actatexto1='ACTES CENTRE';
-$actatexto2='ConfiguraciÛ díActas';
+$actatexto2='Configuraci√≥ d‚ÄôActas';
 $actatexto3='Editar Actes / Llistat';
 $actatexto4='Nova Acta';
-$actatexto5=' Crear / Editar Tipus díActes';
-$actatexto6='Per a poder gestionar les actes del Centre, hem de configurar líaplicaciÛ. En primer lloc, hem de crear el tipus díassistents a les reunions. A continuaciÛ, els tipus díactes que usarem. En la seg¸ent pestanya, importarem / editarem els assistents a les reunions de quË es va a crear líacta i finalment, indiquem els c‡rrecs que han de firmar cada tipus díactes.';
+$actatexto5=' Crear / Editar Tipus d‚ÄôActes';
+$actatexto6='Per a poder gestionar les actes del Centre, hem de configurar l‚Äôaplicaci√≥. En primer lloc, hem de crear el tipus d‚Äôassistents a les reunions. A continuaci√≥, els tipus d‚Äôactes que usarem. En la seg√ºent pestanya, importarem / editarem els assistents a les reunions de qu√® es va a crear l‚Äôacta i finalment, indiquem els c√†rrecs que han de firmar cada tipus d‚Äôactes.';
 $actatexto7='TIPUS ASSISTENTS';
-$actatexto8='TIPUS DíACTA';
+$actatexto8='TIPUS D‚ÄôACTA';
 $actatexto9='IMPORTAR / EDITAR ASSISTENTS';
 $actatexto10='ASSIGNAR SIGNATURES';
-$actatexto11='Crear / Editar el tipus díassistents a les reunions (Director/a, Secretario/a, Padres/Madres, AMPA, alumnado,...) . Indicar líordre en quË volem que apareguen en líacta.';
-$actatexto12='Crear / Editar el tipus díacta que es vol incorporar (Consell Escolar, Claustro,...)';
+$actatexto11='Crear / Editar el tipus d‚Äôassistents a les reunions (Director/a, Secretario/a, Padres/Madres, AMPA, alumnado,...) . Indicar l‚Äôordre en qu√® volem que apareguen en l‚Äôacta.';
+$actatexto12='Crear / Editar el tipus d‚Äôacta que es vol incorporar (Consell Escolar, Claustro,...)';
 $actatexto13='CREAR NOU TIPUS ASISTENT';
 $actatexto14='EDITAR TIPUS SELECCIONAT';
 $actatexto15='ORDRE';
-$actatexto16='Borrar tipus díassistent';
+$actatexto16='Borrar tipus d‚Äôassistent';
 $actatexto17='Borrar tipus acta';
 $actatexto18='CREAR NOU TIPUS ACTA';
-$actatexto29='Seleccionar el tipus díacta i a continuaciÛ introduir els assistents. Els assistents es poden importar per mitj‡ díun arxiu .txt en el que figuren els noms dels assistents en format COGNOM, NOM (un díells per fila) . Seleccionar a continuaciÛ el tipus díassistent majoritari i una vegada importats editar els que tinguen tipus distint. En cada importaciÛ síesborren els anteriors assistents, per tant, cada vegada que es faÁa una importaciÛ han díestar tots els assistents junt amb els nous membres. TambÈ es poden introduir / editar manualment a travÈs del formulario.';             
-$actatexto30='SELECCIONAR TIPUS DíACTA';
+$actatexto29='Seleccionar el tipus d‚Äôacta i a continuaci√≥ introduir els assistents. Els assistents es poden importar per mitj√† d‚Äôun arxiu .txt en el que figuren els noms dels assistents en format COGNOM, NOM (un d‚Äôells per fila) . Seleccionar a continuaci√≥ el tipus d‚Äôassistent majoritari i una vegada importats editar els que tinguen tipus distint. En cada importaci√≥ s‚Äôesborren els anteriors assistents, per tant, cada vegada que es fa√ßa una importaci√≥ han d‚Äôestar tots els assistents junt amb els nous membres. Tamb√© es poden introduir / editar manualment a trav√©s del formulario.';             
+$actatexto30='SELECCIONAR TIPUS D‚ÄôACTA';
 $actatexto31='Seleccionar';
 $actatexto32='NOM';
 $actatexto33='TIPUS';
@@ -363,20 +363,20 @@ $actatexto34='IMPORTAR ASSISTENTS';
 $actatexto35='Borrar';
 $actatexto36='ASSISTENTS';
 $actatexto37='ASSIGNAR TIPUS MAJORITARI';
-$actatexto38='Sols arxiu díextensiÛn .txt';
-$actatexto39='No síha seleccionat cap arxiu txt';
+$actatexto38='Sols arxiu d‚Äôextensi√≥n .txt';
+$actatexto39='No s‚Äôha seleccionat cap arxiu txt';
 $actatexto40='Seleccionar tipus assistent majoritari';
 $actatexto41='INTRODUIR NOU ASSISTENT';
 $actatexto42='EDITAR ASSISTENT SELECIONAT';
 $actatexto43='COGNOMS, NOM';
 $actatexto44='SELECCIONAR TIPUS ASSISTENT';
 
-$actatexto45='Seleccionar el tipus díacta, introduir els c‡rrecs díassistents que han de signar líacta i convocatoria. Introduir líordre en quË volem que apareguen en líacta';
+$actatexto45='Seleccionar el tipus d‚Äôacta, introduir els c√†rrecs d‚Äôassistents que han de signar l‚Äôacta i convocatoria. Introduir l‚Äôordre en qu√® volem que apareguen en l‚Äôacta';
 $actatexto46='SIGNEN';
 $actatexto47='de signar acta';
 $actatexto48='NOVA ACTA';
-$actatexto49='CONFIGURACI” ACTES';
-$actatexto50='Seleccionar el tipus díacta que es desitja crear.';
+$actatexto49='CONFIGURACI√ì ACTES';
+$actatexto50='Seleccionar el tipus d‚Äôacta que es desitja crear.';
 $actatexto51='REDACTAR ACTA';
 $actatexto52='ACORDS (en cas de ser necessari)';
 $actatexto53='ASSISTENTS';
@@ -384,19 +384,19 @@ $actatexto54='ANY';
 $actatexto55='TOTS';
 $actatexto56='CAP';
 $actatexto57='EDITAR ACTA';
-$aviso_ventanas_emergente='La aplicaciÛ usa finestres emergents i popups en algun dels seus mÚduls. PerquË funcione correctament, hi ha que permetre lífinestres emergents en el navegador empleat. Per a aixÚ, basta afegir com exepciÛn la direcciÛ de SECRETICTAC';
-$actatexto58='VISTA PR»VIA ACTA';
-$actatexto59='Per imprimir líacta, polsar el icono IMPRIMIR. Per imprimir els acords, polsar el icono IMPRIMIR ACORDS. Per tornar a la p‡gina anterior, polsar el botÛ de TORNAR. Líaspecte de líacta pot no coincidir amb la vista prËvia';
+$aviso_ventanas_emergente='La aplicaci√≥ usa finestres emergents i popups en algun dels seus m√≤duls. Perqu√® funcione correctament, hi ha que permetre l‚Äôfinestres emergents en el navegador empleat. Per a aix√≤, basta afegir com exepci√≥n la direcci√≥ de SECRETICTAC';
+$actatexto58='VISTA PR√àVIA ACTA';
+$actatexto59='Per imprimir l‚Äôacta, polsar el icono IMPRIMIR. Per imprimir els acords, polsar el icono IMPRIMIR ACORDS. Per tornar a la p√†gina anterior, polsar el bot√≥ de TORNAR. L‚Äôaspecte de l‚Äôacta pot no coincidir amb la vista pr√®via';
 
 
 $actatexto60='PERMISOS ACTAS'; 
-$actatexto61='Asignar els permisos que cada usuari tindr‡ per a poder veure les actes corresponents. Fins que no síassignen els permisos, cap usuari podr‡ veure ni crear cap acta.'; 
+$actatexto61='Asignar els permisos que cada usuari tindr√† per a poder veure les actes corresponents. Fins que no s‚Äôassignen els permisos, cap usuari podr√† veure ni crear cap acta.'; 
 $actatexto62='TIPUS USUARI';
 $actatexto63='ACTES PERMESES'; 
-$actatexto64='Borrar permÌs a'; 
-$actatexto65='sobre líacta'; 
-$actatexto66='ASIGNAR PERMÕS A';
-$actatexto67='Seleccionar el tipus díacta que es desitja editar. A continuaciÛ, buscar líacta desitjada.';
+$actatexto64='Borrar perm√≠s a'; 
+$actatexto65='sobre l‚Äôacta'; 
+$actatexto66='ASIGNAR PERM√çS A';
+$actatexto67='Seleccionar el tipus d‚Äôacta que es desitja editar. A continuaci√≥, buscar l‚Äôacta desitjada.';
 $actatexto68='LLISTAT ACTES';
 $actatexto69='IMPRIMIR ACTA';
 $actatexto70='IMPRIMIR ACORDS';
@@ -404,48 +404,48 @@ $actatexto71='del dia';
 $actatexto72='ACORDS';
 $actatexto73='Sgt:';
 $actatexto74='Cerca Actes';
-$actatexto75='ConvocatÚries';
+$actatexto75='Convocat√≤ries';
 $actatexto76='CERCA ACTES';
-$actatexto77='Seleccionar els filtres desitjats per realitzar la b˙squeda díactas.';
+$actatexto77='Seleccionar els filtres desitjats per realitzar la b√∫squeda d‚Äôactas.';
 $actatexto78='TEXTE A BUSCAR (usar cometes per a buscar texte complet)';
-$actatexto79='CREAR / EDITAR CONVOCAT“RIA';
-$actatexto80='Seleccionar líacta de la qual es desitja crear la convocatÚria. Per a veure / editar totes les convocatÚrias, seleccionar <b>LLISTAT CONVOCAT“RIES</b>';
-$actatexto81='LLISTAT CONVOCAT“RIES';
-$actatexto82='TEXTE CONVOCAT“RIA EN CASTELL¿';
-$actatexto83='TEXTE CONVOCAT“RIA EN VALENCI¿';
-$actatexto84='DATA REUNI”';
-$actatexto85='Polsar sobre la data de la convocatÚria que es desitja editar / consultar.';
-$actatexto86='Antes díimprimir, configurar la p‡gina perquË no mostre encapÁalaments i peu de p‡gines predeterminats pel navegador. La configuraciÛ depÈn de cada navegador.';
-$actatexto87='VISTA PR»VIA CONVOCAT“RIA';
-$actatexto88='Per a imprimir la convocatÚria, polsar <b>IMPRIMIR</b>. Polsa <b>TORNAR</b> per a tornar a la p‡gina anterior. <b>PerquË síimprimisca correctament, en les opcions díimpressiÛ, canviar líorientaciÛ del paper a HORITZONTAL</b> ';
-$actatexto89='ConvocatÚria';
-$actatexto90='FECHA CONVOCAT“RIA';
+$actatexto79='CREAR / EDITAR CONVOCAT√íRIA';
+$actatexto80='Seleccionar l‚Äôacta de la qual es desitja crear la convocat√≤ria. Per a veure / editar totes les convocat√≤rias, seleccionar <b>LLISTAT CONVOCAT√íRIES</b>';
+$actatexto81='LLISTAT CONVOCAT√íRIES';
+$actatexto82='TEXTE CONVOCAT√íRIA EN CASTELL√Ä';
+$actatexto83='TEXTE CONVOCAT√íRIA EN VALENCI√Ä';
+$actatexto84='DATA REUNI√ì';
+$actatexto85='Polsar sobre la data de la convocat√≤ria que es desitja editar / consultar.';
+$actatexto86='Antes d‚Äôimprimir, configurar la p√†gina perqu√® no mostre encap√ßalaments i peu de p√†gines predeterminats pel navegador. La configuraci√≥ dep√©n de cada navegador.';
+$actatexto87='VISTA PR√àVIA CONVOCAT√íRIA';
+$actatexto88='Per a imprimir la convocat√≤ria, polsar <b>IMPRIMIR</b>. Polsa <b>TORNAR</b> per a tornar a la p√†gina anterior. <b>Perqu√® s‚Äôimprimisca correctament, en les opcions d‚Äôimpressi√≥, canviar l‚Äôorientaci√≥ del paper a HORITZONTAL</b> ';
+$actatexto89='Convocat√≤ria';
+$actatexto90='FECHA CONVOCAT√íRIA';
 $actatexto91='Fdo:';
 $actatexto91_bis='Sgt:';
-$actatexto92='CAP«ALERA EN ACTES';
-$actatexto93='CAP«ALERA EN CONVOCAT“RIES';
-$actatexto94='SIGNA CONVOCAT“RIA';
+$actatexto92='CAP√áALERA EN ACTES';
+$actatexto93='CAP√áALERA EN CONVOCAT√íRIES';
+$actatexto94='SIGNA CONVOCAT√íRIA';
 
 //copies seguretat
-$copiestexte1='CÛpies Seguretat';
-$copiestexte2='GESTI” C“PIES SEGURETAT';
-$copiestexte3='Definir la ruta absoluta de la carpeta on es guardaran les cÚpies de seguretat (donar els permisos adequats a la carpeta)i el n˙mero m‡xim de cÚpies que volem guardar. Si es deixa en blanc, no es borrar‡ ninguna de les cÚpies que hi ha. LíaplicaciÛ guardar‡ cÚpies de seguretat de la base de dades i de la carpeta archivos.';
+$copiestexte1='C√≥pies Seguretat';
+$copiestexte2='GESTI√ì C√íPIES SEGURETAT';
+$copiestexte3='Definir la ruta absoluta de la carpeta on es guardaran les c√≤pies de seguretat (donar els permisos adequats a la carpeta)i el n√∫mero m√†xim de c√≤pies que volem guardar. Si es deixa en blanc, no es borrar√† ninguna de les c√≤pies que hi ha. L‚Äôaplicaci√≥ guardar√† c√≤pies de seguretat de la base de dades i de la carpeta archivos.';
 $copiestexte4='INTRODUIR RUTA DE LA CARPETA DE SEGURETAT (sense barra inclinada al final)';
-$copiestexte5='N˙mero de cÚpies a conservar';
-$copiestexte6='CONFIGURACI” INICIAL';
-$copiestexte7='REALITZAR C“PIA DE SEGURTAT';
-$copiestexte8='Si desitja realitzar una cÚpia de seguretat, polsar el botÛ';
-$copiestexte9='FER C“PIA';
-$copiestexte10='RESTAURAR C“PIA DE SEGURETAT';
-$copiestexte11='La cÚpia de seguretat síha creat en';
-$copiestexte12='Hi ha un problema i no síha creat la cÚpia. Revisar la ruta de guardat i la conexiÛ';
+$copiestexte5='N√∫mero de c√≤pies a conservar';
+$copiestexte6='CONFIGURACI√ì INICIAL';
+$copiestexte7='REALITZAR C√íPIA DE SEGURTAT';
+$copiestexte8='Si desitja realitzar una c√≤pia de seguretat, polsar el bot√≥';
+$copiestexte9='FER C√íPIA';
+$copiestexte10='RESTAURAR C√íPIA DE SEGURETAT';
+$copiestexte11='La c√≤pia de seguretat s‚Äôha creat en';
+$copiestexte12='Hi ha un problema i no s‚Äôha creat la c√≤pia. Revisar la ruta de guardat i la conexi√≥';
 $copiestexte13='RESTAURAR ARXIUS';
 $copiestexte14='RESTAURAR BASE DE DADES';
-$copiestexte15='Seleccionar el zip que contÈ les dades de la base de dades';
+$copiestexte15='Seleccionar el zip que cont√© les dades de la base de dades';
 $copiestexte16='RESTAURAR DADES';
-$copiestexte17='Si síusa una ruta absoluta per a la carpeta de seguretat, les cÚpies es guardaran en líordinador des del qual es realitza la cÚpia. Si síusa una ruta relativa, es guardaran en el servidor. Quan es creen les cÚpies de seguretat, Ès convenient copiar-les en un altre suport de tant en tant, per si el servidor tinguera algun problema. En cas de fallada del servidor, instal∑lar novament secretictac en un altre ordinador i recuperar les dades amb les cÚpies de seguretat. Provar este mÚdul per a assegurar-se del bon funcionament i de vegades fer alguna cÚpia manual.';
-$copiestexte18='Ha ocorregut algun problema i no síhan pogut restaurar les dades';
-$copiestexte19='Les dades síhan restaurat';
+$copiestexte17='Si s‚Äôusa una ruta absoluta per a la carpeta de seguretat, les c√≤pies es guardaran en l‚Äôordinador des del qual es realitza la c√≤pia. Si s‚Äôusa una ruta relativa, es guardaran en el servidor. Quan es creen les c√≤pies de seguretat, √©s convenient copiar-les en un altre suport de tant en tant, per si el servidor tinguera algun problema. En cas de fallada del servidor, instal¬∑lar novament secretictac en un altre ordinador i recuperar les dades amb les c√≤pies de seguretat. Provar este m√≤dul per a assegurar-se del bon funcionament i de vegades fer alguna c√≤pia manual.';
+$copiestexte18='Ha ocorregut algun problema i no s‚Äôhan pogut restaurar les dades';
+$copiestexte19='Les dades s‚Äôhan restaurat';
 $copiestexte20='RESTAURAR DOCUMENTS (carpeta arxius)';
 $copiestexte21='Seleccionar el zip dels documents';
 $copiestexte22='RESTAURAR DOCUMENTS';

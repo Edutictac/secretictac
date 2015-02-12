@@ -10,9 +10,7 @@ php_value upload_max_filesize 10M
 #set max post size
 php_value post_max_size 10M
 
-
-
-
+AddDefaultCharset UTF-8
 
 Rewriterule ^camb_contra$ secretictac/nueva_contrasenya.php
 Rewriterule ^comprobar_usuario$ secretictac/verifica.php

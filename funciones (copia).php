@@ -11,7 +11,7 @@ $archivos_permitidas_php_pdf = array("application/pdf");
 
 //reemplazo comillas y dobles comillas
 $search=array("'",'"','&#39;');
-$replace=array('’','’','’');
+$replace=array('','','');
 
 
 //funcion para limpiar el nombre de los archivos
@@ -155,13 +155,5 @@ function Recortar($Texto,$Num_Caracteres)
 	  $result .= "...";
 	   return $result;
 	}
-	
-function codificar_utf($tags){
-$search1=array("'",'"','&#39;');
-$replace1=array('’','’','’');
-$tags =str_replace($replace1,$search1,$tags);
-$tags = utf8_decode($tags);
-return $tags;
-}
 
 ?>

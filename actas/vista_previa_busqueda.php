@@ -104,7 +104,7 @@ $anyo= ($row ["anyo"]);
 				$nombre_ciutat=mysql_query("SELECT POBLACION,NOMBRE_CENTRO FROM 1_centro where cod_centro='$upload_centro'");
 				$row5 = mysql_fetch_array($nombre_ciutat);
 				$nombre_poblacio=$row5["POBLACION"];
-	     $nombre_poblacio=mb_convert_case($nombre_poblacio, MB_CASE_TITLE, "ISO-8859-1");
+	     $nombre_poblacio=mb_convert_case($nombre_poblacio, MB_CASE_TITLE, "UTF-8");
 				$nombre_centro=$row5["NOMBRE_CENTRO"];
 				
 ?>
@@ -285,7 +285,7 @@ $asistentes_cargo =mysql_query( "SELECT distinct id_tipo_asistente FROM acta_asi
 	while($row2=mysql_fetch_array($asistentes_reunion))
 	{	
 	  $nombre_asistente=($row2["nombre"]);
-	  $nombre_asistente=mb_convert_case($nombre_asistente, MB_CASE_TITLE, "ISO-8859-1");
+	  $nombre_asistente=mb_convert_case($nombre_asistente, MB_CASE_TITLE, "UTF-8");
 	 ?>
 	<div id="asistentes_acta" align="left">
 <?php echo 	$nombre_asistente;?>
@@ -310,7 +310,7 @@ $mes_val =$mes;
 $comienza = $mes_val[0];
 
 if ($comienza=='a' or $comienza=='e' or $comienza=='i'  or $comienza=='o' or $comienza=='u')
-$fecha_acta=$day.$de_1.$mes.$de.$year;
+$fecha_acta=$day." d'".$mes.$de.$year;
 else
 $fecha_acta=$day.$de.$mes.$de.$year;
 }
@@ -353,7 +353,7 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
     	  while($row3=mysql_fetch_array($nombre_firma_cargo))
     	  {
      	 $nombre_firma=$row3["nombre"];
-	      $nombre_firma=mb_convert_case($nombre_firma, MB_CASE_TITLE, "ISO-8859-1");
+	      $nombre_firma=mb_convert_case($nombre_firma, MB_CASE_TITLE, "UTF-8");
 ?>	
 
 

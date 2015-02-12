@@ -25,7 +25,7 @@ require('../reportes/fpdf.php');
 class PDF extends FPDF
 {
 
-//Cabecera de página
+//Cabecera de pÃ¡gina
 function Header()
 {
 conectar();
@@ -35,18 +35,18 @@ $tipo_registro=$_POST['tipo_registro'];
 $upload_centro=$_SESSION['cod_centro_secretictac'];
 $result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
 $row = mysql_fetch_array($result);
-$nombre_centro1= ($row ["NOMBRE_CENTRO"]);
-$direccion1= ($row ["DIRECCION"]);
-$poblacion1= ($row ["POBLACION"]);
-$provincia1= ($row ["PROVINCIA"]);
+$nombre_centro1= codificar_utf($row ["NOMBRE_CENTRO"]);
+$direccion1= codificar_utf($row ["DIRECCION"]);
+$poblacion1= codificar_utf($row ["POBLACION"]);
+$provincia1= codificar_utf($row ["PROVINCIA"]);
 $cp1= ($row ["cp"]);
 $web1= ($row ["WEB"]);
 $email1= ($row ["EMAIL"]);
 $telefono1= ($row ["TELEFONO"]);
 $fax1= ($row ["FAX"]);
-$frase1_1= ($row ["FRASE1"]);
-$frase2_1= ($row ["FRASE2"]);
-$frase3_1= ($row ["FRASE3"]);
+$frase1_1= codificar_utf($row ["FRASE1"]);
+$frase2_1= codificar_utf($row ["FRASE2"]);
+$frase3_1= codificar_utf($row ["FRASE3"]);
 
 $distancia_logo=($row ["CMLOGO"]);
 $distancia_logo_conse=($row ["CMLOGO_CONSE"]);
@@ -116,7 +116,7 @@ $this->Ln(10);
 
 
 
-//Creaci�n del objeto de la clase heredada
+//Creación del objeto de la clase heredada
 $pdf=new PDF('P','mm','A4');
 $pdf->SetAutoPageBreak(1,30);
 $pdf->AddPage();
@@ -138,22 +138,22 @@ $secretari= ($row ["secretari"]);
 
 $pdf->SetFont('Arial','',12);
 $pdf->SetXY($ejex,$ejey);
-$pdf->MultiCell(130,5,$registrotexto74,0,'J',0);
+$pdf->MultiCell(130,5,codificar_utf($registrotexto74),0,'J',0);
 
 
 $pdf->SetX($ejex);
-$pdf->MultiCell(130,5,$registrotexto73.': '.$codigo,0,'J',0);
+$pdf->MultiCell(130,5,codificar_utf($registrotexto73).': '.$codigo,0,'J',0);
 
 $pdf->SetX($ejex);
-$pdf->MultiCell(130,5,$compartirtexto28.': '.$fecha,0,'J',0);
+$pdf->MultiCell(130,5,codificar_utf($compartirtexto28).': '.$fecha,0,'J',0);
 $pdf->lN(25);
 $pdf->SetFont('Arial','B',12);
 $pdf->SetX($ejex);
-$pdf->MultiCell(130,8,$registrotexto72,0,'J',0);
+$pdf->MultiCell(130,8,codificar_utf($registrotexto72),0,'J',0);
 
 $pdf->SetFont('Arial','I',12);
 $pdf->SetX($ejex);
-$pdf->MultiCell(150,8,$asunto,0,'J',0);
+$pdf->MultiCell(150,8,codificar_utf($asunto),0,'J',0);
 
 
 $year=substr($fecha,6,4);
@@ -183,7 +183,7 @@ $fecha_formato_largo=$day.$de.$mes.$de.$year;
 $ciudad = mysql_query("SELECT POBLACION FROM 1_centro where COD_CENTRO='$upload_centro'");
 while ($row6 = mysql_fetch_array($ciudad))
 {
-$CIUDAD1=$row6 ["POBLACION"];
+$CIUDAD1=codificar_utf($row6 ["POBLACION"]);
 }
 
 
@@ -193,7 +193,7 @@ $pdf->MultiCell(100,5,$CIUDAD1.', '.$fecha_formato_largo,0,'C',0);
 
 $pdf->Ln(35);
 $pdf->SetX($ejex+60);
-$pdf->MultiCell(100,5,$secretari,0,'C',0);
+$pdf->MultiCell(100,5,codificar_utf($secretari),0,'C',0);
 
 
 

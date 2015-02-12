@@ -2,7 +2,7 @@
 session_start();
 $upload_centro=$_SESSION['cod_centro_secretictac'];
 require('../../conexion.php');
-
+require('../../funciones.php');
 conectar();
 //PDF USING MULTIPLE PAGES
 //CREATED BY: Carlos Vasquez S.
@@ -16,25 +16,25 @@ require('../../reportes/fpdf.php');
 
 class PDF extends FPDF
 {
-//Cabecera de página
+//Cabecera de pÃ¡gina
 function Header()
 {
 session_start();
 $upload_centro=$_SESSION['cod_centro_secretictac'];
 $result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
 $row = mysql_fetch_array($result);
-$nombre_centro1= ($row ["NOMBRE_CENTRO"]);
-$direccion1= ($row ["DIRECCION"]);
-$poblacion1= ($row ["POBLACION"]);
-$provincia1= ($row ["PROVINCIA"]);
+$nombre_centro1= codificar_utf($row ["NOMBRE_CENTRO"]);
+$direccion1= codificar_utf($row ["DIRECCION"]);
+$poblacion1= codificar_utf($row ["POBLACION"]);
+$provincia1= codificar_utf($row ["PROVINCIA"]);
 $cp1= ($row ["cp"]);
 $web1= ($row ["WEB"]);
 $email1= ($row ["EMAIL"]);
 $telefono1= ($row ["TELEFONO"]);
 $fax1= ($row ["FAX"]);
-$frase1_1= ($row ["FRASE1"]);
-$frase2_1= ($row ["FRASE2"]);
-$frase3_1= ($row ["FRASE3"]);
+$frase1_1= codificar_utf($row ["FRASE1"]);
+$frase2_1= codificar_utf($row ["FRASE2"]);
+$frase3_1= codificar_utf($row ["FRASE3"]);
 
 $distancia_logo=($row ["CMLOGO"]);
 $distancia_logo_conse=($row ["CMLOGO_CONSE"]);
@@ -104,7 +104,7 @@ $this->Ln(10);
 
 
 
-//Creación del objeto de la clase heredada
+//CreaciÃ³n del objeto de la clase heredada
 $pdf=new PDF();
 
 $pdf->Output();

@@ -59,7 +59,7 @@ $texto_val=str_replace($replace,$search,$texto_val);
 				$nombre_ciutat=mysql_query("SELECT POBLACION,NOMBRE_CENTRO FROM 1_centro where cod_centro='$upload_centro'");
 				$row5 = mysql_fetch_array($nombre_ciutat);
 				$nombre_poblacio=$row5["POBLACION"];
-	     $nombre_poblacio=mb_convert_case($nombre_poblacio, MB_CASE_TITLE, "ISO-8859-1");
+	     $nombre_poblacio=mb_convert_case($nombre_poblacio, MB_CASE_TITLE, "UTF-8");
 				$nombre_centro=$row5["NOMBRE_CENTRO"];
 				
 ?>
@@ -231,7 +231,7 @@ $mes_val =$mes;
 $comienza = $mes_val[0];
 
 if ($comienza=='a' or $comienza=='e' or $comienza=='i'  or $comienza=='o' or $comienza=='u')
-$fecha_acta=$day.$de_1.$mes.$de.$year;
+$fecha_acta=$day." d'".$mes.$de.$year;
 else
 $fecha_acta=$day.$de.$mes.$de.$year;
 }
@@ -261,7 +261,7 @@ $firma_acta =mysql_query( "SELECT * FROM actas_firmas where id_tipo_acta='$tipo_
     	  while($row3=mysql_fetch_array($nombre_firma_cargo))
     	  {
      	 $nombre_firma=$row3["nombre_asistente"];
-	      $nombre_firma=mb_convert_case($nombre_firma, MB_CASE_TITLE, "ISO-8859-1");
+	      $nombre_firma=mb_convert_case($nombre_firma, MB_CASE_TITLE, "UTF-8");
 ?>	
 
 <div id="firmas"  style="display:inline-block; margin-left:10px;margin-right:10px;" align="center">

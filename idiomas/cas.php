@@ -8,67 +8,67 @@ $boton_aceptar='ACEPTAR';
 $boton_importar='IMPORTAR';
 $boton_cancelar='CANCELAR';
 $boton_imprimir='IMPRIMIR';
-$boton_anyadir='A—ADIR';
+$boton_anyadir='A√ëADIR';
 $boton_quitar2='QUITAR';
 $boton_borrar='BORRAR';
 $boton_nuevo='NUEVO';
 $advertencia_rellenar='Faltan campos por rellenar';
 $menu_boton_desconectar='DESCONECTAR';
 $boton_vista_previa='VISTA PREVIA';
-$extension_no_valida='no es un archivo v·lido. ⁄nicamente archivos de extensiÛn jpg';
-$fecha_erronea='Formato de fecha no v·lido';
+$extension_no_valida='no es un archivo v√°lido. √önicamente archivos de extensi√≥n jpg';
+$fecha_erronea='Formato de fecha no v√°lido';
 
 $menu_inicio='INICIO';
-$pagina_inicio='P·gina Inicio';
+$pagina_inicio='P√°gina Inicio';
 $inicio_titulo='Secretictac';
 $inicio_idioma='Seleccionar idioma';
 $inicio_instrucciones='Instrucciones';
 //LOGIN
-$login_titulo='VALIDACI”N DE USUARIOS';
-$login_falta_codigo='Falta CÛdigo de Centro';
+$login_titulo='VALIDACI√ìN DE USUARIOS';
+$login_falta_codigo='Falta C√≥digo de Centro';
 $login_falta_usuario='Falta Campo USUARIO';
-$login_falta_contra='Falta Campo CONTRASE—A';
-$idi_curso_academico='A—O';
+$login_falta_contra='Falta Campo CONTRASE√ëA';
+$idi_curso_academico='A√ëO';
 $idi_codigo='CODIGO';
 $idi_usuario='USUARIO';
-$idi_contrasenya='CONTRASE—A';
+$idi_contrasenya='CONTRASE√ëA';
 $login_boton_entrar='ENTRAR';
-$idi_resolucion='ResoluciÛn mÌnima 1024 x 768';
+$idi_resolucion='Resoluci√≥n m√≠nima 1024 x 768';
 $version_docges='Secretictac v1.2';
-$idi_licencia='© Todos los derechos de Antonio AntÛn Ruso<br>e-mail: antonioanton37@hotmail.com&nbsp; VERSI”N 1.0';
-$cambio_contratexto1='CAMBIAR CONTRASE—A';
+$idi_licencia='¬© Todos los derechos de Antonio Ant√≥n Ruso<br>e-mail: antonioanton37@hotmail.com&nbsp; VERSI√ìN 1.0';
+$cambio_contratexto1='CAMBIAR CONTRASE√ëA';
 //VERIFICA
-$no_contrasenya='Nombre de usuario o contraseÒa incorrecto';
+$no_contrasenya='Nombre de usuario o contrase√±a incorrecto';
 
-//cambio contraseÒa
-$idi_titulo_cambio='CAMBIO CONTRASE—A';
+//cambio contrase√±a
+$idi_titulo_cambio='CAMBIO CONTRASE√ëA';
 $idi_usuario_cambio='USUARIO';
-$idi_antigua_cambio='CONTRASE—A ANTIGUA';
-$idi_nueva_cambio='CONTRASE—A NUEVA';
-$idi_confirmar_cambio='CONFIRMAR CONTRASE—A';
-$idi_contrasenya_cambio_erronea='Datos incorrectos o incompletos. La causa puede ser:\n-Alg˙n campo vacio \n-La contraseÒa nueva no coincide con la confirmaciÛn.\n-La contraseÒa nueva coincide con la contraseÒa antigua\n Volver a intentar.';
-$contrasenya_actualizada='CONTRASE—A ACTUALIZADA';
-$mensaje_bienvenida='bienvenido/a la aplicaciÛn SECRETICTAC. La primera vez que se entra a la aplicaciÛn, debes cambiar la contraseÒa';
-$eleccion_idioma='SELECCI”N IDIOMA';
+$idi_antigua_cambio='CONTRASE√ëA ANTIGUA';
+$idi_nueva_cambio='CONTRASE√ëA NUEVA';
+$idi_confirmar_cambio='CONFIRMAR CONTRASE√ëA';
+$idi_contrasenya_cambio_erronea='Datos incorrectos o incompletos. La causa puede ser:\n-Alg√∫n campo vacio \n-La contrase√±a nueva no coincide con la confirmaci√≥n.\n-La contrase√±a nueva coincide con la contrase√±a antigua\n Volver a intentar.';
+$contrasenya_actualizada='CONTRASE√ëA ACTUALIZADA';
+$mensaje_bienvenida='bienvenido/a la aplicaci√≥n SECRETICTAC. La primera vez que se entra a la aplicaci√≥n, debes cambiar la contrase√±a';
+$eleccion_idioma='SELECCI√ìN IDIOMA';
 
 
-$cambio_contratexto1='CAMBIAR CONTRASE—A';
-$cambio_contratexto2='øHAS OLVIDADO TU CONTRASE—A?';
-$cambio_contratexto3='Para cambiar la contraseÒa, rellena el siguiente formulario';
+$cambio_contratexto1='CAMBIAR CONTRASE√ëA';
+$cambio_contratexto2='¬øHAS OLVIDADO TU CONTRASE√ëA?';
+$cambio_contratexto3='Para cambiar la contrase√±a, rellena el siguiente formulario';
 $cambio_contratexto4='Datos incorrectos o incompletos.';
-$cambio_contratexto5='Si has olvidado tu contraseÒa, rellena con los datos correctos el siguiente formulario y se te enviar· una contraseÒa nueva al correo electrÛnico que has facilitado en DOCGES. En caso de no haber facilitado el correo electrÛnico, ponte en contacto con el ADMINISTRADOR. Una vez generada la contraseÒa, entra de nuevo a la aplicaciÛn y sigue los pasos que se indican.';
+$cambio_contratexto5='Si has olvidado tu contrase√±a, rellena con los datos correctos el siguiente formulario y se te enviar√° una contrase√±a nueva al correo electr√≥nico que has facilitado en DOCGES. En caso de no haber facilitado el correo electr√≥nico, ponte en contacto con el ADMINISTRADOR. Una vez generada la contrase√±a, entra de nuevo a la aplicaci√≥n y sigue los pasos que se indican.';
 
 //TIPOS PERMISOS
 $tipo_texto1='Tipo permisos';
 $tipo_texto2='Editar permisos';
 $tipo_texto3='ADMINISTRADOR';
 $tipo_texto4='CREAR / EDITAR TIPOS DE PERMISOS';
-$tipo_texto5='Para editar un TIPO DE PERMISO, pulsar sobre la opciÛn EDITAR. Si se desea crear uno nuevo, introducir el nombre del nuevo tipo de permiso en el formulario y pulsar el botÛn GUARDAR. Una vez creado un nuevo tipo, asignarle los permisos adecuados en el apartado EDITAR PERMISOS del men˙.';
+$tipo_texto5='Para editar un TIPO DE PERMISO, pulsar sobre la opci√≥n EDITAR. Si se desea crear uno nuevo, introducir el nombre del nuevo tipo de permiso en el formulario y pulsar el bot√≥n GUARDAR. Una vez creado un nuevo tipo, asignarle los permisos adecuados en el apartado EDITAR PERMISOS del men√∫.';
 $tipo_texto6='TIPOS DE PERMISOS';
 $tipo_texto7='EDITAR';
 $tipo_texto8='NOMBRE PERMISO';
-$tipo_texto9='Para editar el nombre del permiso seleccionado, escribir el nuevo nombre y pulsar GUARDAR. ⁄nicamente se modificar· el nombre, no los permisos asignados.';
-$tipo_texto10='Antes de borrar el permiso seleccionado, asegurarse que no hay ning˙n usuario con este permiso. øBorrar permiso ';
+$tipo_texto9='Para editar el nombre del permiso seleccionado, escribir el nuevo nombre y pulsar GUARDAR. √önicamente se modificar√° el nombre, no los permisos asignados.';
+$tipo_texto10='Antes de borrar el permiso seleccionado, asegurarse que no hay ning√∫n usuario con este permiso. ¬øBorrar permiso ';
 $tipo_texto11='NUEVO PERMISO';
 $tipo_texto12='EDITAR PERMISO';
 
@@ -78,18 +78,18 @@ $editar_permisos1='EDITAR PERMISOS DE USUARIOS';
 $editar_permisos2='Seleccionar el tipo de permiso que se desea modificar';
 $editar_permisos3='Seleccionar tipo usuario';
 $editar_permisos4='Modificar permisos de acceso del tipo de usuario';
-$editar_permisos5='Seleccionar las casillas para asignar los permisos correspondientes a los usuarios con el permiso seleccionado. Si se desea seleccionar un casilla de nivel inferior, se ha de activar las correspondientes de nivel superior hasta llegar a ella. Si se desactiva una opciÛn, todas las que dependan de ella quedar·n desactivadas autom·ticamente, incluso estando marcadas como activas.';
+$editar_permisos5='Seleccionar las casillas para asignar los permisos correspondientes a los usuarios con el permiso seleccionado. Si se desea seleccionar un casilla de nivel inferior, se ha de activar las correspondientes de nivel superior hasta llegar a ella. Si se desactiva una opci√≥n, todas las que dependan de ella quedar√°n desactivadas autom√°ticamente, incluso estando marcadas como activas.';
 
 //CREAR USUARIOS
 $crear_usuarios1='Crear / Editar usuarios';
 $crear_usuarios2='CREAR / EDITAR USUARIOS';
-$crear_usuarios3='⁄nicamente se puede modificar el nombre del usuario y el tipo de permiso asignado. Una vez hecho, pulsar GUARDAR.';
-$crear_usuarios4='Para crear un nuevo usuario, introducir los datos en el formulario. Como cÛdigo de usuario se ha de introducir uno que no estÈ en el sistema. SerÌa conveniente usar identificadores ˙nicos, como por ejemplo el DNI. En nombre de usuario, escribir el nombre del usuario que va a ser dado de alta en la plataforma. Como contraseÒa, se asignar· cualquiera, ya que cuando el nuevo usuario entre en el sistema, le obligar· a cambiarla.';
+$crear_usuarios3='√önicamente se puede modificar el nombre del usuario y el tipo de permiso asignado. Una vez hecho, pulsar GUARDAR.';
+$crear_usuarios4='Para crear un nuevo usuario, introducir los datos en el formulario. Como c√≥digo de usuario se ha de introducir uno que no est√© en el sistema. Ser√≠a conveniente usar identificadores √∫nicos, como por ejemplo el DNI. En nombre de usuario, escribir el nombre del usuario que va a ser dado de alta en la plataforma. Como contrase√±a, se asignar√° cualquiera, ya que cuando el nuevo usuario entre en el sistema, le obligar√° a cambiarla.';
 $crear_usuarios5='USUARIOS';
-$crear_usuarios6='øBorrar usuario ';
+$crear_usuarios6='¬øBorrar usuario ';
 $crear_usuarios7='USUARIO';
 $crear_usuarios8='NOMBRE DE USUARIO';
-$crear_usuarios9='CONTRASE—A INICIAL';
+$crear_usuarios9='CONTRASE√ëA INICIAL';
 $crear_usuarios10='ASIGNAR PERMISO';
 $crear_usuarios11='PERMISO';
 $crear_usuarios12='NUEVO USUARIO';
@@ -97,33 +97,33 @@ $crear_usuarios13='EDITAR USUARIO';
 
 //DEFINIR CENTRO
 $definir_centro0='Secretario/a';
-$definir_centro1='ConfiguraciÛn Inicial';
-$definir_centro2='CONFIGURACI”N INICIAL';
-$definir_centro3='Personalizar los datos del Centro. La imagen de los logos es obligatoria introducirla, en caso de no querer ning˙n logotipo en los documentos, introducir una imagen en blanco para que no aparezca error en los documentos. Se disponen de dos logos para la cabecera, uno el del centro propiamente dicho y otro para el ”rgano Oficial al que pertenece el Centro.';
+$definir_centro1='Configuraci√≥n Inicial';
+$definir_centro2='CONFIGURACI√ìN INICIAL';
+$definir_centro3='Personalizar los datos del Centro. La imagen de los logos es obligatoria introducirla, en caso de no querer ning√∫n logotipo en los documentos, introducir una imagen en blanco para que no aparezca error en los documentos. Se disponen de dos logos para la cabecera, uno el del centro propiamente dicho y otro para el √ìrgano Oficial al que pertenece el Centro.';
 $definir_centro4='PERSONALIZAR LOS DATOS DEL CENTRO';
 $definir_centro5='NOMBRE DEL CENTRO';
-$definir_centro6='DIRECCI”N';
-$definir_centro7='POBLACI”N';
+$definir_centro6='DIRECCI√ìN';
+$definir_centro7='POBLACI√ìN';
 $definir_centro8='PROVINCIA';
-$definir_centro9='C”DIGO POSTAL';
-$definir_centro10='TEL…FONO';
+$definir_centro9='C√ìDIGO POSTAL';
+$definir_centro10='TEL√âFONO';
 $definir_centro11='FAX';
 $definir_centro12='EMAIL';
 $definir_centro13='WEB';
-$definir_centro14='Imagen LOGO del Centro <br>(˙nicamente archivos en formato jpg. Reducir el tamaÒo del archivo para no ralentizar la aplicaciÛn.)';
-$definir_centro15='Distancia del logo al margen izquierdo de la hoja (en milÌmetros)';
+$definir_centro14='Imagen LOGO del Centro <br>(√∫nicamente archivos en formato jpg. Reducir el tama√±o del archivo para no ralentizar la aplicaci√≥n.)';
+$definir_centro15='Distancia del logo al margen izquierdo de la hoja (en mil√≠metros)';
 $definir_centro16='FRASE 1';
 $definir_centro17='FRASE 2';
 $definir_centro18='FRASE 3';
-$definir_centro19='LOGO CONSELLERIA <br>(˙nicamente archivos en formato jpg. Reducir el tamaÒo del archivo para no ralentizar la generaciÛn de documentos.)';
+$definir_centro19='LOGO CONSELLERIA <br>(√∫nicamente archivos en formato jpg. Reducir el tama√±o del archivo para no ralentizar la generaci√≥n de documentos.)';
 $definir_centro20='DEFINIR LOGO Y DATOS DEL CENTRO';
 $definir_centro21='DEFINIR LOGO CONSELLERIA Y TEXTO DEL LOGO';
 $definir_centro22='PERSONALIZAR REGISTRO';
-$definir_centro23='ANUAL (Cada aÒo comenzar· con el registro n˙mero 1)';
-$definir_centro24='CONTINUO (Comenzar· a contar a partir del n˙mero que le indiquemos)';
-$definir_centro25='⁄ltimo n˙mero registro de ENTRADAS';
-$definir_centro26='⁄ltimo n˙mero registro de SALIDAS';
-$definir_centro27='Podemos enlazar el nuevo libro de registros con el antiguo, indicando en cada caso el ˙ltimo registro anotado.';
+$definir_centro23='ANUAL (Cada a√±o comenzar√° con el registro n√∫mero 1)';
+$definir_centro24='CONTINUO (Comenzar√° a contar a partir del n√∫mero que le indiquemos)';
+$definir_centro25='√öltimo n√∫mero registro de ENTRADAS';
+$definir_centro26='√öltimo n√∫mero registro de SALIDAS';
+$definir_centro27='Podemos enlazar el nuevo libro de registros con el antiguo, indicando en cada caso el √∫ltimo registro anotado.';
 
 
 
@@ -133,26 +133,26 @@ $compartirtexto1='Documentos Compartidos';
 $compartirtexto2='Expandir';
 $compartirtexto3='Contraer';
 $compartirtexto4='DOCUMENTOS COMPARTIDOS';
-$compartirtexto5='Para expandir un directorio, pulsar sobre el sÌmbolo <b>+</b>. Para contraerlo, pulsar sobre el signo <b>-</b><br>Para abrir un archivo, pulsar sobre Èl. Para crear una carpeta nueva o un archivo nuevo, pulsar sobre el nombre de la carpeta correspondiente donde se quiere insertar la nueva carpeta o el nuevo archivo y a continuaciÛn rellenar los elementos del formulario. Si no se selecciona carpeta alguna, se crear· en el directorio raiz';
+$compartirtexto5='Para expandir un directorio, pulsar sobre el s√≠mbolo <b>+</b>. Para contraerlo, pulsar sobre el signo <b>-</b><br>Para abrir un archivo, pulsar sobre √©l. Para crear una carpeta nueva o un archivo nuevo, pulsar sobre el nombre de la carpeta correspondiente donde se quiere insertar la nueva carpeta o el nuevo archivo y a continuaci√≥n rellenar los elementos del formulario. Si no se selecciona carpeta alguna, se crear√° en el directorio raiz';
 $compartirtexto6='SERVIDOR';
 $compartirtexto7='Archivo no permitido';
-$compartirtexto8='ARCHIVO (si no se selecciona archivo se crear· el nodo como carpeta)';
-$compartirtexto9='⁄nicamente archivos de extensiÛn ';
+$compartirtexto8='ARCHIVO (si no se selecciona archivo se crear√° el nodo como carpeta)';
+$compartirtexto9='√önicamente archivos de extensi√≥n ';
 $compartirtexto10='Creado por: ';
-$compartirtexto11='P⁄BLICO';
+$compartirtexto11='P√öBLICO';
 $compartirtexto12='PRIVADO';
-$compartirtexto13='Si se crea una carpeta, esta se crear· siempre como <b>P⁄BLICA</b> independientemente de la casilla seleccionada. Los documentos que lleven asociados un archivo son los ˙nicos que se pueden declarar como <b>PRIVADOS</b>. Una vez creado el documento se puede modificar su caracter en la secciÛn <b>MODIFICAR MIS DOCUMENTOS</b>. <b>Aunque los documentos se declaren como privados, el administrador de la aplicaciÛn puede tener acceso a modificarlos y a su contenido</b>';
+$compartirtexto13='Si se crea una carpeta, esta se crear√° siempre como <b>P√öBLICA</b> independientemente de la casilla seleccionada. Los documentos que lleven asociados un archivo son los √∫nicos que se pueden declarar como <b>PRIVADOS</b>. Una vez creado el documento se puede modificar su caracter en la secci√≥n <b>MODIFICAR MIS DOCUMENTOS</b>. <b>Aunque los documentos se declaren como privados, el administrador de la aplicaci√≥n puede tener acceso a modificarlos y a su contenido</b>';
 $compartirtexto14='MODIFICAR MIS DOCUMENTOS';
-$compartirtexto15='Para modificar los par·metros iniciales de un documento, pulsar sobre el nombre del documento.';
+$compartirtexto15='Para modificar los par√°metros iniciales de un documento, pulsar sobre el nombre del documento.';
 $compartirtexto16='Confirmar borrar documento';
 $compartirtexto17='MODIFICAR DOCUMENTO SELECCIONADO';
 
 $compartirtexto19='MOVER ARCHIVO';
-$compartirtexto20='Seleccionar la nueva ubicaciÛn y pulsar el botÛn GUARDAR. Si no se desea guardar, pulsar el botÛn VOLVER';
-$compartirtexto21='CAMBIAR UBICACI”N ELEMENTO SELECCIONADO';
-$compartirtexto22='Para borrar una CARPETA, debe estar vacÌa. De no ser asÌ, no aparecer· la opciÛn de BORRAR';
+$compartirtexto20='Seleccionar la nueva ubicaci√≥n y pulsar el bot√≥n GUARDAR. Si no se desea guardar, pulsar el bot√≥n VOLVER';
+$compartirtexto21='CAMBIAR UBICACI√ìN ELEMENTO SELECCIONADO';
+$compartirtexto22='Para borrar una CARPETA, debe estar vac√≠a. De no ser as√≠, no aparecer√° la opci√≥n de BORRAR';
 $compartirtexto23='MOVER ARCHIVO A';
-$compartirtexto24='Si se desea compartir un archivo de DROPBOX, seleccionarlo con el botÛn siguiente';
+$compartirtexto24='Si se desea compartir un archivo de DROPBOX, seleccionarlo con el bot√≥n siguiente';
 $compartirtexto25='Nombre de la carpeta o archivo que se quiere crear';
 $compartirtexto26='COMPARTIR DOCUMENTOS';
 $compartirtexto27='Subir / Compartir documentos';
@@ -168,18 +168,18 @@ $compartirtexto34='Editar el nombre si se desea';
 $registrotexto0='REGISTRO';
 $registrotexto1='Entradas';
 $registrotexto2='Salidas';
-$registrotexto3='Listados / B˙squeda';
+$registrotexto3='Listados / B√∫squeda';
 $registrotexto4='Organismos /Tipos Documentos';
 $registrotexto5='REGISTRO ENTRADAS';
-$registrotexto6='A—O';
-$registrotexto7='C”DIGO REGISTRO';
+$registrotexto6='A√ëO';
+$registrotexto7='C√ìDIGO REGISTRO';
 $registrotexto8='FECHA REGISTRO';
 $registrotexto9='FECHA ENTRADA';
 $registrotexto10='TIPO DE DOCUMENTO';
 $registrotexto11='Seleccionar tipo documento';
 $registrotexto12='NUEVO';
 $registrotexto13='CREAR NUEVO TIPO DE DOCUMENTO';
-$registrotexto14='Introducir el nombre en los dos idiomas. A continuaciÛn, pulsar GUARDAR';
+$registrotexto14='Introducir el nombre en los dos idiomas. A continuaci√≥n, pulsar GUARDAR';
 $registrotexto15='Nombre en CASTELLANO';
 $registrotexto16='Nombre en VALENCIANO';
 $registrotexto17='ASUNTO';
@@ -206,7 +206,7 @@ $registrotexto37='Para cambiarlo, seleccionar otro';
 $registrotexto38='Nuevo registro';
 $registrotexto39='Siguiente registro';
 $registrotexto40='Anterior registro';
-$registrotexto41='⁄ltimo registro';
+$registrotexto41='√öltimo registro';
 $registrotexto42='Primer registro';
 $registrotexto43='GUARDAR';
 $registrotexto44='DIRIGIDO A:';
@@ -214,8 +214,8 @@ $registrotexto45='Seleccionar, si es necesario';
 $registrotexto46='REGISTRO SALIDAS';
 $registrotexto47='NOMBRE DESTINO';
 $registrotexto48='LISTADO REGISTRO ENTRADA / SALIDA';
-$registrotexto49='Seleccionar los filtros deseados. Se puede usar m·s de uno. Una vez hecho, pulsar el botÛn <b>FILTRAR</b>.<p> Para modificar un registro, pulsar sobre el botÛn <b>EDITAR</b></p>';
-$registrotexto50='Seleccionar aÒo';
+$registrotexto49='Seleccionar los filtros deseados. Se puede usar m√°s de uno. Una vez hecho, pulsar el bot√≥n <b>FILTRAR</b>.<p> Para modificar un registro, pulsar sobre el bot√≥n <b>EDITAR</b></p>';
+$registrotexto50='Seleccionar a√±o';
 $registrotexto51='Remitente';
 $registrotexto52='Organismo';
 $registrotexto53='Procedencia';
@@ -225,22 +225,22 @@ $registrotexto56='EDITAR';
 $registrotexto57='Tipo Documento';
 $registrotexto58='Destino';
 $registrotexto59='Todos';
-$registrotexto60='Si se desean m·s opciones de b˙squeda, rellenar los siguientes campos con los datos adecuados';
-$registrotexto61='Buscar en ASUNTO o en el documento adjunto la palabra o palabras indicadas (mÌnimo 4 letras).';
+$registrotexto60='Si se desean m√°s opciones de b√∫squeda, rellenar los siguientes campos con los datos adecuados';
+$registrotexto61='Buscar en ASUNTO o en el documento adjunto la palabra o palabras indicadas (m√≠nimo 4 letras).';
 $registrotexto62='FECHA SALIDA';
-$registrotexto63='N∫ ENTRA';
+$registrotexto63='N¬∫ ENTRA';
 $registrotexto64='F. REGIS';
 $registrotexto65='F. ENTRA';
-$registrotexto66='N∫ SALID';
+$registrotexto66='N¬∫ SALID';
 $registrotexto67='F. SALID';
 $registrotexto68='FILTRAR';
-$registrotexto69='N⁄MERO DE REGISTROS POR P¡GINA';
+$registrotexto69='N√öMERO DE REGISTROS POR P√ÅGINA';
 $registrotexto70='ATENDIDO';
-$registrotexto71='Los siguientes registros estar sin atender. Pulsar el botÛn EDITAR para ver los detalles del registro.';
+$registrotexto71='Los siguientes registros estar sin atender. Pulsar el bot√≥n EDITAR para ver los detalles del registro.';
 $registrotexto72='ADJUNTO REMITO';
-$registrotexto73='N∫ SALIDA';
+$registrotexto73='N¬∫ SALIDA';
 $registrotexto74='REGISTRO DE SALIDA';
-$registrotexto75='⁄ltimo registro';
+$registrotexto75='√öltimo registro';
 $registrotexto76='Primer registro';
 
 
@@ -249,9 +249,9 @@ $registrotexto76='Primer registro';
 //IMPRIMIR LIBROS REGISTRO
 $imprimirtexto1='Imprimir Libros Registro';
 $imprimirtexto2='IMPRIMIR REGISTRO ENTRADAS / SALIDAS';
-$imprimirtexto3='Seleccionar el tipo de libro que se desea imprimir y el aÒo. A continuaciÛn pulsar el botÛn IMPRIMIR.';
+$imprimirtexto3='Seleccionar el tipo de libro que se desea imprimir y el a√±o. A continuaci√≥n pulsar el bot√≥n IMPRIMIR.';
 $imprimirtexto4='LIBRO REGISTRO DE ENTRADAS';
-$imprimirtexto5='A—O';
+$imprimirtexto5='A√ëO';
 $imprimirtexto6='LIBRO REGISTRO DE SALIDAS';
 
 //MANTENIMITNO ORGANOS DESTINOS
@@ -274,47 +274,47 @@ $mantenimientotexto16='LISTADO NOMBRES DE ORIGEN DE SALIDAS';
 $mantenimientotexto17='LISTADO NOMBRES DE ORGANISMOS DE SALIDAS';
 $mantenimientotexto18='LISTADO NOMBRES DE DESTINOS DE SALIDAS';
 $mantenimientotexto19='LISTADO TIPOS DE DOCUMENTOS';
-$mantenimientotexto20='Si se borra el elemento seleccionado, los registros ENTRADAS / SALIDAS quedar·n sin dicho elemento. øDesea continuar?';
-$mantenimientotexto21='N∫ de registros asociados';
+$mantenimientotexto20='Si se borra el elemento seleccionado, los registros ENTRADAS / SALIDAS quedar√°n sin dicho elemento. ¬øDesea continuar?';
+$mantenimientotexto21='N¬∫ de registros asociados';
 $mantenimientotexto22='Hay';
-$mantenimientotexto23='Registros asociados al elemento seleccionado. Si continua, estos registros se ver·n afectados. Confirmar borrado.';
-$mantenimientotexto24='No hay registros asociados al elemento seleccionado. Se puede borrar sin que afecte a ning˙n registro. Confirmar borrado.';
+$mantenimientotexto23='Registros asociados al elemento seleccionado. Si continua, estos registros se ver√°n afectados. Confirmar borrado.';
+$mantenimientotexto24='No hay registros asociados al elemento seleccionado. Se puede borrar sin que afecte a ning√∫n registro. Confirmar borrado.';
 $mantenimientotexto22='Hay';
 
 //INICIO
-$iniciotexto1='La aplicaciÛn Secretictac consta, en principio, de tres mÛdulos, que ser·n o no visibles en funciÛn de los permisos asignados a cada usuario. Estos mÛdulos son:
-<ul><li><b>MÛdulo de Registro de entradas / salidas al Centro</b>: …ste Ès el mÛdulo principal de la aplicaciÛn y se usa para gestionar los documentos de ENTRADA / SALIDA en la organizaciÛn.
-Consta de varios men˙s:<ul><li><u>Entradas</u>: GestiÛn de los documentos de Entrada. Posibilidad de seleccionar al usuario al cual va dirigido, si Ès necesario. Cuando un usuario entre en la aplicaciÛn, se le avisar· si tiene alg˙n documento pendiente de revisiÛn. </li>
-<li><u>Salidas</u>: GestiÛn de los documentos de salida.</li>
-<li><u>Listados/B˙squeda</u>: Permite obtener listados de los registros por pantalla usando diferentes filtro para ello, incluyendo b˙squeda en el asunto del registro. Estos filtros se puede encadenar para una b˙squeda m·s precisa.</li>
-<li ><u>Imprimir Libros Registro</u>: ImpresiÛn de los libros de Entradas y Salidas por aÒos.</li>
-<li><u>Organismos /Tipos Documentos</u>: Permite crear y modificar el nombre del Organismo, Tipos de documentos,... que usaremos en este mÛdulo.</li>
+$iniciotexto1='La aplicaci√≥n Secretictac consta, en principio, de tres m√≥dulos, que ser√°n o no visibles en funci√≥n de los permisos asignados a cada usuario. Estos m√≥dulos son:
+<ul><li><b>M√≥dulo de Registro de entradas / salidas al Centro</b>: √âste √©s el m√≥dulo principal de la aplicaci√≥n y se usa para gestionar los documentos de ENTRADA / SALIDA en la organizaci√≥n.
+Consta de varios men√∫s:<ul><li><u>Entradas</u>: Gesti√≥n de los documentos de Entrada. Posibilidad de seleccionar al usuario al cual va dirigido, si √©s necesario. Cuando un usuario entre en la aplicaci√≥n, se le avisar√° si tiene alg√∫n documento pendiente de revisi√≥n. </li>
+<li><u>Salidas</u>: Gesti√≥n de los documentos de salida.</li>
+<li><u>Listados/B√∫squeda</u>: Permite obtener listados de los registros por pantalla usando diferentes filtro para ello, incluyendo b√∫squeda en el asunto del registro. Estos filtros se puede encadenar para una b√∫squeda m√°s precisa.</li>
+<li ><u>Imprimir Libros Registro</u>: Impresi√≥n de los libros de Entradas y Salidas por a√±os.</li>
+<li><u>Organismos /Tipos Documentos</u>: Permite crear y modificar el nombre del Organismo, Tipos de documentos,... que usaremos en este m√≥dulo.</li>
 </ul>
 </li>
-<li><b>MÛdulo Compartir Documentos</b>: MÛdulo para compartir documentos entre los usuarios de la aplicaciÛn.
+<li><b>M√≥dulo Compartir Documentos</b>: M√≥dulo para compartir documentos entre los usuarios de la aplicaci√≥n.
 <ul>
 <li>
 <u>Subir /compartir documentos</u>: Apartado donde se gestionan los documentos y carpetas que se han de compartir. A los documentos se les puede dar
-el car·cter de p˙blico (los ver·n todos los usuarios) o privados (˙nicamente los ver· el usuario que los ha subido). Las carpetas que se creen siempre ser·n de car·cter p˙blico, no asi los documentos.</li>
-<li><u>Modificar mis documentos</u>: Apartado para gestionar los documentos subidos, cambiarlos, moverlos de carpeta,.... Las carpetas que se creen, ˙nicamente podr·n ser borradas por el administrador de la aplicaciÛn.
+el car√°cter de p√∫blico (los ver√°n todos los usuarios) o privados (√∫nicamente los ver√° el usuario que los ha subido). Las carpetas que se creen siempre ser√°n de car√°cter p√∫blico, no asi los documentos.</li>
+<li><u>Modificar mis documentos</u>: Apartado para gestionar los documentos subidos, cambiarlos, moverlos de carpeta,.... Las carpetas que se creen, √∫nicamente podr√°n ser borradas por el administrador de la aplicaci√≥n.
 </li>
 </ul>
 </li>
 
-<li><b>MÛdulo Administrador de la aplicaciÛn</b>
+<li><b>M√≥dulo Administrador de la aplicaci√≥n</b>
 <ul>
 <li><u>Tipo permisos</u>: Permite crear distintos tipos de permisos para ajustarse a las necesidades de los usuarios. Hay tres permisos creados por defecto, ADMIN, ADMINISTRATIVO y SECRETARIO.
 </li>
-<li><u>Editar permisos</u>: Permite seleccionar los mÛdulos que pueden usar cada uno de los usuarios, en funciÛn del tipo de permiso asignado. EL permiso ADMIN ha de tener activados todos los mÛdulos.
+<li><u>Editar permisos</u>: Permite seleccionar los m√≥dulos que pueden usar cada uno de los usuarios, en funci√≥n del tipo de permiso asignado. EL permiso ADMIN ha de tener activados todos los m√≥dulos.
 </li>
-<li><u>Crear / Editar usuarios</u>: Apartado para dar de alta o editar los usuarios de la aplicaciÛn, asign·ndole el permiso adecuado.
+<li><u>Crear / Editar usuarios</u>: Apartado para dar de alta o editar los usuarios de la aplicaci√≥n, asign√°ndole el permiso adecuado.
 </li>
-<li><u>ConfiguraciÛn Inicial</u>: PersonalizaciÛn de los datos del centro tales como logotipo, direcciÛn, nombre,.... Ser·n los datos que aparecer·n en la cabecera de los documentos impresos.
-</li>
-</ul>
+<li><u>Configuraci√≥n Inicial</u>: Personalizaci√≥n de los datos del centro tales como logotipo, direcci√≥n, nombre,.... Ser√°n los datos que aparecer√°n en la cabecera de los documentos impresos.
 </li>
 </ul>
-Esta Ès la <b> FASE BETA DE SECRETICTAC</b>. Para comentarios, sugerencias, correcciÛn de errores,.... podÈis poneros en contacto conmigo a travÈs del foro de EDUCATICTAC o al correo antonioanton37@hotmail.com. Espero que encontrÈis de utilidad esta aplicaciÛn.
+</li>
+</ul>
+Esta √©s la <b> FASE BETA DE SECRETICTAC</b>. Para comentarios, sugerencias, correcci√≥n de errores,.... pod√©is poneros en contacto conmigo a trav√©s del foro de EDUCATICTAC o al correo antonioanton37@hotmail.com. Espero que encontr√©is de utilidad esta aplicaci√≥n.
 ';
 
 $enero='enero';
@@ -337,15 +337,15 @@ $de_1=' de ';
 $rsstexto1='ACTUALIDAD SECRETITAC EN EDUCATICTAC';
 $rsstexto2='Todas';
 $rsstexto3='NOTICIAS SECRETICTAC';
-$rsstexto4='Leer m·s';
+$rsstexto4='Leer m√°s';
 
 //ACTAS
 $actatexto1='ACTAS CENTRO';
-$actatexto2='ConfiguraciÛn Actas';
+$actatexto2='Configuraci√≥n Actas';
 $actatexto3='Editar Actas / Listado';
 $actatexto4='Nueva Acta';
 $actatexto5='Crear / Editar Tipos de Actas';
-$actatexto6='Para poder gestionar las actas del Centro, hemos de configurar la aplicaciÛn. En primer lugar, hemos de crear el tipo de asistentes a las reuniones. A continuaciÛn, los tipos de actas que vamos a usar. En la siguiente pestaÒa, importaremos / editaremos los asistentes a las reuniones de las que se va a crear el acta, seguidamente indicamos los cargos que han de firmar cada tipo de actas y por ˙ltimo asignamos los permisos adecuados a los usuarios para que puedan ver o no determinadas actas.';
+$actatexto6='Para poder gestionar las actas del Centro, hemos de configurar la aplicaci√≥n. En primer lugar, hemos de crear el tipo de asistentes a las reuniones. A continuaci√≥n, los tipos de actas que vamos a usar. En la siguiente pesta√±a, importaremos / editaremos los asistentes a las reuniones de las que se va a crear el acta, seguidamente indicamos los cargos que han de firmar cada tipo de actas y por √∫ltimo asignamos los permisos adecuados a los usuarios para que puedan ver o no determinadas actas.';
 $actatexto7='TIPOS ASISTENTES';
 $actatexto8='TIPO DE ACTA';
 $actatexto9='IMPORTAR / EDITAR ASISTENTES';
@@ -358,8 +358,8 @@ $actatexto15='ORDEN';
 $actatexto16='Borrar tipo de asistente';
 $actatexto17='Borrar tipo acta';
 $actatexto18='CREAR NUEVO TIPO ACTA';
-$actatexto29='Seleccionar el tipo de acta y a continuaciÛn introducir los asistentes. Los asistentes se pueden importar mediante un archivo .txt en el que figuren los nombres de los asistentes en formato APELLIDO, NOMBRE (uno de ellos por fila). Seleccionar a continuaciÛn el tipo de asistente mayoritario y una vez importados
- editar los que tengan tipo distinto. En cada importaciÛn se borran los anteriores asistentes, por tanto, cada vez que se haga una importaciÛn han de estar todos los asistentes junto a los nuevos miembros. TambiÈn se pueden introducir / editar manualmente a travÈs del formulario.';
+$actatexto29='Seleccionar el tipo de acta y a continuaci√≥n introducir los asistentes. Los asistentes se pueden importar mediante un archivo .txt en el que figuren los nombres de los asistentes en formato APELLIDO, NOMBRE (uno de ellos por fila). Seleccionar a continuaci√≥n el tipo de asistente mayoritario y una vez importados
+ editar los que tengan tipo distinto. En cada importaci√≥n se borran los anteriores asistentes, por tanto, cada vez que se haga una importaci√≥n han de estar todos los asistentes junto a los nuevos miembros. Tambi√©n se pueden introducir / editar manualmente a trav√©s del formulario.';
 $actatexto30='SELECCIONAR TIPO ACTA';
 $actatexto31='Seleccionar';
 $actatexto32='NOMBRE';
@@ -368,8 +368,8 @@ $actatexto34='IMPORTAR ASISTENTES';
 $actatexto35='Borrar';
 $actatexto36='ASISTENTES';
 $actatexto37='ASIGNAR TIPO MAYORITARIO';
-$actatexto38='⁄nicamente archivos de extensiÛn .txt';
-$actatexto39='No se ha seleccionado ning˙n archivo txt';
+$actatexto38='√önicamente archivos de extensi√≥n .txt';
+$actatexto39='No se ha seleccionado ning√∫n archivo txt';
 $actatexto40='Seleccionar tipo asistente mayoritario';
 $actatexto41='INTRODUCIR NUEVO ASISTENTE';
 $actatexto42='EDITAR ASISTENTE SELECIONADO';
@@ -379,47 +379,47 @@ $actatexto45='Seleccionar el tipo de acta, introducir los cargos de asistentes q
 $actatexto46='FIRMAN';
 $actatexto47='de firma acta';
 $actatexto48='NUEVA ACTA';
-$actatexto49='CONFIGURACI”N ACTAS';
+$actatexto49='CONFIGURACI√ìN ACTAS';
 $actatexto50='Seleccionar el tipo de acta que se desea crear.';
 $actatexto51='REDACTAR ACTA';
 $actatexto52='ACUERDOS (si es necesario)';
 $actatexto53='ASISTENTES';
-$actatexto54='A—O';
+$actatexto54='A√ëO';
 $actatexto55='TODOS';
 $actatexto56='NINGUNO';
 $actatexto57='EDITAR ACTA';
-$aviso_ventanas_emergente='La aplicaciÛn usa ventanas emergentes y popups en alguno de sus mÛdulos. Para que funcione correctamente, permitir usar ventanas emergentes en el navegador empleado. Para ello, basta aÒadir como exepciÛn la direcciÛn de SECRETICTAC';
+$aviso_ventanas_emergente='La aplicaci√≥n usa ventanas emergentes y popups en alguno de sus m√≥dulos. Para que funcione correctamente, permitir usar ventanas emergentes en el navegador empleado. Para ello, basta a√±adir como exepci√≥n la direcci√≥n de SECRETICTAC';
 $actatexto58='VISTA PREVIA ACTA';
-$actatexto59='Para imprimir el acta, pulsar el icono IMPRIMIR. Para imprimir los acuerdos, pulsar el icono IMPRIMIR ACUERDOS. Para volver a la p·gina anterior, pulsar el botÛn de VOLVER. El aspecto del acta puede no coincidir con la vista previa';
+$actatexto59='Para imprimir el acta, pulsar el icono IMPRIMIR. Para imprimir los acuerdos, pulsar el icono IMPRIMIR ACUERDOS. Para volver a la p√°gina anterior, pulsar el bot√≥n de VOLVER. El aspecto del acta puede no coincidir con la vista previa';
 $actatexto60='PERMISOS ACTAS';
-$actatexto61='Asignar los permisos que cada usuario tendr· para poder ver las actas correspondientes. Hasta que no se asignen los permisos, ning˙n usuario podr· ver ni crear ningun acta.';
+$actatexto61='Asignar los permisos que cada usuario tendr√° para poder ver las actas correspondientes. Hasta que no se asignen los permisos, ning√∫n usuario podr√° ver ni crear ningun acta.';
 $actatexto62='TIPO USUARIO';
 $actatexto63='ACTAS PERMITIDAS';
 $actatexto64='Borrar permiso a';
 $actatexto65='sobre el acta';
 $actatexto66='ASIGNAR PERMISO A';
-$actatexto67='Seleccionar el tipo de acta que se desea editar. A continuaciÛn, buscar el acta deseada.';
+$actatexto67='Seleccionar el tipo de acta que se desea editar. A continuaci√≥n, buscar el acta deseada.';
 $actatexto68='LISTADO ACTAS';
 $actatexto69='IMPRIMIR ACTA';
 $actatexto70='IMPRIMIR ACUERDOS';
-$actatexto71='del dÌa';
+$actatexto71='del d√≠a';
 $actatexto72='ACUERDOS';
 $actatexto73='Fdo:';
-$actatexto74='B˙squeda Actas';
+$actatexto74='B√∫squeda Actas';
 $actatexto75='Convocatorias';
-$actatexto76='B⁄SQUEDA ACTAS';
-$actatexto77='Seleccionar los filtros deseados para realizar la b˙squeda de actas.';
+$actatexto76='B√öSQUEDA ACTAS';
+$actatexto77='Seleccionar los filtros deseados para realizar la b√∫squeda de actas.';
 $actatexto78='TEXTO A BUSCAR (usar comillas para buscar texto completo)';
 $actatexto79='CREAR / EDITAR CONVOCATORIA';
 $actatexto80='Seleccionar el acta de la que se desea crear la convocatoria. Para ver / editar todas las convocatorias, seleccionar <b>LISTADO CONVOCATORIAS</b>';
 $actatexto81='LISTADO CONVOCATORIAS';
-$actatexto82='TEXTO CONVOCAT“RIA EN CASTELLANO';
+$actatexto82='TEXTO CONVOCAT√íRIA EN CASTELLANO';
 $actatexto83='TEXTO CONVOCATORIA EN VALENCIANO';
-$actatexto84='FECHA REUNI”N';
+$actatexto84='FECHA REUNI√ìN';
 $actatexto85='Pulsar sobre la fecha de la convocatoria que se desea editar / consultar.';
-$actatexto86='Antes de imprimir, configurar la p·gina para que no muestre encabezados y pie de p·ginas predefinido por el navegador. La configuraciÛn depende de cada navegador.';
+$actatexto86='Antes de imprimir, configurar la p√°gina para que no muestre encabezados y pie de p√°ginas predefinido por el navegador. La configuraci√≥n depende de cada navegador.';
 $actatexto87='VISTA PREVIA CONVOCATORIA';
-$actatexto88='Para imprimir la convocatoria, pulsar <b>IMPRIMIR</b>. Pulsa <b>VOLVER</b> para regresa a la p·gina anterior. <b>Para que se imprima correctamente, en las opciones de impresiÛn, cambiar la orientaciÛn del papel a HORIZONTAL</b>';
+$actatexto88='Para imprimir la convocatoria, pulsar <b>IMPRIMIR</b>. Pulsa <b>VOLVER</b> para regresa a la p√°gina anterior. <b>Para que se imprima correctamente, en las opciones de impresi√≥n, cambiar la orientaci√≥n del papel a HORIZONTAL</b>';
 $actatexto89='Convocatoria';
 $actatexto90='FECHA CONVOCATORIA';
 $actatexto91='Fdo:';
@@ -430,23 +430,23 @@ $actatexto94='FIRMA CONVOCATORIA';
 
 //copies seguretat
 $copiestexte1='Copias Seguridad';
-$copiestexte2='GESTI”N COPIAS SEGURIDAD';
-$copiestexte3='Definir la ruta absoluta de la carpeta donde se almacenar·n las copias de seguridad (dar los permisos adecuados a esta carpeta) y el n˙mero m·ximo de copias que deseamos almacenar. Si se deja en blanco, no se eliminiar· ninguna de las copias. La aplicaciÛn realizar· copias de seguridad de la base de datos y de la carpeta archivos.';
+$copiestexte2='GESTI√ìN COPIAS SEGURIDAD';
+$copiestexte3='Definir la ruta absoluta de la carpeta donde se almacenar√°n las copias de seguridad (dar los permisos adecuados a esta carpeta) y el n√∫mero m√°ximo de copias que deseamos almacenar. Si se deja en blanco, no se eliminiar√° ninguna de las copias. La aplicaci√≥n realizar√° copias de seguridad de la base de datos y de la carpeta archivos.';
 $copiestexte4='INTRODUCIR RUTA DE LA CARPETA DE SEGURIDAD (sin barra inclinada final)';
-$copiestexte5='N˙mero de copias a conservar';
-$copiestexte6='CONFIGURACI”N INICIAL';
+$copiestexte5='N√∫mero de copias a conservar';
+$copiestexte6='CONFIGURACI√ìN INICIAL';
 $copiestexte7='REALIZAR COPIA DE SEGURIDAD';
-$copiestexte8='Si desea realizar una copia de seguridad, pulsar el botÛn';
+$copiestexte8='Si desea realizar una copia de seguridad, pulsar el bot√≥n';
 $copiestexte9='HACER COPIA';
 $copiestexte10='RESTAURAR COPIA DE SEGURIDAD';
 $copiestexte11='La copia de seguridad ha sido creada en';
-$copiestexte12='Ha ocurrido alg˙n problema. Revisar la ruta de guardado y conexion';
+$copiestexte12='Ha ocurrido alg√∫n problema. Revisar la ruta de guardado y conexion';
 $copiestexte13='RESTAURAR ARCHIVOS';
 $copiestexte14='RESTAURAR BASE DE DATOS';
 $copiestexte15='Seleccionar el zip que contiene los datos de la base de datos';
 $copiestexte16='RESTAURAR DATOS';
-$copiestexte17='Si se usa una ruta absoluta para la carpeta de seguridad, las copias se guardar·n en el ordenador desde el cual se realiza la copia. Si se usa una ruta relativa, se guardar·n en el en el servidor. Cuando se creen las copias de seguridad, es conveniente copiarlas en otro soporte de vez en cuando, por si el servidor tuviera alg˙n problema. En caso de fallo del servidor, instalar de nuevo secretictac en otro ordenador y recuperar los datos con las copias de seguridad. Probar este mÛdulo para asegurarse del buen funcionamiento y en ocasiones realizar alguna copia manual.';
-$copiestexte18='Ha ocurrido alg˙n problema y no se han podido restaurar los datos';
+$copiestexte17='Si se usa una ruta absoluta para la carpeta de seguridad, las copias se guardar√°n en el ordenador desde el cual se realiza la copia. Si se usa una ruta relativa, se guardar√°n en el en el servidor. Cuando se creen las copias de seguridad, es conveniente copiarlas en otro soporte de vez en cuando, por si el servidor tuviera alg√∫n problema. En caso de fallo del servidor, instalar de nuevo secretictac en otro ordenador y recuperar los datos con las copias de seguridad. Probar este m√≥dulo para asegurarse del buen funcionamiento y en ocasiones realizar alguna copia manual.';
+$copiestexte18='Ha ocurrido alg√∫n problema y no se han podido restaurar los datos';
 $copiestexte19='Los datos se han restaurado';
 $copiestexte20='RESTAURAR DOCUMENTOS (carpeta archivos)';
 $copiestexte21='Seleccionar el zip de los archivos';

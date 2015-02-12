@@ -1,5 +1,5 @@
 <?php
-//tamaños
+//tamaÃ±os
 $tamanyo_pagina="1000";
 
 $color_background='#000000';
