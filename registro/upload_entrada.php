@@ -189,6 +189,13 @@ case 'ADJUNTO':
 <form  name="Form3"  method="post" action="<?php echo "$ruta_absoluta";?>/adjunto_remito" target="_blank">
 <input type="text" name="fecha" value="<?php echo $fecha_adjunto;?>">
 <input type="text" name="codigo" value="<?php echo $codigo_registro;?>">
+<input type="text" name="organismo" value="<?php echo $organismo;?>">
+<input type="text" name="destino" value="<?php echo $destino;?>">
+<input type="text" name="dirigido" value="<?php echo $dirigido;?>">
+
+<input type="text" name="procedencia" value="<?php echo $procedencia;?>">
+
+<input type="text" name="origen" value="<?php echo $origen;?>">
 <textarea  name="asunto" id="TextArea1" style="width:350px;height:80px;" rows="5"  cols="39"><?php echo "$asunto";?></textarea>
 </form>
 

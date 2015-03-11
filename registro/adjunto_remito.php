@@ -123,18 +123,75 @@ $pdf->AddPage();
 
 
 $ejex=30;
-$ejey=50;
+$ejey=40;
 
 
 $codigo=$_REQUEST['codigo'];
 $codigo=str_pad($codigo, 6, "0", STR_PAD_LEFT);
 $fecha=fecha2($_REQUEST['fecha']);
 $asunto=$_REQUEST['asunto'];
+$organismo=$_REQUEST['organismo'];
+$destino=$_REQUEST['destino'];
+$dirigido=$_REQUEST['dirigido'];
+$procedencia=$_REQUEST['procedencia'];
+$origen=$_REQUEST['origen'];
+
+if($organismo!=0)
+{
+					if ($_SESSION["idioma_secretictac"]=='cas')
+					{
+				$nombre_organismo=mysql_query("SELECT nombre_cas FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
+				$row = mysql_fetch_array($nombre_organismo);
+				  $nombre_organismo=$row ["nombre_cas"];
+				  }
+				if ($_SESSION["idioma_secretictac"]=='val')
+				{
+				$nombre_organismo=mysql_query("SELECT nombre_val FROM registro_organismo where cod_centro='$upload_centro' and id_organismo='$organismo' ");
+				$row = mysql_fetch_array($nombre_organismo);
+				  $nombre_organismo=$row ["nombre_val"];
+				}
+
+}
+
+if($destino!=0)
+{
+					if ($_SESSION["idioma_secretictac"]=='cas')
+					{
+				$nombre_destino=mysql_query("SELECT nombre_cas FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
+				$row = mysql_fetch_array($nombre_destino);
+				  $nombre_destino=$row ["nombre_cas"];
+				  }
+				if ($_SESSION["idioma_secretictac"]=='val')
+				{
+				$nombre_destino=mysql_query("SELECT nombre_val FROM registro_destino where cod_centro='$upload_centro' and id_destino='$destino' ");
+				$row = mysql_fetch_array($nombre_destino);
+				  $nombre_destino=$row ["nombre_val"];
+				}
+
+}
+if($origen!=0)
+{
+					if ($_SESSION["idioma_secretictac"]=='cas')
+					{
+				$nombre_origen=mysql_query("SELECT nombre_cas FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
+				$row = mysql_fetch_array($nombre_origen);
+				  $nombre_origen=$row ["nombre_cas"];
+				  }
+				if ($_SESSION["idioma_secretictac"]=='val')
+				{
+				$nombre_origen=mysql_query("SELECT nombre_val FROM registro_origen where cod_centro='$upload_centro' and id_origen='$origen' ");
+				$row = mysql_fetch_array($nombre_origen);
+				  $nombre_origen=$row ["nombre_val"];
+				}
+
+}
+
+
+
 
 $result=mysql_query("SELECT * FROM 1_centro WHERE COD_CENTRO='$upload_centro'");
 $row = mysql_fetch_array($result);
 $secretari= ($row ["secretari"]);
-
 
 $pdf->SetFont('Arial','',12);
 $pdf->SetXY($ejex,$ejey);
@@ -150,6 +207,9 @@ $pdf->lN(25);
 $pdf->SetFont('Arial','B',12);
 $pdf->SetX($ejex);
 $pdf->MultiCell(130,8,codificar_utf($registrotexto72),0,'J',0);
+
+
+
 
 $pdf->SetFont('Arial','I',12);
 $pdf->SetX($ejex);
@@ -189,13 +249,15 @@ $CIUDAD1=codificar_utf($row6 ["POBLACION"]);
 
 $pdf->Ln(15);
 $pdf->SetX($ejex+60);
-$pdf->MultiCell(100,5,$CIUDAD1.', '.$fecha_formato_largo,0,'C',0);
+$pdf->MultiCell(100,5,$CIUDAD1.', '.codificar_utf($fecha_formato_largo),0,'C',0);
 
 $pdf->Ln(35);
 $pdf->SetX($ejex+60);
 $pdf->MultiCell(100,5,codificar_utf($secretari),0,'C',0);
 
-
+$pdf->Ln(95);
+$pdf->SetX($ejex);
+$pdf->MultiCell(130,5,codificar_utf($registrotexto58).': '.codificar_utf($procedencia),0,'J',0);
 
 desconectar();
 
